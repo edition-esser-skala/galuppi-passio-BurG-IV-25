@@ -77,6 +77,73 @@ PassioOrgano = {
 		a4. a8 a4 a
 		g1
 		c,
+		\mvTr a2\pE-\soloE r4 h' %70
+		gis e r a
+		f r r8 f e dis
+		e2 a,
+		d8 g f e d4 d
+		e8 g e d cis4 cis %75
+		d8 f d c b2
+		a8 e' a g fis4 d
+		g2 r8 c, c' b
+		a f g a b2
+		r8 f d h! c2 %80
+		f1
+		b,~
+		b~
+		b2 es~
+		es2. c4 %85
+		c'8 b a!2.~
+		a1
+		e4 e8 d cis2~
+		cis1
+		d~ %90
+		d2 r4 e
+		dis1~
+		dis
+		e2 r8 h' e,4
+		r8 fis g! fis eis eis eis eis %95
+		fis2 h,4 r
+		g! h d4. d8
+		cis4 d8 c h4 e
+		d d8 c h c h a
+		g2 g'4 h %100
+		c r8 c, cis4 r
+		r8 d dis4 r8 e g a
+		h4. dis,8 e4 e,
+		h'2 r
+		g'1~ %105
+		g
+		h1~
+		h2 c4 b~
+		b2 f4 es~
+		es1 %110
+		d~
+		d~
+		d~
+		d2 g4 g8 f
+		e!1~ %115
+		e~
+		e2 f
+		b,1~
+		b2 c4 f8 es
+		d!1~ %120
+		d~
+		d
+		es~
+		es
+		as, %125
+		des
+		r4 es e2~
+		e1
+		f8 es d2.~
+		d2 h!~ %130
+		h c~
+		c1~
+		c2 d4 cis~
+		cis2 d~
+		d r8 f e dis %135
+		e2 a,4 r
 	}
 }
 
@@ -150,4 +217,71 @@ PassioBassFigures = \figuremode {
 	<[4]>2 <[3]>4 <[6\\]>
 	<[6 4]>2 <[5 3]>
 	r1
+	r %70
+	<[6]>4 <[_+]>2.
+	r2 r8 <[5 3]> \bassFigureExtendersOn <5 3> q \bassFigureExtendersOff
+	<[6 4]>4 <[5 _+]>2.
+	r1
+	<[5-]>2 <[7-]>4 <[6]>8 <[5]> %75
+	r1
+	<[_+]>2 <[6]>4 <[_+]>
+	<[_-]>1
+	<[6]>2 <[5]>4 <[6]>
+	r4. <[7]>8 <[6 4]>4 <[5 3]> %80
+	r1
+	r
+	r
+	r2 <[5-]>
+	r2. <[6- _-]>4 %85
+	r <[6]>2.
+	r1
+	<[6]>2 q
+	r <[7-]>
+	r1 %90
+	<[4+]>2. <[_+]>4
+	<[6 _+]>1
+	r
+	r2. <[7]>4
+	r8 <[5+ _+]> <[5 3]>2 \bassFigureExtendersOn <5 3>8 q \bassFigureExtendersOff %95
+	<[6 4]>4 <[5+ _+]>2.
+	r4 <[6]> <[_+]>2
+	<[6 5]>4 <[_+]>8 <[\t]> <[6]>4 <[6\\]>
+	<[_+]>2 <[6]>
+	r <[7!]>4 <[6 5]> %100
+	r2 <[6]>
+	r8 <[_+]> <[6 _+]>2 <[6]>4
+	<[5+ _+]>4. <[6 _+]>8 r2
+	<[5+] _+>1
+	r %105
+	r
+	<[6 5]>
+	r2. <2>4
+	r2. <2>4
+	r1 %110
+	<[6-]>
+	r
+	r
+	r2 <6- [_-]>
+	<[6]>1 %115
+	r
+	<[7-]>4. <[6]>8 <[_-]>2
+	q1
+	<[4!]>2. <[_-]>4
+	<[6-]>1 %120
+	<[6- 5-]>
+	r
+	<[5-]>
+	r
+	q %125
+	q2 <[6- 4! 2-]>
+	r4 <[5-]> <[6]>2
+	r1
+	<[_!]>8 <4! 2> <6->2.
+	r2 <[6]> %130
+	r <[_-]>
+	r <4+ _->
+	r <_+>4 <6>
+	r2 <[_!]>
+	r r8 <[5 3]>4 \bassFigureExtendersOn <5 3>8 \bassFigureExtendersOff %135
+	<[6 4]>4 <[5 _+]>2.
 }

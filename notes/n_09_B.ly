@@ -22,6 +22,7 @@ PassioBassoNotes = {
 		a4. a8 a4 a
 		g1
 		c,
+		R1*67
 	}
 }
 

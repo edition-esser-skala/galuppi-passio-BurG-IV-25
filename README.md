@@ -29,7 +29,7 @@ The file *master.ly* allows you to work with an editor like Kile: Change the inc
 * *master.ly* – allows building movements/parts from within Kile.
 * Individual voices in folder *notes*:
     * n_01_Textus.ly
-    * n_02_AncillaMaria.ly
+    * n_02_AncillaOstiaria.ly
     * n_03_Jesus.ly
     * n_04_Pilatus.ly
     * n_05_UnusMinimorum.ly

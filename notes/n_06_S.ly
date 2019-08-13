@@ -33,6 +33,7 @@ PassioSopranoNotes = {
 		d c8[ h] c2~
 		c4 h8[ a] h2
 		c1
+		R1*67
 	}
 }
 

@@ -36,12 +36,12 @@
 								(padding . -100)
 								(stretchability . 0))
 					} {
-						\set Staff.instrumentName = \AncillaMariaIncipit
+						\set Staff.instrumentName = \AncillaOstiariaIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "AncillaMaria" { \dynamicUp \PassioAncillaMariaNotes }
+						\new Voice = "AncillaOstiaria" { \dynamicUp \PassioAncillaOstiariaNotes }
 					}
-					\new Lyrics \lyricsto AncillaMaria \PassioAncillaMariaLyrics
+					\new Lyrics \lyricsto AncillaOstiaria \PassioAncillaOstiariaLyrics
 					
 					\new Staff {
 						\set Staff.instrumentName = \JesusIncipit

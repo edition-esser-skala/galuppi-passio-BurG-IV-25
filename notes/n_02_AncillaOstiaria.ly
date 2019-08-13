@@ -4,8 +4,8 @@
 
 \version "2.18.0"
 
-AncillaMariaIncipit = \markup {
-	\center-column { "Ancilla" "Maria" } \hspace #-18.5 \score {
+AncillaOstiariaIncipit = \markup {
+	\center-column { "Ancilla" "Ostiaria" } \hspace #-18.5 \score {
 		\new Staff \with {
 			\remove Time_signature_engraver
 		} {
@@ -15,14 +15,14 @@ AncillaMariaIncipit = \markup {
 	} \hspace #-1.8
 }
 
-PassioAncillaMariaNotes = {
+PassioAncillaOstiariaNotes = {
 	\relative c' {
 		\clef treble
 		\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-		R1*69
+		R1*136 %136
 	}
 }
 
-PassioAncillaMariaLyrics = \lyricmode {
+PassioAncillaOstiariaLyrics = \lyricmode {
 	
 }

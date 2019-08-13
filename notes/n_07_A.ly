@@ -33,6 +33,7 @@ PassioAltoNotes = {
 		e2. fis4
 		g1
 		g
+		R1*67
 	}
 }
 

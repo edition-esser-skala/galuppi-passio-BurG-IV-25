@@ -4,11 +4,11 @@
 
 
 # change the following variables according to your project
-project = Galuppi_Missa_BurG_I_7
-zipname = Galuppi_Missa_BurG_I_7_Engraving_Files
-notes = A B ob1 ob2 org S T tr vl1 vl2 vla
-parts = b coro ob1 ob2 org tr vl1 vl2 vla
-movements = kyrie gloria credo
+project = Galuppi_Passio_BurG_IV_25
+zipname = Galuppi_Passio_BurG_IV_25_Engraving_Files
+notes = A AncillaOstaria B Jesus org Pilatus S T Textus UnusMinimorum
+parts = b coro org
+movements = passio
 
 
 .DEFAULT_GOAL := info

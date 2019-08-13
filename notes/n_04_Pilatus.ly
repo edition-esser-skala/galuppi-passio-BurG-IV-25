@@ -19,7 +19,7 @@ PassioPilatusNotes = {
 	\relative c' {
 		\clef treble
 		\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-		R1*69
+		R1*136
 	}
 }
 

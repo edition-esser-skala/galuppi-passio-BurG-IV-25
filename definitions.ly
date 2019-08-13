@@ -357,7 +357,7 @@ tempoAdagio = \tempoMarkup "Adagio"
 }
 
 \include "notes/n_01_Textus.ly"
-\include "notes/n_02_AncillaMaria.ly"
+\include "notes/n_02_AncillaOstiaria.ly"
 \include "notes/n_03_Jesus.ly"
 \include "notes/n_04_Pilatus.ly"
 \include "notes/n_05_UnusMinimorum.ly"

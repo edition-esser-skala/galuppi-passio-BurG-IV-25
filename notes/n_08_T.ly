@@ -33,6 +33,7 @@ PassioTenoreNotes = {
 		a2 a'
 		e d
 		e1
+		R1*67
 	}
 }
 
