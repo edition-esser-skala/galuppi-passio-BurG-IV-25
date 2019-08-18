@@ -13,7 +13,7 @@
 	bottom-margin = .5\cm
 	outer-margin = 2\cm
 	inner-margin = 1.5\cm
-	indent = 3\cm
+	indent = 4\cm
 	
 	oddFooterMarkup = \markup {}
 	evenFooterMarkup = \markup {}
@@ -129,6 +129,11 @@ tenuto = \markup { \remark ten. }
 tenutoE = \markup { \remarkE ten. }
 unisono = \markup { \remark "unisono" }
 unisonoE = \markup { \remarkE "unisono" }
+
+Ancilla = \markup { \remark "Ancilla ostiaria" }
+Petrus = \markup { \remark "Petrus" }
+Pilatus = \markup { \remark "Pilatus" }
+Unus = \markup { \remark "Unus minimorum" }
 
 t = \markup { \combine \fontsize #-2 \transparent \number 5 \raise #.6 \draw-line #'(1 . 0) }
 l = \markup { \fontsize #-2 \transparent \number 5 }
@@ -357,12 +362,10 @@ tempoAdagio = \tempoMarkup "Adagio"
 }
 
 \include "notes/n_01_Textus.ly"
-\include "notes/n_02_AncillaOstiaria.ly"
-\include "notes/n_03_Jesus.ly"
-\include "notes/n_04_Pilatus.ly"
-\include "notes/n_05_UnusMinimorum.ly"
-\include "notes/n_06_S.ly"
-\include "notes/n_07_A.ly"
-\include "notes/n_08_T.ly"
-\include "notes/n_09_B.ly"
-\include "notes/n_10_org.ly"
+\include "notes/n_02_Jesus.ly"
+\include "notes/n_03_Soli.ly"
+\include "notes/n_04_S.ly"
+\include "notes/n_05_A.ly"
+\include "notes/n_06_T.ly"
+\include "notes/n_07_B.ly"
+\include "notes/n_08_org.ly"

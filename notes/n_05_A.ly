@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 AltoIncipit = \markup {
-	"Alto" \hspace #-17 \score {
+	"Alto" \hspace #-20.5 \score {
 		\new Staff \with {
 			\remove Time_signature_engraver
 		} {
@@ -15,12 +15,12 @@ AltoIncipit = \markup {
 	} \hspace #-1.8
 }
 
-PassioAltoNotes = {
+AltoNotes = {
 	\relative c' {
 		\clef treble
 		\key c \major \time 4/4 \autoBeamOff \tempoAdagio
 		R1*36 %36
-		\key d \major fis4.\fE fis8 fis4 fis
+		\key d \major fis4. fis8 fis4 fis
 		fis( e8[ d] e4) fis
 		g4. g8 g4 g
 		fis2. gis4 %40
@@ -33,11 +33,15 @@ PassioAltoNotes = {
 		e2. fis4
 		g1
 		g
-		R1*67
+		R1*127 %196
+		g4 g8 g a2
+		g8 g a a16 a g2
+		a g
+		fis1 %200
 	}
 }
 
-PassioAltoLyrics = \lyricmode {
+AltoLyrics = \lyricmode {
 	Je -- sum Na -- za -- %37
 	re -- num,
 	Je -- sum Na -- za --
@@ -51,4 +55,9 @@ PassioAltoLyrics = \lyricmode {
 	re -- _
 	_
 	num.
+	
+	Num -- quid et tu %197
+	ex di -- sci -- pu -- lis e --
+	_ ius
+	es? %200
 }

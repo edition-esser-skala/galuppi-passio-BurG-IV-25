@@ -25,47 +25,25 @@
 						\set Staff.instrumentName = \TextusIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Textus" { \dynamicUp \PassioTextusNotes }
+						\new Voice = "Textus" { \dynamicUp \TextusNotes }
 					}
-					\new Lyrics \lyricsto Textus \PassioTextusLyrics
-					
-					\new Staff \with {
-						\override VerticalAxisGroup.staff-staff-spacing =
-							#'((basic-distance . 15)
-								(minimum-distance . 15)
-								(padding . -100)
-								(stretchability . 0))
-					} {
-						\set Staff.instrumentName = \AncillaOstiariaIncipit
-						\override Staff.InstrumentName.self-alignment-Y = ##f
-						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "AncillaOstiaria" { \dynamicUp \PassioAncillaOstiariaNotes }
-					}
-					\new Lyrics \lyricsto AncillaOstiaria \PassioAncillaOstiariaLyrics
+					\new Lyrics \lyricsto Textus \TextusLyrics
 					
 					\new Staff {
 						\set Staff.instrumentName = \JesusIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Jesus" { \dynamicUp \PassioJesusNotes }
+						\new Voice = "Jesus" { \dynamicUp \JesusNotes }
 					}
-					\new Lyrics \lyricsto Jesus \PassioJesusLyrics
+					\new Lyrics \lyricsto Jesus \JesusLyrics
 					
 					\new Staff {
-						\set Staff.instrumentName = \PilatusIncipit
+						\set Staff.instrumentName = \SoliIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Pilatus" { \dynamicUp \PassioPilatusNotes }
+						\new Voice = "Soli" { \dynamicUp \SoliNotes }
 					}
-					\new Lyrics \lyricsto Pilatus \PassioPilatusLyrics
-					
-					\new Staff {
-						\set Staff.instrumentName = \UnusMinimorumIncipit
-						\override Staff.InstrumentName.self-alignment-Y = ##f
-						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "UnusMinimorum" { \dynamicUp \PassioUnusMinimorumNotes }
-					}
-					\new Lyrics \lyricsto UnusMinimorum \PassioUnusMinimorumLyrics
+					\new Lyrics \lyricsto Soli \SoliLyrics
 				>>
 				\new ChoirStaff <<
 					\set ChoirStaff.instrumentName = \markup { \rotate #90 "T     U     R     B     A" \hspace #15 }
@@ -73,40 +51,40 @@
 						\set Staff.instrumentName = \SopranoIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Soprano" { \dynamicUp \PassioSopranoNotes }
+						\new Voice = "Soprano" { \dynamicUp \SopranoNotes }
 					}
-					\new Lyrics \lyricsto Soprano \PassioSopranoLyrics
+					\new Lyrics \lyricsto Soprano \SopranoLyrics
 					
 					\new Staff {
 						\set Staff.instrumentName = \AltoIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Alto" { \dynamicUp \PassioAltoNotes }
+						\new Voice = "Alto" { \dynamicUp \AltoNotes }
 					}
-					\new Lyrics \lyricsto Alto \PassioAltoLyrics
+					\new Lyrics \lyricsto Alto \AltoLyrics
 					
 					\new Staff {
 						\set Staff.instrumentName = \TenoreIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Tenore" { \dynamicUp \PassioTenoreNotes }
+						\new Voice = "Tenore" { \dynamicUp \TenoreNotes }
 					}
-					\new Lyrics \lyricsto Tenore \PassioTenoreLyrics
+					\new Lyrics \lyricsto Tenore \TenoreLyrics
 					
 					\new Staff {
 						\set Staff.instrumentName = "Basso"
-						\new Voice = "Basso" { \dynamicUp \PassioBassoNotes }
+						\new Voice = "Basso" { \dynamicUp \BassoNotes }
 					}
-					\new Lyrics \lyricsto Basso \PassioBassoLyrics
+					\new Lyrics \lyricsto Basso \BassoLyrics
 				>>
 				\new StaffGroup <<
 					\new Staff {
 						\set Staff.instrumentName = "Organo"
-						\PassioOrgano
+						\Organo
 					}
 				>>
 				\new FiguredBass {
-					\PassioBassFigures
+					\BassFigures
 				}
 			>>
 			\layout { }

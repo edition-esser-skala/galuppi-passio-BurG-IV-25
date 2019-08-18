@@ -4,13 +4,13 @@
 
 \version "2.18.0"
 
-PassioBassoNotes = {
+BassoNotes = {
 	\relative c {
 		\clef bass
 		\key c \major \time 4/4 \autoBeamOff \tempoAdagio
 		R1*36 %36
 		\key d \major R1
-		a'4.\fE a8 a4 a
+		a'4. a8 a4 a
 		a( g8[ fis] g4) a
 		h4. h8 h4 h4 %40
 		a1
@@ -22,11 +22,15 @@ PassioBassoNotes = {
 		a4. a8 a4 a
 		g1
 		c,
-		R1*67
+		R1*127 %196
+		g'4 g8 g fis2
+		e8 e fis fis16 fis g2
+		fis e
+		d1 %200
 	}
 }
 
-PassioBassoLyrics = \lyricmode {
+BassoLyrics = \lyricmode {
 	Je -- sum Na -- za -- %38
 	re -- num,
 	Je -- sum Na -- za -- %40
@@ -38,4 +42,9 @@ PassioBassoLyrics = \lyricmode {
 	Je -- sum Na -- za --
 	re --
 	num.
+	
+	Num -- quid et tu %197
+	ex di -- sci -- pu -- lis e --
+	_ ius
+	es? %200
 }

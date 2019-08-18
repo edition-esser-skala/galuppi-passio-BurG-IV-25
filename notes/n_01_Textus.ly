@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 TextusIncipit = \markup {
-	"Textus" \hspace #-18 \score {
+	"Textus" \hspace #-21.5 \score {
 		\new Staff \with {
 			\remove Time_signature_engraver
 		} {
@@ -15,11 +15,11 @@ TextusIncipit = \markup {
 	} \hspace #-1.8
 }
 
-PassioTextusNotes = {
+TextusNotes = {
 	\relative c' {
 		\clef treble
 		\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-		g'4.(\pE as16) g g2
+		g'4.( as16) g g2
 		c4.( des16) c c2
 		d4 d16([ es)] es([ f)] f8 f, as8. g32([ f)]
 		f8 es r4 r es'
@@ -124,10 +124,45 @@ PassioTextusNotes = {
 		e'8 a, g a f! f r f'
 		d d r c \appoggiatura h! a2~ %135
 		a8.[ h16] h8.\trill a16 a4 r
+		R1*3
+		r4 d8([ e16)] c \appoggiatura c h8.[(\trill a16]) g4 %140
+		R1
+		g8 g c h c4 c
+		c8 c c g16 g e4 e
+		r8 e g a b b r d
+		b b16 b b8 a f4 r %145
+		a8 d d a16 a fis8 fis r d
+		a' a r16 a b c b4 r8 b
+		a g cis cis16 d a4 r
+		r4 g8 g16 g r4 h8 h
+		r h h h h c a a %150
+		a h c c16 h g4 g
+		e'8 cis16 h ais8 h \appoggiatura g fis fis r4
+		r cis' a a 
+		r a fis2~
+		fis4. gis8 fis4 r %155
+		R1*19 %174
+		r8 g c16 c c e c8 c c h16 a %175
+		gis8 gis a h c c a c
+		h4 a8 h g4 g
+		e'8[( \grace { d32[ c] } h16 c]) h4 r2
+		R1
+		r8 e cis h ais4. h8 %180
+		\appoggiatura g4 fis2 fis4 r
+		R1*6 %187
+		r4 r8 fis h h cis d
+		cis4 cis8 cis cis4 gis8 a
+		h8. h16 h8 cis a8. a16 a4 %190
+		r a8 d d4 a
+		fis8 fis r4 a8 a r4
+		c r8 e a, h c c16 h
+		g4 r8 g cis cis cis d
+		a4.( h8) a2 %195
+		R1*5 %200
 	}
 }
 
-PassioTextusLyrics = \lyricmode {
+TextusLyrics = \lyricmode {
 	Pas -- si -- o,
 	pas -- si -- o
 	Do -- mi -- ni no -- stri Je -- su
@@ -233,4 +268,38 @@ PassioTextusLyrics = \lyricmode {
 	Di -- cit er -- go Pe -- tro an --
 	cil -- la os -- tia -- %135
 	_ ri -- a:
+	
+	Di -- cit il -- le: %140
+	
+	Sta -- bant au -- tem ser -- vi
+	et mi -- ni -- stri ad pru -- nas
+	quia fri -- gus e -- rat et
+	ca -- le -- fac -- ie -- bant se. %145
+	E -- rat au -- tem cum e -- is et
+	Pe -- trus, et Pe -- trus stans et
+	ca -- le -- fa -- ci -- ens se.
+	Pon -- ti -- fex er -- go
+	in -- ter -- ro -- ga -- vit Je -- sum %150
+	de di -- sci -- pu -- lis su -- is
+	et de do -- ctri -- na e -- ius.
+	Re -- spon -- dit
+	ei Je --
+	_ sus: %155
+	
+	Haec au -- tem cum di -- xis -- set u -- nus ad -- %175
+	si -- stens mi -- ni -- stro -- rum de -- dit
+	a -- la -- pam Je -- su
+	di -- cens:
+	
+	Re -- spon -- dit e -- i %180
+	Je -- sus:
+	
+	Et mi -- sit e -- um %188
+	An -- nas li -- ga -- tum ad
+	Cai -- a -- phan pon -- ti -- fi -- cem. %190
+	Er -- at au -- tem
+	Si -- mon Pe -- trus
+	stans et ca -- le -- fa -- ci -- ens
+	se. Di -- xe -- runt er -- go
+	e -- i: %195
 }

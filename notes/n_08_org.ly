@@ -4,7 +4,7 @@
 
 \version "2.18.0"
 
-PassioOrgano = {
+Organo = {
 	\relative c {
 		\clef bass
 		\key c \major \time 4/4 \tempoAdagio
@@ -144,10 +144,99 @@ PassioOrgano = {
 		cis2 d~
 		d r8 f e dis %135
 		e2 a,4 r
+		f'8 c f,4 r8 f' f,4
+		r8 c'' c, d e2~
+		e1
+		fis2 g~ %140
+		g1
+		e~
+		e~
+		e~
+		e2 a,4 a'8 g %145
+		fis1~
+		fis2 g~
+		g a4 d,8 c!
+		h1~
+		h2. dis4~ %150
+		dis2 e~
+		e r4 fis
+		eis eis r fis
+		d d r his
+		cis2 fis4 r %155
+		r8 d cis a r d fis g
+		fis d e a, d4 cis
+		h a8 a' g fis16 e fis8 d
+		r d cis a h fis' h a
+		gis4 gis8 fis? e4. gis8 %160
+		a e a h cis4 a
+		r8 a, e' d cis4 a
+		d8 a' d, cis h4. h8
+		e d cis a h4 r8 h'
+		gis e fis cis d4 e %165
+		a,8 a16 h a8 h c4 r
+		r8 h16 a h8 cis d4 r
+		cis8 a' fis e dis4. h8
+		e e g!4 r8 a fis4
+		r8 g e4 a,8 h c! a %170
+		h h'16 a g8 fis r e( g e)
+		r h( dis h) e4 g
+		a h r8 c h ais
+		h4 h, e r
+		c1 %175
+		h2 a
+		dis e~
+		e1
+		c2 h
+		e~ e %180
+		r r8 fis h,4
+		g2 r8 e' d c
+		h4 c d8 a d c
+		h4 r8 g c4 h
+		e8 e fis d g e d16 c h a %185
+		g4 r r8 a' fis d
+		e4 r d r
+		h1
+		eis~
+		eis2 fis %190
+		d1~
+		d~
+		d
+		h2 g'
+		r r4 a %195
+		d,1
+		\mvTr g4\fE-\tuttiE g8 g fis2
+		e8 e fis fis16 fis g2
+		fis e
+		d1 %200
+		gis
+		a
+		e
+		f4 cis2.~
+		cis1~ %205
+		cis4 g' a b~
+		b1~
+		b2 a~
+		a fis
+		f?1 %210
+		e4 es2.~
+		es1
+		d
+		es~
+		es2 as %215
+		e f~
+		f g4 as~
+		as2 d,
+		es1~
+		es2 f4 b8 g %220
+		e!1
+		d
+		h
+		dis
+		e4 r r2 %225
 	}
 }
 
-PassioBassFigures = \figuremode {
+BassFigures = \figuremode {
 	<_->2. <[6]>8 <[\t]>
 	<_->2. <[6]>4
 	<[6!]>2 <[7-]>
@@ -284,4 +373,85 @@ PassioBassFigures = \figuremode {
 	r2 <[_!]>
 	r r8 <[5 3]>4 \bassFigureExtendersOn <5 3>8 \bassFigureExtendersOff %135
 	<[6 4]>4 <[5 _+]>2.
+	r1
+	r2 <[6]>
+	r1
+	<[6]> %140
+	r
+	<[6]>
+	r
+	r
+	r2 <6> %145
+	<6>1
+	r2 <[_-]>
+	r4 <[4\+]> <[_+]>2
+	<6>1
+	r2. <[6 _+]>4 %150
+	r1
+	<[6\\]>2. <[5+] _+>4
+	<[6+ _+]>2. <[5+ _!]>4
+	<[_+]>2. <[6+ 5+ _+]>4
+	<[6 4+]> <[5+ _+]> <[5+]>2 %155
+	r8 <[_+]> <[6]> <[_+]> r q <[6]>4
+	q8 <[_+]> r <[7 _+]> <[_+]>4 <[6]>
+	<[7]>8 <[6]> <[7 _+]>4 <[6]>8 <[6]>4 <[_+]>8
+	r <[_+]> <[6]> <[6+ _+]> <[5+ 4]> <[\t \t]> <[5+ 3]> <[\t \t]>
+	<[6 5]>2 <[7 _+]> %160
+	<[4]>4 <[_+]> <[6]> <[_+]>
+	r8 <[7 _+]>4. <[7]>8 <[6]> <[7 _+]>4
+	<[4]> <[_+]> <[5+]>2
+	<[_+]>4 <[6]>8 <[_+]> <[5+ _+]>2
+	<[6]>8 <[_+]> <[5+ 3]> <[6]> <[5 _+]> <[6]> <[4]> <[_+]> %165
+	<[_+]>2 <[4+]>
+	r8 <[6]>4 <[6 5]>8 <[_+]>2
+	<[6]>8 <[_+]>4. <[6 5]>4. <[7 5+ _+]>8
+	<[_!]>4 <[6]> r8 <[_!]> <[6 5]>4
+	r <[6 5]> <[6\\]>4. \bassFigureExtendersOn <6\\>8 \bassFigureExtendersOff %170
+	<[5+] _+>4 <[6]>8 <[6\\]> r2
+	r8 <[7 5+ _+]>4. r4 <[6]>
+	r <[6 4]>8 <[5+ _+]> r8 <[5 3]>4 \bassFigureExtendersOn <5 3>8 \bassFigureExtendersOff 
+	<6 4>4 <[5+ _+]> r2
+	r1 %175
+	<[6\\]>
+	<[6 5 _+]>2 <[_!]>
+	r1
+	<[7]>4 <[6]> <[5+] _+>2
+	r2 <[6+ 4+ 2+]> %180
+	r r8 <[5+ _+]> <[5+]>4
+	r1
+	<[6]>4 q8 <[5]> <[_+]>2
+	<[6]> <[3]>8 <[4+]> <[6]>4
+	<[7]> <[6 5]>8 <[7 _+]> r2 %185
+	r2 r8 <[6+]>4 \bassFigureExtendersOn <6+>8 \bassFigureExtendersOff
+	<6+>2 <[_+]>
+	<[5+]>1
+	<[6+ _+]>
+	r2 <[5+]> %190
+	<[_+]>1
+	r
+	<[7 _+]>
+	<[6]>2 <[4+]>
+	r2. <[_+]>4 %195
+	q1
+	r2 <[6]>
+	q4 <[6 5]> <[5]> <[6]>
+	<[7]> <[6]> <[7]> <[6\\]>
+	<[_+]>1 %200
+	r1
+	r
+	r
+	r
+	r %205
+	r2 <_+>4 <6>
+	r1
+	r2 <_+>
+	r1
+	<2> %210
+	r4 <6>2.
+	<4 2>1
+	r
+	r
+	r %215
+	r
+	r2 <_!>4 <5->
 }
