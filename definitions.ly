@@ -133,7 +133,8 @@ unisonoE = \markup { \remarkE "unisono" }
 Ancilla = \markup { \remark "Ancilla ostiaria" }
 Petrus = \markup { \remark "Petrus" }
 Pilatus = \markup { \remark "Pilatus" }
-Unus = \markup { \remark "Unus minimorum" }
+UnusMinimorum = \markup { \remark "Unus minimorum" }
+UnusExServis = \markup { \remark "Unus ex servis" }
 
 t = \markup { \combine \fontsize #-2 \transparent \number 5 \raise #.6 \draw-line #'(1 . 0) }
 l = \markup { \fontsize #-2 \transparent \number 5 }
