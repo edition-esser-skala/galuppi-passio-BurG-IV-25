@@ -50,7 +50,23 @@ SopranoNotes = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c' {
-		
+		R1*9 %242
+		c'4 a8 f b4 b
+		d h8 g c4 c
+		r c8 c b4 a8 a %245
+		g1
+		a
+		R1*72 %319
+		r4 b a c %320
+		b d8 d es2
+		d4 b8 b c2
+		b1
+		R1*12 %335
+		r4 b8 b c4 c8 c
+		c4 b d2
+		es4 b8 b c4 b8 b
+		as1
+		g %340
 	}
 }
 
@@ -83,4 +99,21 @@ SopranoLyrics = \lyricmode {
 % 	non, non ti -- bi tra -- di -- dis --
 % 	se -- mus e -- _
 % 	_ um. %233 (finis)
+	
+	No -- bis non li -- cet, %243
+	no -- bis non li -- cet
+	in -- ter -- fi -- ce -- re %245
+	quem --
+	quam.
+	
+	Non hunc, non %320
+	hunc sed Ba -- rab --
+	bam, sed Ba -- rab --
+	bam.
+	
+	A -- ve rex Ju -- dae -- %336
+	o -- rum, A --
+	ve, a -- ve rex Ju -- dae --
+	o --
+	rum. %340
 }

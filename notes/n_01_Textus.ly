@@ -186,7 +186,63 @@ TextusNotes = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c' {
-		
+		r4 a'8 c c f, es' es16 d %234
+		b8 b r4 r2 %235
+		R1*5 %240
+		r8 g c e a,4 h8 c
+		\appoggiatura a g g r4 r2
+		R1*5 %247
+		r8 f b a b b d8. d16
+		b8 b r b b f r f
+		\appoggiatura b as8. as16 as8 b? g4 g8 d' %250
+		d f, as8. g16 es4 es
+		es'8 c b2 b4
+		\appoggiatura a8 g g r4 b8 b b es
+		es?4 b g8 g16 g as8 b
+		b8. des,16 des8 es c c r4 %255
+		b'8 b as g as as r f
+		h h r16 f' h, c g8 g r4
+		R1
+		r8 g cis d a a r4
+		R1*4 %263
+		r4 r8 g cis4 cis8 d
+		a a r4 r2 %265
+		R1*5 %270
+		r8 d \appoggiatura cis?16 h8 \appoggiatura a!16 gis8 \appoggiatura gis4 fis2~
+		fis4. gis8 fis?4 r
+		R1*12 %284
+		r4 a8 h c!8. c16 c4 %285
+		e c8 h g4.( a8)
+		g4 r r2
+		R1*2
+		r8 d' gis, a e e r4 %290
+		R1*10 %300
+		r4 c'8 g c4 b8 g
+		\tuplet 3/2 8 { a16[ g f] c'[ b a] } d[ d, e f] b([ g8.)] g4\trill
+		f r r2
+		R1
+		a8 a cis e e4 a, %305
+		a8. a16 a8 b g g b a
+		f4 f r8 d' gis, a
+		\appoggiatura f e e r4 r2
+		R1*8 %316
+		c'8 c c c c4 g
+		g8 a b b16 a f2~
+		f8.[ g16] g4\trill f r
+		R1*4 %323
+		r4 c'8 c c g16 g b8 a
+		f f r d' d a r fis16 g %325
+		a8 a16 b c8 d b b r cis~
+		cis cis16 d \appoggiatura b8 a a r4 r8 f
+		b b b c as as r f^\markup { \remark "flebile" }
+		as as r b g g r4
+		r8 g g as b b r4 %330
+		b? b8 g as as r as
+		c4 c8 des b b16 b r8 g
+		g as b as f f r4
+		r8 b16 f as8 as16 b g8 g es' d
+		b8.[\fermata c16] c4\trill b r %335
+		R1*5 %340
 	}
 }
 
@@ -355,4 +411,63 @@ TextusLyrics = \lyricmode {
 % 	Re -- spon -- %223
 % 	de -- runt et di -- xe -- runt
 % 	e -- i: %225 (finis)
+	
+	Di -- xit er -- go e -- is Pi -- %234
+	la -- tus:
+	
+	Di -- xe -- runt er -- go Ju -- %241
+	dae -- i:
+	
+	Ut ser -- mo Je -- su im -- ple -- %248
+	re -- tur quem di -- xit si --
+	gni -- fi -- cans qua mor -- te, si -- %250
+	gni -- fi -- cans qua mor -- te
+	es -- set mo -- ri --
+	tu -- rus. In -- tro -- i -- vit
+	er -- go i -- te -- rum in prae --
+	to -- ri -- um Pi -- la -- tus %255
+	et vo -- ca -- vit Je -- sum et
+	di -- xit, et di -- xit e -- i:
+	
+	Re -- spon -- dit Je -- sus: %259
+	
+	Re -- spon -- dit Pi -- %264
+	la -- tus:
+	
+	Re -- spon -- dit Je -- %271
+	_ sus:
+	
+	Di -- xit i -- ta -- que %285
+	e -- i Pi -- la --
+	tus:
+	
+	Re -- spon -- dit Je -- sus: %290
+	
+	Di -- cit e -- i Pi -- %301
+	la -- _ _ _ _
+	tus:
+	
+	Et cum hoc di -- xis -- set %305
+	i -- te -- rum ex -- i -- vit ad Ju --
+	dae -- os et di -- cit
+	e -- is:
+	
+	Cla -- ma -- ve -- runt er -- go %317
+	rur -- sum o -- mnes di -- cen --
+	_ tes:
+	
+	E -- rat au -- tem Ba -- rab -- bas %324
+	la -- tro. Tunc er -- go ap -- %325
+	pre -- hen -- dit Pi -- la -- tus Je -- sum et __
+	fla -- gel -- la -- vit. Et
+	mi -- li -- tes ple -- cten -- tes co --
+	ro -- nam de spi -- nis
+	in -- po -- su -- e -- runt %330
+	ca -- pi -- ti e -- ius et
+	ve -- ste pur -- pu -- re -- a cir --
+	cum -- de -- de -- runt e -- um
+	et ve -- nie -- bant ad e -- um et di --
+	ce -- _ bant: %335
+	
+% 	Et dabant ei alapas
 }

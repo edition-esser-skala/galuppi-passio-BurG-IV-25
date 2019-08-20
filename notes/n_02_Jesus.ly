@@ -82,7 +82,36 @@ JesusNotes = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c' {
-		
+		R1*26 %259
+		r8 d g8. g16 f!4 f8 d %260
+		f f r g e e16 e r4
+		e fis8 g a4 c,8 h
+		d4 r r2
+		R1*9 %272
+		r4 a'8 d, g8.([ a32 h)] a4
+		r8 h g4 r8 a fis4
+		r e8 a16([ fis)] \appoggiatura e4 d2 %275
+		cis4 r r8 e a fis
+		dis4 dis fis8 fis g a
+		g!4 g r8 g g h
+		gis4 gis h8 e,16 e f!8. e16
+		c!8 c r e16 a a8. dis,16 dis8 g %280
+		e e r4 r r8 g
+		g \appoggiatura fis16 e8 \appoggiatura d16 cis8. g'16 g8 fis d4~
+		d8[ h' \appoggiatura a16 g8 \appoggiatura fis?16 e8] e4.\trill d8
+		d4 r r2
+		R1*6 %290
+		r8 a' a e r e g! a
+		fis fis r4 r16 fis16 fis^\critnote gis? a8 a16 h
+		gis4 r r gis8 gis
+		eis4 h'8 h16 a fis8 fis r fis
+		fis gis a16 a a h gis8 gis16 gis gis8 a
+		e e r4 r a~
+		a8[ f!] f d g4 d'16([ h)] g f
+		f8 e r4 b'8 b a gis
+		a2~ a4. h8
+		a4 r r2 %300
+		R1*40
 	}
 }
 
@@ -146,4 +175,32 @@ JesusLyrics = \lyricmode {
 % 	be de ma -- lo. %185
 % 	Si au -- tem be -- ne
 % 	quid me cae -- dis? %187 (finis)
+	
+	A te -- met i -- pso hoc %260
+	di -- cis, an a -- li -- i
+	ti -- bi di -- xe -- runt de
+	me?
+	
+	Re -- gnum me -- um %273
+	non est, non est
+	de hoc mun -- %275
+	do. Si ex hoc
+	mun -- do es -- set re -- gnum
+	me -- um, mi -- ni -- stri
+	me -- i u -- ti -- que de -- cer --
+	ta -- rent ut non tra -- de -- rer Ju -- %280
+	dae -- is. Nunc
+	au -- tem re -- gnum me -- um non __
+	_ est hinc.
+	
+	Tu di -- cis quia rex sum %291
+	e -- go. E -- go in hoc na -- tus
+	sum et ad
+	hoc ve -- ni in mun -- dum ut
+	te -- sti -- mo -- ni -- um per -- hi -- be -- am ve -- ri -- %295
+	ta -- ti. O --
+	mnis qui est ex ve -- ri --
+	ta -- te au -- dit vo -- cem
+	me -- _
+	am. %300
 }

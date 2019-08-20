@@ -244,7 +244,113 @@ Organo = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c {
-		f1
+		\verse "18" "31" \mvTr f1\pE-\soloE
+		d4 r r2 %235
+		a4 a8 h cis4 a8 a'
+		b8 g16 a b8 a g4 b
+		c8 c,16. c32 c4 r8 a16. a32 a4
+		r8 b a b c4 c,
+		f r r2 %240
+		e'2 f
+		r4 g c,2
+		\mvTr f4\fE-\tuttiE f8 f d4 d
+		g g8 g e4 e
+		a, a'8 a e4 f8 f %245
+		c1
+		f
+		\verse "18" "32" \mvTr d1~\pE-\soloE
+		d~
+		d2 h!~ %250
+		h c
+		r4 cis d2
+		r4 d \verse "18" "33" es2~
+		es1~
+		es2 e~ %255
+		e f~
+		f g4 c,
+		fis2 b,4 r
+		\verse "18" "34" b2 a4 d
+		h1~ %260
+		h2 c4 c8 h
+		a1
+		g4 r r2
+		\verse "18" "35" g'1
+		a4 d, r2 %265
+		h1
+		a~
+		a2 ais~
+		ais h4 g'
+		fis r r2 %270
+		\verse "18" "36" h,4 r r8 d cis his
+		cis2 fis4 r
+		d2 h'8 g d' fis,
+		g4 r8 e fis4 r8 d
+		cis h cis a h d e e, %275
+		a a' e cis a2
+		h1
+		e
+		d
+		a' %280
+		g8 h g fis e e d d
+		cis4 r8 a' d, d, r fis'
+		g2 a
+		d,4 r r2
+		\verse "18" "37" d1~ %285
+		d2 r8 cis d4
+		g, r r2
+		e'1
+		d4 r r2
+		d2 e4 a, %290
+		cis1
+		r8 d fis e dis2
+		r8 e gis fis eis2~
+		eis fis~
+		fis d %295
+		r8 e e d c! h c a
+		d2 h4 g
+		c8 c g' f e2
+		r8 f e dis e2
+		a,4 r r2 %300
+		\verse "18" "38" e'1
+		f4 b,2 c4
+		f r r2
+		d2 c4 r
+		cis1~ %305
+		cis
+		d
+		e4 a, r2
+		f8 r f' r e r c r
+		f r f e d2 %310
+		c4 c'8 b \verse "18" "39" a2~
+		a fis~
+		fis1
+		b,
+		c %315
+		d4 g, r2
+		\verse "18" "40" e'!1~
+		e2 r8 a, b h
+		c2 f4 r
+		r4 \mvTr b,\fE-\tuttiE f' f %320
+		b, b'8 b es,2
+		b'4 b8 b b4 a
+		b?1
+		\mvTr e,!\pE-\soloE
+		f4 \verse "19" "1" fis2.~ %325
+		fis2 g~
+		g4 r8 a d, c \verse "19" "2" b4~
+		b2 r8 b b4-\markup { \remark "flebile" }
+		r8 b? b4 r8 es es4
+		r2 r8 des des4 %330
+		r2 r8 c c4
+		r2 r8 e! e4
+		r2 r8 as f es
+		\verse "19" "3" d!2 es
+		f b,4 r %335
+		\mvTr es4\fE-\tuttiE es8 es es4 es8 es
+		es4 es b'2
+		es,4 es8 es as4 es8 es
+		b1
+		es %340
 	}
 }
 
@@ -483,4 +589,112 @@ BassFigures = \figuremode {
 % 	<[6]>2.. q16 <[5]>
 % 	r2 <[4]>4 <[3]>8 <[2]>
 % 	<[3]>1 %233 (finis)
+	
+	r1 %234
+	<[6]> %235
+	<_+>2 <[6]>4 <[_+]>
+	r2 <[_-]>4 <[6]>
+	r2 r8 q4.
+	r4 q2.
+	r1 %240
+	<[6]>
+	r
+	r2 <[6]>
+	<[_!]> <[6]>
+	<6> <[6]> %245
+	<[4]> <[3]>
+	r1
+	<[6-]>
+	r
+	<[5-]>2 <[6]> %250
+	r <[_-]>
+	r4 <[7- 5 _!]> <[6- 4]>2
+	r4 <[\t \t]> <[5-]>2
+	r1
+	<[7- 5-]>2 <[6]> %255
+	r <[_-]>
+	<[4!]>2 <_!>4 <[_-]>
+	<[6]>2 q
+	q2 <_+>4 <[_!]>
+	<[6 5]>1 %260
+	r
+	<[7]>2 <[6\\]>
+	r1
+	r2 <[4+]>
+	<_+>4 <[_+]>2. %265
+	<6+>1
+	<[_+]>
+	r2 <[6+ _+]>
+	r <[5+]>4 <[6]>
+	<[5+] _+>1 %270
+	<[5+]>2 r8 <[8 _+]>4 \bassFigureExtendersOn <8 _+>8 \bassFigureExtendersOff
+	<[6 4+]>4 <[5+ _+]> <[5+]>2
+	<[_+]>2 <[6]>4 <[_+]>8 <[6]>
+	r4. <[6\\]>8 <[6]>4. <[_+]>8
+	<[6]>4. <[_+]>8 <[7 5+]>4 <[7 _+]> %275
+	<[_+]>1
+	<[5+ _+]>
+	<[_!]>
+	<[4+] 2>
+	<[_!]>2 <[6+ 4+]> %280
+	<[6]>2 <[5 3]>4 <[\t \t]>
+	<[6 5]>4. <[7 _+]>8 <[4]> <[_+]> r <[6]>
+	<[5]>4 <[6]> <[4]> <[_+]>
+	<[_+]>1
+	q %285
+	<[7! _+]>2 r8 <[7 5]> <[4]> <[_+]>
+	r1
+	<5>2 <6+>
+	<[_+]>1
+	q2 <_+>4 q %290
+	<[6]>1
+	r8 <[_+]>4. <[6 5 _+]>2
+	r8 <[_+]>4. <[6+ 5 _+]>2
+	r <[5+]>
+	r <[4+]> %295
+	r8 <_+>4. <[6]>2
+	<[_!]>2 <[6]>
+	r <[5-]>
+	r8 <[8 3]>4 \bassFigureExtendersOn <8 3>8 \bassFigureExtendersOff <[6 4]>4 <[5 _+]>
+	r1 %300
+	<[6]>
+	r
+	r
+	<[6!]>
+	<[6]> %305
+	r
+	r
+	<[_+]>
+	r2 <[6]>
+	r2 <[5]>4. <[6!]>8 %310
+	r2 <[6]>
+	r q
+	r1
+	<[6]>
+	<[_-]>2 <[4+]> %315
+	<_+>4 <_->2.
+	<[6]>1
+	r2 r8 <[6]>4 \bassFigureExtendersOn <6>8 \bassFigureExtendersOff
+	<[6 4]>4 <[5 3]>2.
+	r2. <[7-]>4 %320
+	r1
+	r2 <[4- 2]>4 <[6 5-]>
+	r1
+	<[6]>
+	r4 <6>2. %325
+	r2 <[_-]>
+	<[4+]>4. <[_+]>8 r2
+	r2 r8 <[7-]>4.
+	r8 <[\t]>4. r8 <[5-]>4.
+	r2 r8 <[6- 4 2-]>4. %330
+	r2 r8 <[6- _-]>4.
+	r2 r8 <[6 5-]>4.
+	r2 r8 <[6]> <[_-]>4
+	<[6]>2 <[5-]>
+	<[6 4-]>4 <[5 3]>2. %335
+	<[5- 3]>2 <[6 4-]>
+	<[\t \t]>4 <[5- 3]> <[7-]>2
+	<[5- 3]> q4 q
+	<[7- 6 4-]> \bassFigureExtendersOn <7- [5 3]>8 <7- [4- 2]> <7- [5 3]>2 \bassFigureExtendersOff
+	<[5- 3]>1 %340
 }

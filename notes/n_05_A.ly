@@ -50,7 +50,23 @@ AltoNotes = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c' {
-		
+		R1*9 %242
+		f4 f8 f f4 f
+		g g8 g g4 g
+		r f8 f g4 f8 f %245
+		f4 e8[ d] e2
+		f1
+		R1*72 %319
+		r4 f f f %320
+		f b8 b b2
+		b?4 f8 f g4( f)
+		f1
+		R1*12 %335
+		r4 g8 g as4 as8 as
+		as?4 g as2
+		g4 g8 g as4 g8 g
+		g4 f8[ es] f2
+		es1 %340
 	}
 }
 
@@ -83,4 +99,21 @@ AltoLyrics = \lyricmode {
 % 	non, non ti -- bi tra -- di -- dis --
 % 	se -- mus e --
 % 	um. %233 (finis)
+	
+	No -- bis non li -- cet, %243
+	no -- bis non li -- cet
+	in -- ter -- fi -- ce -- re %245
+	quem -- _ _
+	quam.
+	
+	Non hunc, non %320
+	hunc sed Ba -- rab --
+	bam, sed Ba -- rab --
+	bam.
+	
+	A -- ve rex Ju -- dae -- %336
+	o -- rum, A --
+	ve, a -- ve rex Ju -- dae --
+	o -- _ _
+	rum. %340
 }

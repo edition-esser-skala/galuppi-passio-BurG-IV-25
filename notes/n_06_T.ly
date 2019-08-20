@@ -50,34 +50,67 @@ TenoreNotes = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c' {
-		
+		R1*9 %242
+		a4 c8 c d4 d
+		h! d8 d e4 e
+		r c8 c c4 c8 c %245
+		c1
+		c
+		R1*72 %319
+		r4 d c es %320
+		d f8 f g2
+		f4 d8 d es2
+		d1
+		R1*12 %335
+		r4 es8 es es4 es8 es
+		es?4 es f2
+		es4 es8 es es4 es8 es
+		es?4 d8[ c] d2
+		es1 %340
 	}
 }
 
 TenoreLyrics = \lyricmode {
-	Je -- sum Na -- za -- %38
-	re -- _
-	_ _ %40
-	_ _
-	num.
+% 	Je -- sum Na -- za -- %38
+% 	re -- _
+% 	_ _ %40
+% 	_ _
+% 	num.
+% 	
+% 	Je -- sum Na -- za -- %64
+% 	re -- _ %65
+% 	_ _
+% 	_ _
+% 	num.
+% 	
+% 	Num -- quid et tu %197
+% 	ex di -- sci -- pu -- lis e -- _
+% 	_ _ ius
+% 	es? %200
+% 	
+% 	Si non es -- set hic ma -- le -- %226
+% 	fa -- ctor, ma -- le --
+% 	fa -- ctor, non
+% 	ti -- bi tra -- di -- dis -- se -- mus
+% 	e -- um, non, %230
+% 	non, non ti -- bi tra -- di -- dis --
+% 	se -- mus e --
+% 	um. %233 (finis)
 	
-	Je -- sum Na -- za -- %64
-	re -- _ %65
-	_ _
-	_ _
-	num.
+	No -- bis non li -- cet, %243
+	no -- bis non li -- cet
+	in -- ter -- fi -- ce -- re %245
+	quem --
+	quam.
 	
-	Num -- quid et tu %197
-	ex di -- sci -- pu -- lis e -- _
-	_ _ ius
-	es? %200
+	Non hunc, non %320
+	hunc sed Ba -- rab --
+	bam, sed Ba -- rab --
+	bam.
 	
-	Si non es -- set hic ma -- le -- %226
-	fa -- ctor, ma -- le --
-	fa -- ctor, non
-	ti -- bi tra -- di -- dis -- se -- mus
-	e -- um, non, %230
-	non, non ti -- bi tra -- di -- dis --
-	se -- mus e --
-	um. %233 (finis)
+	A -- ve rex Ju -- dae -- %336
+	o -- rum, A --
+	ve, a -- ve rex Ju -- dae --
+	o --
+	rum. %340
 }

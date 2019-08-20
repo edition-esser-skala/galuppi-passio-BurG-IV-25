@@ -39,7 +39,23 @@ BassoNotes = {
 % 	}
 	\set Score.currentBarNumber = #234
 	\relative c {
-		
+		R1*9 %242
+		f4 f8 f d4 d
+		g g8 g e4 e
+		r4 a8 a e4 f8 f %245
+		c1
+		f
+		R1*72 %319
+		r4 b, f' f %320
+		b, b'8 b es,2
+		b'4 b8 b b4( a)
+		b?1
+		R1*12 %335
+		r4 es,8 es es4 es8 es
+		es?4 es b'2
+		es,4 es8 es as4 es8 es
+		b1
+		es %340
 	}
 }
 
@@ -70,4 +86,21 @@ BassoLyrics = \lyricmode {
 % 	non, non ti -- bi tra -- di -- dis --
 % 	se -- mus e --
 % 	um. %233 (finis)
+	
+	No -- bis non li -- cet, %243
+	no -- bis non li -- cet
+	in -- ter -- fi -- ce -- re %245
+	quem --
+	quam.
+	
+	Non hunc, non %320
+	hunc sed Ba -- rab --
+	bam, sed Ba -- rab --
+	bam.
+	
+	A -- ve rex Ju -- dae -- %336
+	o -- rum, A --
+	ve, a -- ve rex Ju -- dae --
+	o --
+	rum. %340
 }

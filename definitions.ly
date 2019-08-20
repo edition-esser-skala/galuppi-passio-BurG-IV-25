@@ -188,6 +188,17 @@ pao = \partcombineApartOnce
 pa = \partcombineApart
 pd = \partcombineAutomatic
 
+verse =
+	#(define-music-function
+		(parser location chapter verse)
+		(markup? markup?)
+	#{
+		\mark \markup {
+			\override #'(word-space . 0) \box \line { #chapter . #verse }
+		}
+	#})
+%
+
 tempoMarkup =
 	#(define-music-function
 		(parser location arg)
