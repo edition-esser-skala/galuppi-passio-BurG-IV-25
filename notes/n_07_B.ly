@@ -7,7 +7,9 @@
 BassoNotes = {
 	\clef bass
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-% 	\relative c { % chapter 18, verses 1 to 30
+	
+% 	% chapter 18, verses 1 to 30
+% 	\relative c {
 % 		R1*36 %36
 % 		\key d \major R1
 % 		a'4. a8 a4 a
@@ -37,6 +39,8 @@ BassoNotes = {
 % 		g4 c, g'2~
 % 		g c, \bar "|" %233 (finis)
 % 	}
+	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c {
 		R1*9 %242
@@ -56,20 +60,48 @@ BassoNotes = {
 		es,4 es8 es as4 es8 es
 		b1
 		es %340
+		R1*23 %363
+		fis8 fis fis fis g4 g
+		gis8 gis gis gis a4 a %365
+		r a8 a d4 a
+		r a8 a d4 a
+		r a8 a fis4 g
+		a1
+		d, %370
+		R1*10 %380
+		r4 f f f8 f
+		b2 f4 f8 f
+		c' c c c f,4 e
+		g2 c,4 c8 c
+		g' g g g c4 c, %385
+		r c2 c4
+		cis cis8 cis d4 d
+		g2 a~
+		a d,
+		R1*32 %421
+		g4 fis8 g d'4 d,8 d
+		g4 r8 g a4 r8 a
+		h h g h a4. a8
+		d,2 r4 d'8 d %425
+		gis,4 gis gis8 gis a gis
+		a4 a d,2
+		dis e4 a
+		e2. e4
+		a1 \bar "|" %430 (finis)
 	}
 }
 
 BassoLyrics = \lyricmode {
 % 	% chapter 18, verses 1 to 30
-% 	Je -- sum Na -- za -- %38
+% 	Ie -- sum Na -- za -- %38
 % 	re -- num,
-% 	Je -- sum Na -- za -- %40
+% 	Ie -- sum Na -- za -- %40
 % 	re --
 % 	num.
 % 	
-% 	Je -- sum Na -- za -- %64
+% 	Ie -- sum Na -- za -- %64
 % 	re -- num, %65
-% 	Je -- sum Na -- za --
+% 	Ie -- sum Na -- za --
 % 	re --
 % 	num.
 % 	
@@ -87,6 +119,7 @@ BassoLyrics = \lyricmode {
 % 	se -- mus e --
 % 	um. %233 (finis)
 	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	No -- bis non li -- cet, %243
 	no -- bis non li -- cet
 	in -- ter -- fi -- ce -- re %245
@@ -98,9 +131,37 @@ BassoLyrics = \lyricmode {
 	bam, sed Ba -- rab --
 	bam.
 	
-	A -- ve rex Ju -- dae -- %336
+	A -- ve rex Iu -- dae -- %336
 	o -- rum, A --
-	ve, a -- ve rex Ju -- dae --
+	ve, a -- ve rex Iu -- dae --
 	o --
 	rum. %340
+	
+	Cru -- ci -- fi -- ge e -- um, %364
+	cru -- ci -- fi -- ge e -- um, %365
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge
+	e --
+	um. %370
+	
+	Nos le -- gem ha -- %381
+	be -- mus et se --
+	cun -- dum le -- gem de -- bet
+	mo -- ri, de -- bet
+	mo -- ri, de -- bet mo -- ri %385
+	qui -- a
+	Fi -- li -- um De -- i
+	se fe --
+	cit.
+	
+	Si hunc di -- mit -- tis non %422
+	es, non es, non
+	es a -- mi -- cus Cae -- sa --
+	ris. O -- mnis %425
+	e -- nim qui se re -- gem
+	fa -- cit con --
+	tra -- di -- cit
+	Cae -- sa --
+	ri. %430 (finis)
 }

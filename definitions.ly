@@ -194,7 +194,7 @@ verse =
 		(markup? markup?)
 	#{
 		\mark \markup {
-			\override #'(word-space . 0) \box \line { #chapter . #verse }
+			\override #'(word-space . 0) \box \line { #chapter : #verse }
 		}
 	#})
 %

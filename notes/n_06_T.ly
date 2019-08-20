@@ -18,7 +18,9 @@ TenoreIncipit = \markup {
 TenoreNotes = {
 	\clef "treble_8"
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-% 	\relative c' { % chapter 18, verses 1 to 30
+	
+% 	% chapter 18, verses 1 to 30
+% 	\relative c' {
 % 		R1*36 %36
 % 		\key d \major R1
 % 		a4 a' a g8([ fis)]
@@ -48,6 +50,8 @@ TenoreNotes = {
 % 		d4 e d2~
 % 		d e \bar "|" %233 (finis)
 % 	}
+	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c' {
 		R1*9 %242
@@ -67,17 +71,45 @@ TenoreNotes = {
 		es4 es8 es es4 es8 es
 		es?4 d8[ c] d2
 		es1 %340
+		R1*23 %363
+		d8 d d d d4 d
+		e8 e e e e4 e %365
+		r e8 e fis4 e
+		r e8 e fis4 e
+		r e8 e d4 g
+		e1
+		fis %370
+		R1*10 %380
+		r4 f f f8 f
+		f2 f4 f8 f
+		e e e e f4 c
+		d2 e4 e8 e
+		d d d d e4 e %385
+		r e2 e4
+		e e8 e e4 d
+		e4.( d8) cis?4 d~
+		d cis? d2
+		R1*32 %421
+		d4 d8 d d4 d8 d
+		d4 r8 d d4 r8 d
+		d d h d a4. a8
+		a2 r4 f'!8 f %425
+		e4 e e8 e e e
+		e4 e d2
+		c h4 c
+		h2. h4
+		c1 \bar "|" %430 (finis)
 	}
 }
 
 TenoreLyrics = \lyricmode {
-% 	Je -- sum Na -- za -- %38
+% 	Ie -- sum Na -- za -- %38
 % 	re -- _
 % 	_ _ %40
 % 	_ _
 % 	num.
 % 	
-% 	Je -- sum Na -- za -- %64
+% 	Ie -- sum Na -- za -- %64
 % 	re -- _ %65
 % 	_ _
 % 	_ _
@@ -97,6 +129,7 @@ TenoreLyrics = \lyricmode {
 % 	se -- mus e --
 % 	um. %233 (finis)
 	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	No -- bis non li -- cet, %243
 	no -- bis non li -- cet
 	in -- ter -- fi -- ce -- re %245
@@ -108,9 +141,37 @@ TenoreLyrics = \lyricmode {
 	bam, sed Ba -- rab --
 	bam.
 	
-	A -- ve rex Ju -- dae -- %336
+	A -- ve rex Iu -- dae -- %336
 	o -- rum, A --
-	ve, a -- ve rex Ju -- dae --
-	o --
+	ve, a -- ve rex Iu -- dae --
+	o -- _ _
 	rum. %340
+	
+	Cru -- ci -- fi -- ge e -- um, %364
+	cru -- ci -- fi -- ge e -- um, %365
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge
+	e --
+	um. %370
+	
+	Nos le -- gem ha -- %381
+	be -- mus et se --
+	cun -- dum le -- gem de -- bet
+	mo -- ri, de -- bet
+	mo -- ri, de -- bet mo -- ri %385
+	qui -- a
+	Fi -- li -- um De -- i
+	se fe -- _
+	_ cit.
+	
+	Si hunc di -- mit -- tis non %422
+	es, non es, non
+	es a -- mi -- cus Cae -- sa --
+	ris. O -- mnis %425
+	e -- nim qui se re -- gem
+	fa -- cit con --
+	tra -- di -- cit
+	Cae -- sa --
+	ri. %430 (finis)
 }

@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 JesusIncipit = \markup {
-	"Jesus" \hspace #-21 \score {
+	"Iesus" \hspace #-21 \score {
 		\new Staff \with {
 			\remove Time_signature_engraver
 		} {
@@ -18,7 +18,9 @@ JesusIncipit = \markup {
 JesusNotes = {
 	\clef treble
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-% 	\relative c' { % chapter 18, verses 1 to 30
+	
+% 	% chapter 18, verses 1 to 30
+% 	\relative c' {
 % 		R1*30 %30
 % 		r2 r4 r8 c
 % 		f16.([ g32 a8)] r c, g'16.([ a32 b8)] r c,
@@ -80,6 +82,8 @@ JesusNotes = {
 % 		r g8 fis a a r4
 % 		R1*46 \bar "|" %233 (finis)
 % 	}
+	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c' {
 		R1*26 %259
@@ -111,7 +115,16 @@ JesusNotes = {
 		f8 e r4 b'8 b a gis
 		a2~ a4. h8
 		a4 r r2 %300
-		R1*40
+		R1*108 %408
+		r4 a8. a16 a([ e)] e4 a16 g
+		g([ fis)] fis8 r d16 a' h([ g)] g8~ g16[ a32 g] fis16 fis %410
+		fis?([ e)] e4 e16 e fis8. d'32([ h)] \appoggiatura a8 gis8. a16
+		a4 r8 a h16. fis32 fis4 fis8~
+		fis a16.([ c!32)] c16([ h)] h a a([ g)] g4 r8
+		c8 fis, r16 fis a c h8 e, r4
+		a8 dis, r16 dis fis? a h8.[( a32 h]) c16[ a g fis] %415
+		e8.[ fis16] fis4\trill e r
+		R1*14 \bar "|" %430 (finis)
 	}
 }
 
@@ -155,7 +168,7 @@ JesusLyrics = \lyricmode {
 % 	E -- go sem -- per do -- cu -- i
 % 	in sy -- na -- go -- ga et in %160
 % 	tem -- plo quo
-% 	o -- mnes Ju -- dae -- i con --
+% 	o -- mnes Iu -- dae -- i con --
 % 	ve -- ni -- unt, et in oc --
 % 	cul -- to lo -- cu -- tus
 % 	sum ni -- _ _ %165
@@ -176,6 +189,7 @@ JesusLyrics = \lyricmode {
 % 	Si au -- tem be -- ne
 % 	quid me cae -- dis? %187 (finis)
 	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	A te -- met i -- pso hoc %260
 	di -- cis, an a -- li -- i
 	ti -- bi di -- xe -- runt de
@@ -188,7 +202,7 @@ JesusLyrics = \lyricmode {
 	mun -- do es -- set re -- gnum
 	me -- um, mi -- ni -- stri
 	me -- i u -- ti -- que de -- cer --
-	ta -- rent ut non tra -- de -- rer Ju -- %280
+	ta -- rent ut non tra -- de -- rer Iu -- %280
 	dae -- is. Nunc
 	au -- tem re -- gnum me -- um non __
 	_ est hinc.
@@ -203,4 +217,13 @@ JesusLyrics = \lyricmode {
 	ta -- te au -- dit vo -- cem
 	me -- _
 	am. %300
+	
+	Non ha -- be -- res po -- te -- %409
+	sta -- tem in me ul -- lam ni -- si %410
+	ti -- bi da -- tum es -- set de -- su --
+	per. Pro -- pter -- e -- a qui __
+	me tra -- di -- dit ti -- bi
+	ma -- ius pec -- ca -- tum ha -- bet,
+	ma -- ius pec -- ca -- tum ha -- _ %415
+	_ _ bet. %416 (finis)
 }

@@ -7,7 +7,9 @@
 Organo = {
 	\clef bass
 	\key c \major \time 4/4 \tempoAdagio
-% 	\relative c { % chapter 18, verses 1 to 30
+	
+% 	% chapter 18, verses 1 to 30
+% 	\relative c {
 % 		\mvTr c8\pE-\soloE c c c c d es e
 % 		f f f f f f es es
 % 		d d c c h!4. h8
@@ -242,6 +244,8 @@ Organo = {
 % 		g4 c, g'2~
 % 		g c, \bar "|" %233 (finis)
 % 	}
+	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c {
 		\verse "18" "31" \mvTr f1\pE-\soloE
@@ -351,6 +355,96 @@ Organo = {
 		es,4 es8 es as4 es8 es
 		b1
 		es %340
+		\mvTr e\pE-\soloE
+		f4 f8 es \verse "19" "4" d2~
+		d1
+		r8 es e4 r8 f fis4
+		r g c, r %345
+		f8 r f r e r c r
+		r f g a b2
+		a4 f c e8 d
+		cis8 r a r d a' fis e
+		dis8 r h r e h' gis fis %350
+		e r d! r c!4 f
+		e2 a,4 r
+		\verse "19" "5" f'1
+		g
+		f2 cis %355
+		d1
+		r8 dis e4 a, r
+		dis1
+		e4 r r2
+		\verse "19" "6" cis1~ %360
+		cis
+		d~
+		d2 e4 a,
+		\mvTr fis'8\fE-\tuttiE fis fis fis g4 g
+		gis8 gis gis gis a4 a %365
+		a, a8 a d4 a
+		a a8 a d4 a
+		r a'8 a fis4 g
+		a1
+		d, %370
+		\mvTr fis2\pE-\soloE g4 r
+		g8 r g, r r4 h
+		c r8 c a a' a g
+		f4. es8 d a d es
+		c4. c8 b d b a %375
+		g4. b8 a e' a g
+		f4 cis d8 e f g
+		a4 a, d r
+		\verse "19" "7" d1~
+		d2 e4 a, %380
+		\mvTr f\fE-\tuttiE f' f f8 f
+		b2 f4 f8 f
+		c' c c c f,4 e
+		g2 c,4 c8 c
+		g' g g g c4 c, %385
+		r c2 c4
+		cis cis8 cis d4 d
+		g2 a,~
+		a d
+		\verse "19" "8" \mvTr d1~\pE-\soloE %390
+		d2 e
+		<< { \oneVoice a,1 } \\ { s2 \verse "19" "9" s2 } >>
+		dis2 e
+		a h4 e,
+		e2 c %395
+		h4 r r2
+		dis1~
+		dis2 e4 e8 d?
+		\verse "19" "10" cis?1~
+		cis2 d4 r %400
+		d1~
+		d
+		c!
+		h4 dis2.
+		e1 %405
+		fis4 h, r2
+		\verse "19" "11" h2~ h8 his his his
+		cis2 fis4 r
+		d16([ cis d e fis e fis g)] a,([ gis? a h cis h cis a)]
+		d([ cis d e fis e fis d)] g([ fis g a h cis d d,)] %410
+		a'([ gis a h cis a h cis)] d8 d, e e,
+		a16([ gis a h cis dis e cis)] dis([ cis dis e fis e dis cis)]
+		h4. dis8 e16([ dis e fis g! fis g e)]
+		a([ c a g fis e fis d)] g([ h g fis? e d e cis)]
+		fis([ a fis e dis cis dis h)] g8 g' a a, %415
+		h2 e4 r
+		\verse "19" "12" cis1~
+		cis2 d4 d'8 c!
+		h1
+		c2 d4 d, %420
+		g1
+		\mvTr g4\fE-\tuttiE fis8 g d'4 d,8 d
+		r g, g4 r8 a a4
+		r8 h' g h a4 a,
+		d d,8 d d4 d''8 d %425
+		gis,4 gis gis8 gis a gis
+		a4 a d,2
+		dis e4 a,
+		e'2. e4
+		a,1 \bar "|" %430 (finis)
 	}
 }
 
@@ -590,6 +684,7 @@ BassFigures = \figuremode {
 % 	r2 <[4]>4 <[3]>8 <[2]>
 % 	<[3]>1 %233 (finis)
 	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	r1 %234
 	<[6]> %235
 	<_+>2 <[6]>4 <[_+]>
@@ -697,4 +792,94 @@ BassFigures = \figuremode {
 	<[5- 3]> q4 q
 	<[7- 6 4-]> \bassFigureExtendersOn <7- [5 3]>8 <7- [4- 2]> <7- [5 3]>2 \bassFigureExtendersOff
 	<[5- 3]>1 %340
+	<[6]>
+	r2 <[6-]>
+	r1
+	r8 <[5- 3]> <[6]>4 r8 <[_!]> <[6]>4
+	r2 <[_-]> %345
+	r <[6]>
+	r <[5]>4 <[6]>
+	q2 <[6 4]>4 <[6]>
+	q <[7 _+]> <[4]> <[6]>
+	<[6 _+]> <[7 5+ _+]> <[_+]>2 %350
+	<[\t]>4 <[5 _+]>8. <[6 \t]>16 <[6]>4 q
+	<[_+]>1
+	r
+	<[6 _-]>
+	r2 <[6]> %355
+	r1
+	r8 <[7 5 _+]> <[6 4]> <[5 _+]> r2
+	<[6 _+]>1
+	r
+	<[6]> %360
+	<[6 5]>
+	<[_+]>
+	r2 <[_+]>4 q
+	<[6]>1
+	q2 <[_+]> %365
+	q2 q4 q
+	q2 q4 q
+	r q <[6]>2
+	<[4]> <[_+]>
+	q1 %370
+	<[6]>
+	r2. <[6 5]>4
+	r4. <[7-]>8 <[6]>2
+	r4. <[4 3]>8 <[_+]>2
+	<[4+]> <[6]>4 q8 <[6\\]> %375
+	<[_-]>4. <[4 3]>8 <[_+]>2
+	<[6]>4 q r8 <[6\\]> <[6]> <[_-]>
+	<[4]>4 <[_+]>2.
+	r1
+	<[4+]>2 <_+> %380
+	r1
+	r
+	<[7-]>2. <[6]>4
+	<[4]> <[_!]>2.
+	r1 %385
+	r
+	<[6 5]>2 <[9]>4 <[8]>
+	<[8 6 _-]>4. \bassFigureExtendersOn <[7 5] _->8 \bassFigureExtendersOff <[5 _+]>4 <[6 4]>
+	<[4]> <[_+]>2.
+	r1 %390
+	r2 <[_+]>
+	r1
+	<[6 _+]>
+	r2 <[5+] _+>
+	r <[6]> %395
+	<[5+] _+>1
+	<[6 _+]>
+	<7 5 _+>
+	<[6]>
+	r2 <_+> %400
+	<[_+]>1
+	r
+	<[4\+] 2>
+	<[6]>4 <6 [_+]>2.
+	r2 <[6+ 4+ 2+]> %405
+	<[5+] _+>4 <[5+]>2.
+	q2 r8 <[6+ 5+ _+]>4.
+	<[6 4+]>4 <[5+ _+]> <[5+]>2
+	<[_+]>4 <[6]> <[_+]> <[6]>
+	<[_+]> <[6]> r <[6]>16 q <[_+]>8 %410
+	<[6+ 4]>8 <[5 _+]> <[6]>4 <[5 _+]>8 <[6 \t]> <[6+ 4]> <[5 _+]>
+	<[_+]>4 <[6]> <[6 _+]>2
+	<[7 5+ _+]>4. <[6 5 _+]>8 <[4]> <[_!]> <[6]>4
+	<[_!]> <[6 5]> r <[6 5]>
+	<[6+]> <[6 5 _+]> <[6]> <[6\\]> %415
+	<[6 4]> <[5 _+]>2.
+	<[6]>1
+	r2 <[_+]>
+	<[6]>1
+	r2 <[6 4]>4 <[5 _+]> %420
+	r1
+	r4 <[6 5]> <[6 4]> <[5 _+]>
+	r2 r8 <[6\\ 4 3]>4.
+	r8 <[6]> q q <[4]>4 <[_+]>
+	q2. <[_!]>4 %425
+	<[6 5]>2. <[_!]>8 <[6]>
+	r2 <[6- _!]>
+	<[7 5 _+]> <[_+]>
+	<[4]> <[_+]>
+	r1 %430 (finis)
 }

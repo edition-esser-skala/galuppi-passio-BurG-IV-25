@@ -18,7 +18,9 @@ TextusIncipit = \markup {
 TextusNotes = {
 	\clef treble
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-% 	\relative c' { % chapter 18, verses 1 to 30
+	
+% 	% chapter 18, verses 1 to 30
+% 	\relative c' {
 % 		g'4.( as16) g g2
 % 		c4.( des16) c c2
 % 		d4 d16([ es)] es([ f)] f8 f, as8. g32([ f)]
@@ -184,6 +186,8 @@ TextusNotes = {
 % 		e e r4 r2 %225
 % 		R1*8 \bar "|" %233 (finis)
 % 	}
+	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c' {
 		r4 a'8 c c f, es' es16 d %234
@@ -243,6 +247,48 @@ TextusNotes = {
 		r8 b16 f as8 as16 b g8 g es' d
 		b8.[\fermata c16] c4\trill b r %335
 		R1*5 %340
+		r4 r8 c c g b a!
+		f f16 f r4 r r8 f
+		b b b d b b16 b r b as b
+		g8 g r c a a r es'
+		h! c \appoggiatura as g g r2 %345
+		R1*7 %352
+		r4 r8 f f f f g
+		\appoggiatura f e4 e g8 g16 a b8. c16
+		a8 a16 a r8 a16 b g8 g16 g b8. a16 %355
+		f8 f r4 f' d8 c
+		a4.( h8) a4 r
+		R1*2
+		r4 r8 e a a16 a a8 h %360
+		g4 g8 e g g16 g g8 a
+		fis fis r a a d, r d'
+		d4 gis,8 a e e r4
+		R1*7 %370
+		d'8 e c c16 h g8 g r4
+		R1*7 %378
+		r4 a8 a f'[ \grace e32 d16 c] h8 a32[ gis] a16
+		\appoggiatura a8 gis gis r a \appoggiatura f e e r4 %380
+		R1*9 %389
+		r4 r8 d' d a a g16 a %390
+		d8^\critnote d d h gis gis r h16 e,
+		c8 c16 c r4 a'8 h c16 c c h
+		h8 h16 h r4 h8 g16 g r8 h
+		c a r g \appoggiatura fis e e r4
+		R1*2 %396
+		r4 h'8 h h4 fis8 e
+		fis? fis r16 c' a g e8 e r4
+		r a8 h cis e e4~
+		e8[ g,] g8.\trill fis16 a8 a r4 %400
+		R1*6 %406
+		r8 d \appoggiatura cis16 h8 \appoggiatura a16 gis8 fis2~
+		fis4. gis8 fis4 r
+		R1*8 %416
+		r4 e8 e a a16. a32 cis8 d16 e
+		e8 g,16 g g8 g16 a fis8 fis r4
+		r r8 d' d g, g f16 g
+		e8.([ e'16)] c8 h g8.[ a16] a4\trill %420
+		g1
+		R1*9 \bar "|" %430 (finis)
 	}
 }
 
@@ -250,30 +296,30 @@ TextusLyrics = \lyricmode {
 % 	% chapter 18, verses 1 to 30
 % 	Pas -- si -- o,
 % 	pas -- si -- o
-% 	Do -- mi -- ni no -- stri Je -- su
+% 	Do -- mi -- ni no -- stri Ie -- su
 % 	Chri -- sti se --
-% 	cun -- dum Jo -- an -- %5
+% 	cun -- dum Io -- an -- %5
 % 	_ _ nem.
 % 	In il -- lo tem -- po -- re e --
-% 	gres -- sus est Je -- sus
+% 	gres -- sus est Ie -- sus
 % 	cum di -- sci -- pu -- lis su -- is
 % 	trans tor -- ren -- tem Ce -- dron %10
 % 	u -- bi e -- rat hor -- tus in
 % 	quem in -- tro -- i -- vit i -- pse et di --
 % 	sci -- pu -- li e -- ius.
-% 	Scie -- bat au -- tem et Ju -- das
+% 	Scie -- bat au -- tem et Iu -- das
 % 	qui tra -- de -- bat e -- um %15
-% 	lo -- cum u -- ti Je -- sus con --
+% 	lo -- cum u -- ti Ie -- sus con --
 % 	ve -- ne -- rat il -- luc cum di --
 % 	sci -- pu -- lis su -- is.
-% 	Ju -- das er -- go
+% 	Iu -- das er -- go
 % 	cum ac -- ce -- pis -- set co -- %20
 % 	hor -- tem et a pon -- ti --
 % 	fi -- ci -- bus et Pha -- ri --
 % 	sae -- is mi -- ni -- stros ve -- nit
 % 	il -- luc cum lan -- ter -- nis et
 % 	fa -- ci -- bus et ar -- mis. %25
-% 	Je -- sus i -- ta -- que sciens
+% 	Ie -- sus i -- ta -- que sciens
 % 	o -- mni -- a quae ven -- tu -- ra e -- rant su -- per
 % 	e -- um pro -- ces -- sit, pro --
 % 	ces -- sit et di -- cit,
@@ -283,11 +329,11 @@ TextusLyrics = \lyricmode {
 % 	Re -- spon -- de -- runt e -- %35
 % 	i:
 % 	
-% 	Di -- cit e -- is Je -- %43
+% 	Di -- cit e -- is Ie -- %43
 % 	_ sus:
 % 	
 % 	Sta -- bat au -- tem et %48
-% 	Ju -- das qui tra -- de -- bat
+% 	Iu -- das qui tra -- de -- bat
 % 	e -- um cum i -- psis. %50
 % 	Ut er -- go di -- xit
 % 	e -- is: E -- go sum, ab --
@@ -302,7 +348,7 @@ TextusLyrics = \lyricmode {
 % 	
 % 	Re -- spon -- dit, %70
 % 	re -- spon -- dit,
-% 	re -- spon -- dit Je --
+% 	re -- spon -- dit Ie --
 % 	_ sus:
 % 	
 % 	Ut im -- ple -- re -- tur ser -- mo quem %82
@@ -317,14 +363,14 @@ TextusLyrics = \lyricmode {
 % 	cu -- lam e -- ius dex -- te -- ram.
 % 	E -- rat au -- tem no -- men
 % 	ser -- vo Mal -- chus. Di -- xit
-% 	er -- go Je -- sus,
-% 	Je -- sus Pe -- %95
+% 	er -- go Ie -- sus,
+% 	Ie -- sus Pe -- %95
 % 	_ tro:
 % 	
 % 	Co -- hors er -- go et tri -- %105
-% 	bu -- nus et mi -- ni -- stri Ju -- dae --
+% 	bu -- nus et mi -- ni -- stri Iu -- dae --
 % 	o -- rum con -- pre -- hen --
-% 	de -- runt Je -- sum
+% 	de -- runt Ie -- sum
 % 	et li -- ga -- ve -- runt e -- um
 % 	et ad -- du -- xe -- runt e -- um ad An -- nam %110
 % 	pri -- mum, e -- rat
@@ -333,16 +379,16 @@ TextusLyrics = \lyricmode {
 % 	an -- ni il -- li -- us.
 % 	E -- rat au -- tem %115
 % 	Cai -- a -- phas qui con -- si -- l -- ium
-% 	de -- de -- rat Ju -- dae -- is qui -- a
+% 	de -- de -- rat Iu -- dae -- is qui -- a
 % 	ex -- pe -- dit u -- num ho -- mi -- nem
 % 	mo -- ri pro po -- pu -- lo.
 % 	Se -- que -- ba -- tur au -- tem %120
-% 	Je -- sum Si -- mon
+% 	Ie -- sum Si -- mon
 % 	Pe -- trus et a -- li -- us di --
 % 	sci -- pu -- lus. Di -- sci -- pu -- lus
 % 	au -- tem ille e -- rat no -- tus pon --
 % 	ti -- fi -- ci et in -- tro -- i -- vit cum %125
-% 	Je -- su in a -- tri -- um pon --
+% 	Ie -- su in a -- tri -- um pon --
 % 	ti -- fi -- cis.
 % 	Pe -- trus au -- tem sta -- bat ad o -- stium
 % 	fo -- ris. Ex -- i -- vit
@@ -364,20 +410,20 @@ TextusLyrics = \lyricmode {
 % 	Pe -- trus, et Pe -- trus stans et
 % 	ca -- le -- fa -- ci -- ens se.
 % 	Pon -- ti -- fex er -- go
-% 	in -- ter -- ro -- ga -- vit Je -- sum %150
+% 	in -- ter -- ro -- ga -- vit Ie -- sum %150
 % 	de di -- sci -- pu -- lis su -- is
 % 	et de do -- ctri -- na e -- ius.
 % 	Re -- spon -- dit
-% 	ei Je --
+% 	ei Ie --
 % 	_ sus: %155
 % 	
 % 	Haec au -- tem cum di -- xis -- set u -- nus ad -- %175
 % 	si -- stens mi -- ni -- stro -- rum de -- dit
-% 	a -- la -- pam Je -- su
+% 	a -- la -- pam Ie -- su
 % 	di -- cens:
 % 	
 % 	Re -- spon -- dit e -- i %180
-% 	Je -- sus:
+% 	Ie -- sus:
 % 	
 % 	Et mi -- sit e -- um %188
 % 	An -- nas li -- ga -- tum ad
@@ -398,7 +444,7 @@ TextusLyrics = \lyricmode {
 % 	I -- te -- rum er -- go ne -- ga -- vit %209
 % 	Pe -- trus, et sta -- tim gal -- lus can -- %210
 % 	ta -- vit. Ad -- du -- cunt er -- go
-% 	Je -- sum a Cai -- phas in prae --
+% 	Ie -- sum a Cai -- phas in prae --
 % 	tor -- ium. E -- rat au -- tem
 % 	ma -- ne et i -- psi non in -- tro --
 % 	ie -- runt in prae -- to -- ri -- um ut %215
@@ -412,13 +458,14 @@ TextusLyrics = \lyricmode {
 % 	de -- runt et di -- xe -- runt
 % 	e -- i: %225 (finis)
 	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	Di -- xit er -- go e -- is Pi -- %234
 	la -- tus:
 	
-	Di -- xe -- runt er -- go Ju -- %241
+	Di -- xe -- runt er -- go Iu -- %241
 	dae -- i:
 	
-	Ut ser -- mo Je -- su im -- ple -- %248
+	Ut ser -- mo Ie -- su im -- ple -- %248
 	re -- tur quem di -- xit si --
 	gni -- fi -- cans qua mor -- te, si -- %250
 	gni -- fi -- cans qua mor -- te
@@ -426,29 +473,29 @@ TextusLyrics = \lyricmode {
 	tu -- rus. In -- tro -- i -- vit
 	er -- go i -- te -- rum in prae --
 	to -- ri -- um Pi -- la -- tus %255
-	et vo -- ca -- vit Je -- sum et
+	et vo -- ca -- vit Ie -- sum et
 	di -- xit, et di -- xit e -- i:
 	
-	Re -- spon -- dit Je -- sus: %259
+	Re -- spon -- dit Ie -- sus: %259
 	
 	Re -- spon -- dit Pi -- %264
 	la -- tus:
 	
-	Re -- spon -- dit Je -- %271
+	Re -- spon -- dit Ie -- %271
 	_ sus:
 	
 	Di -- xit i -- ta -- que %285
 	e -- i Pi -- la --
 	tus:
 	
-	Re -- spon -- dit Je -- sus: %290
+	Re -- spon -- dit Ie -- sus: %290
 	
 	Di -- cit e -- i Pi -- %301
 	la -- _ _ _ _
 	tus:
 	
 	Et cum hoc di -- xis -- set %305
-	i -- te -- rum ex -- i -- vit ad Ju --
+	i -- te -- rum ex -- i -- vit ad Iu --
 	dae -- os et di -- cit
 	e -- is:
 	
@@ -458,7 +505,7 @@ TextusLyrics = \lyricmode {
 	
 	E -- rat au -- tem Ba -- rab -- bas %324
 	la -- tro. Tunc er -- go ap -- %325
-	pre -- hen -- dit Pi -- la -- tus Je -- sum et __
+	pre -- hen -- dit Pi -- la -- tus Ie -- sum et __
 	fla -- gel -- la -- vit. Et
 	mi -- li -- tes ple -- cten -- tes co --
 	ro -- nam de spi -- nis
@@ -469,5 +516,46 @@ TextusLyrics = \lyricmode {
 	et ve -- nie -- bant ad e -- um et di --
 	ce -- _ bant: %335
 	
-% 	Et dabant ei alapas
+	Et da -- bant e -- i %341
+	a -- la -- pas. Ex --
+	i -- it er -- go i -- te -- rum Pi -- la -- tus
+	fo -- ras et di -- cit, et
+	di -- cit ei -- s: %345
+	
+	Ex -- i -- vit er -- go
+	Ie -- sus por -- tans co -- ro -- nam
+	spi -- ne -- am et pur -- pu -- re -- um ve -- sti --
+	men -- tum et di -- cit
+	e -- is:
+	
+	Cum er -- go vi -- dis -- sent %360
+	e -- um pon -- ti -- fi -- ces et mi --
+	ni -- stri cla -- ma -- bant, cla --
+	ma -- bant di -- cen -- tes:
+	
+	Di -- cit e -- is Pi -- %371
+	la -- tus:
+	
+	Re -- spon -- de -- _ _ runt %379
+	e -- i Iu -- dae -- i:
+	
+	Cum er -- go_au -- dis -- set Pi -- %390
+	la -- tus hunc ser -- mo -- nem ma -- gis
+	ti -- mu -- it et in -- gres -- sus est prae --
+	to -- ri -- um i -- te -- rum et
+	di -- cit ad Ie -- sum:
+	
+	Ie -- sus au -- tem re -- %397
+	spon -- sum non de -- dit e -- i.
+	Di -- cit er -- go e --
+	i Pi -- la -- tus: %400
+	
+	Re -- spon -- dit Ie -- %407
+	_ sus:
+	
+	Et ex -- in -- de quae -- re -- bat Pi -- %417
+	la -- tus di -- mit -- te -- re e -- um.
+	Iu -- dae -- i au -- tem cla --
+	ma -- bant di -- cen -- _ %420
+	tes: %421 (finis)
 }

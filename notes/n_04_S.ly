@@ -18,7 +18,9 @@ SopranoIncipit = \markup {
 SopranoNotes = {
 	\clef treble
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
-% 	\relative c' { % chapter 18, verses 1 to 30
+	
+% 	% chapter 18, verses 1 to 30
+% 	\relative c' {
 % 		R1*36 %36
 % 		\key d \major d'4. d8 d4 d
 % 		d( cis8[ h] cis4) dis
@@ -48,6 +50,8 @@ SopranoNotes = {
 % 		h4 c c h8[ a]
 % 		h2 c \bar "|" %233 (finis)
 % 	}
+	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c' {
 		R1*9 %242
@@ -67,21 +71,49 @@ SopranoNotes = {
 		es4 b8 b c4 b8 b
 		as1
 		g %340
+		R1*23 %363
+		d'8 d d d h4 h
+		e8 e e e cis4 cis %365
+		r cis?8 cis d4 cis
+		r cis8 cis d4 cis
+		r cis8 cis d4 d
+		d cis?8[ h] cis2
+		d1 %370
+		R1*10 %380
+		r4 c c c8 c
+		d2 c4 c8 c
+		b b b c a4 c
+		c( h) c c8 c
+		h h h h c4 c %385
+		r c2 c4
+		a a8 a a4 a
+		b2 a~
+		a a
+		R1*32 %421
+		h4 c8 h h4 a8 a
+		h4 r8 h c4 r8 c
+		d h e d \appoggiatura d4 cis4. d8
+		d2 r4 d8 d %425
+		d4 h e8 d c! h
+		c4 c b2
+		a gis4 a
+		a gis8[ fis] gis4. gis8
+		a1 \bar "|" %430 (finis)
 	}
 }
 
 SopranoLyrics = \lyricmode {
 % 	% chapter 18, verses 1 to 30
-% 	Je -- sum Na -- za -- %37
+% 	Ie -- sum Na -- za -- %37
 % 	re -- num,
-% 	Je -- sum Na -- za --
+% 	Ie -- sum Na -- za --
 % 	re -- _ _ %40
 % 	_ _
 % 	num.
 % 	
-% 	Je -- sum Na -- za -- %64
+% 	Ie -- sum Na -- za -- %64
 % 	re -- num, %65
-% 	Je -- sum Na -- za --
+% 	Ie -- sum Na -- za --
 % 	re -- _ _
 % 	_ _
 % 	num.
@@ -100,6 +132,7 @@ SopranoLyrics = \lyricmode {
 % 	se -- mus e -- _
 % 	_ um. %233 (finis)
 	
+	% chapter 18, verse 31, to chapter 19, verse 12
 	No -- bis non li -- cet, %243
 	no -- bis non li -- cet
 	in -- ter -- fi -- ce -- re %245
@@ -111,9 +144,37 @@ SopranoLyrics = \lyricmode {
 	bam, sed Ba -- rab --
 	bam.
 	
-	A -- ve rex Ju -- dae -- %336
+	A -- ve rex Iu -- dae -- %336
 	o -- rum, A --
-	ve, a -- ve rex Ju -- dae --
+	ve, a -- ve rex Iu -- dae --
 	o --
 	rum. %340
+	
+	Cru -- ci -- fi -- ge e -- um, %364
+	cru -- ci -- fi -- ge e -- um, %365
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge
+	e -- _ _
+	um. %370
+	
+	Nos le -- gem ha -- %381
+	be -- mus et se --
+	cun -- dum le -- gem de -- bet
+	mo -- ri, de -- bet
+	mo -- ri, de -- bet mo -- ri %385
+	qui -- a
+	Fi -- li -- um De -- i
+	se fe --
+	cit.
+	
+	Si hunc di -- mit -- tis non %422
+	es, non es, non
+	es a -- mi -- cus Cae -- sa --
+	ris. O -- mnis %425
+	e -- nim qui se re -- gem
+	fa -- cit con --
+	tra -- di -- cit
+	Cae -- _ _ sa --
+	ri. %430 (finis)
 }
