@@ -136,7 +136,8 @@ TenoreNotes = {
 		e4 h c c
 		h r h h %%30
 		h1
-		R1*41
+		R1*101 %632
+		R1\fermataMarkup \bar "|." %633 FINIS
 	}
 }
 
@@ -243,6 +244,6 @@ TenoreLyrics = \lyricmode {
 	non scin -- da -- mus e -- am
 	sed sor -- ti -- a -- mur de
 	il -- la cu -- ius
-	sit, cu -- ius %%30
-	sit.
+	sit, cu -- ius %530
+	sit. %531 FINIS
 }

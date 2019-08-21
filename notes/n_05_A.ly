@@ -136,7 +136,8 @@ AltoNotes = {
 		g!4 g e e
 		dis r e dis %530
 		e1
-		R1*41
+		R1*101 %632
+		R1\fermataMarkup \bar "|." %633 FINIS
 	}
 }
 
@@ -246,6 +247,6 @@ AltoLyrics = \lyricmode {
 	non scin -- da -- mus e -- am
 	sed sor -- ti -- a -- mur de
 	il -- la cu -- ius
-	sit, cu -- ius %%30
-	sit.
+	sit, cu -- ius %530
+	sit. %531 FINIS
 }

@@ -120,7 +120,8 @@ SoliNotes = {
 		R1*51 %510
 		r4 r8 d^\Pilatus gis a r4
 		a8 e r4 r2
-		R1*60
+		R1*120 %632
+		R1\fermataMarkup \bar "|." %633 FINIS
 	}
 }
 
@@ -213,5 +214,5 @@ SoliLyrics = \lyricmode {
 	cru -- ci -- fi -- gam?
 	
 	Quod scri -- psi %511
-	scri -- psi.
+	scri -- psi. %512 FINIS
 }

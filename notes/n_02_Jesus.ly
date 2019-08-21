@@ -145,6 +145,13 @@ JesusNotes = {
 		R1*8 %570
 		g2. as4
 		\appoggiatura g4 f4. es8 es2
+		R1*11 %583
+		c'8([ as)] r f ges[ b] r e,!
+		f[ as] r f ges f4 e!8 %585
+		f1~
+		f
+		R1*45 %632
+		R1\fermataMarkup \bar "|." %633 FINIS
 	}
 }
 
@@ -260,6 +267,11 @@ JesusLyrics = \lyricmode {
 	ma -- ter tu --
 	a.
 	
-	Si -- _ %%71
+	Si -- _ %571
 	_ ti -- o.
+	
+	Con -- su -- ma -- _ %584
+	_ _ _ _ tum %585
+	est.
+	__ %587 FINIS
 }

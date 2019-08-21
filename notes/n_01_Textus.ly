@@ -397,6 +397,64 @@ TextusNotes = {
 		b c des des16 es c4 c
 		d4. es8 \appoggiatura c b b r4 %570
 		R1*2
+		r4 r8 c c f, f g
+		es es16 es c'16([ a)] f4 es(\trill d16) es
+		d8 d r4 b'8 b r b16 c %575
+		as8 as f' as,16 b g8 g r es
+		b' b r16 b c g as8 as as f
+		h h a g c4.( d8)
+		c4 r r8 g b b
+		r2 r4 b8 des %580
+		des?4 g, b b8 c
+		as as r4 as4.( b8)
+		as?1
+		R1*4 %587
+		r2 b
+		a16([ b8.)] a16([ b8.)] \appoggiatura es,8 d4. as'8
+		as?8. g16 g4 r b8.^\markup { \remark "sotto voce piano" } as16 %590
+		as?4 r r as?8. g16
+		g4 r r g8.([ f32 es)]
+		d4. d8 d2~
+		d r
+		r8 g c h c4 c %595
+		c8 g16 g g g f g e4 e
+		c'8 c h a gis a16 h h8 e,
+		h'4 h8 c a a16 a r8 d16 d
+		d8 a a a fis fis g a
+		a8. d,16 d r a' h c4 h8 a %600
+		h4 h r8 g g a
+		h h16 h a8 g cis cis r16 e cis d
+		d8 a r h d h a h
+		gis gis16 gis r e e fis gis8 gis16 gis a8 h
+		cis4 cis cis8 e e a,16 a %605
+		a8 a16 a g!8 a fis r gis8.([\trill a16)]
+		a8 e r4 r8 cis fis fis
+		fis? fis fis gis a4 a
+		a8 a a h c!4 fis,8 fis
+		dis dis16 dis r8 fis?16 g! a8 a g fis %610
+		g8^\critnote g r4 r8 g h d
+		d8. g,16 g4 g8 g16 g g8 a
+		f! f g4 e8 e16 e r8 c'16^\markup { \remark "con espressione" } d
+		b8 b16 b r g b c a8 a r4
+		h8 h r c c g r4 %615
+		r2 r8 e16 e a8 a
+		a h c c d e e a,16 a
+		r8 fis h ais h4 h8 c
+		a4 a8 g e e r4
+		r8 e a gis a8. a16 g8 a %620
+		fis8^\critnote fis r4 r g8 h
+		e,4 r c'8 a fis g
+		d d r4 r8 g g as
+		b4 b es b8 b
+		g g as b b4 es, %625
+		r b' b8 b b c
+		des4 b8 c as4 as
+		r f b8. b16 b4
+		b?8. f16 f f g as g8 g r4
+		r8 g c b16 c as2 %630
+		f4~ \tuplet 10/8 4 { f16[ g32 as b c d! e! f g] } as4~ as16 \appoggiatura g32 f16 \appoggiatura es32 d16 c
+		c4. d8 d2\trill
+		c1\fermata \bar "|." %633 FINIS
 	}
 }
 
@@ -770,4 +828,63 @@ TextusLyrics = \lyricmode {
 	con -- sum -- ma -- ta sunt et con --
 	sum -- ma -- re -- tur scri -- ptu -- ra
 	di -- _ _ cit: %570
+	
+	Vas er -- go e -- rat %573
+	po -- si -- tum a -- ce -- _ to
+	ple -- num. Il -- li au -- tem %575
+	spon -- giam ple -- nam a -- ce -- to hy --
+	so -- po cir -- cum -- po -- nen -- tes ob -- tu --
+	le -- runt or -- i e --
+	ius. Cum er -- go
+	ac -- ce -- %580
+	pis -- set Ie -- sus a --
+	ce -- tum di --
+	xit:
+	
+	Et %588
+	in -- cli -- na -- to
+	ca -- pi -- te tra -- di -- %590
+	dit, tra -- di --
+	dit spi --
+	_ ri -- tum. __
+	
+	Iu -- dae -- i er -- go %595
+	quo -- ni -- am Pa -- ra -- sce -- se er -- at 
+	ut non re -- ma -- ne -- rent in cru -- ce
+	cor -- po -- ra Sab -- ba -- to (er -- at
+	e -- nim ma -- gnus di -- es il -- le
+	Sab -- ba -- ti) ro -- ga -- ve -- runt Pi -- %600
+	la -- tum ut fran -- ge --
+	ren -- tur e -- o -- rum cru -- ra et tol -- le --
+	ren -- tur. Ve -- ne -- runt er -- go
+	mi -- li -- tes et pri -- mi qui -- dem fre -- ge -- runt
+	cru -- ra et al -- te -- ri -- us %605
+	qui cru -- ci -- fi -- xus est cum
+	e -- o. Ad Ie -- sum
+	au -- tem cum ve -- nis -- sent
+	ut vi -- de -- runt e -- um iam
+	mor -- tu -- um non fre -- ge -- runt e -- ius %610
+	cru -- ra sed u -- nus
+	mi -- li -- tum lan -- ce -- a la -- tus
+	e -- ius a -- pe -- ru -- it et con --
+	ti -- nu -- o ex -- i -- vit san -- guis,
+	san -- guis et a -- qua. %615
+	Et qui vi -- dit
+	te -- sti -- mo -- ni -- um per -- hi -- bu -- it:
+	Et ve -- rum est te -- sti --
+	mo -- ni -- um e -- ius.
+	Et il -- le scit quia ve -- ra %620
+	di -- cit ut et
+	vos, ut et vos cre -- da -- tis.
+	Fa -- cta sunt
+	e -- nim haec ut scri --
+	ptu -- ra im -- ple -- a -- tur: %625
+	Os non com -- mi -- nu --
+	e -- tis ex e -- o.
+	Et i -- te -- rum
+	a -- li -- a scri -- ptu -- ra di -- cit:
+	Vi -- de -- bunt in quem %630
+	trans -- _ _ _ fi --
+	xe -- _ _
+	runt. %633 FINIS
 }
