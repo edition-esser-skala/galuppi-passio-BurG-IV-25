@@ -82,49 +82,69 @@ JesusNotes = {
 % 		r g8 fis a a r4
 % 		R1*46 \bar "|" %233 (finis)
 % 	}
+% 	
+% 	% chapter 18, verse 31, to chapter 19, verse 12
+% 	\set Score.currentBarNumber = #234
+% 	\relative c' {
+% 		R1*26 %259
+% 		r8 d g8. g16 f!4 f8 d %260
+% 		f f r g e e16 e r4
+% 		e fis8 g a4 c,8 h
+% 		d4 r r2
+% 		R1*9 %272
+% 		r4 a'8 d, g8.([ a32 h)] a4
+% 		r8 h g4 r8 a fis4
+% 		r e8 a16([ fis)] \appoggiatura e4 d2 %275
+% 		cis4 r r8 e a fis
+% 		dis4 dis fis8 fis g a
+% 		g!4 g r8 g g h
+% 		gis4 gis h8 e,16 e f!8. e16
+% 		c!8 c r e16 a a8. dis,16 dis8 g %280
+% 		e e r4 r r8 g
+% 		g \appoggiatura fis16 e8 \appoggiatura d16 cis8. g'16 g8 fis d4~
+% 		d8[ h' \appoggiatura a16 g8 \appoggiatura fis?16 e8] e4.\trill d8
+% 		d4 r r2
+% 		R1*6 %290
+% 		r8 a' a e r e g! a
+% 		fis fis r4 r16 fis16 fis^\critnote gis? a8 a16 h
+% 		gis4 r r gis8 gis
+% 		eis4 h'8 h16 a fis8 fis r fis
+% 		fis gis a16 a a h gis8 gis16 gis gis8 a
+% 		e e r4 r a~
+% 		a8[ f!] f d g4 d'16([ h)] g f
+% 		f8 e r4 b'8 b a gis
+% 		a2~ a4. h8
+% 		a4 r r2 %300
+% 		R1*108 %408
+% 		r4 a8. a16 a([ e)] e4 a16 g
+% 		g([ fis)] fis8 r d16 a' h([ g)] g8~ g16[ a32 g] fis16 fis %410
+% 		fis?([ e)] e4 e16 e fis8. d'32([ h)] \appoggiatura a8 gis8. a16
+% 		a4 r8 a h16. fis32 fis4 fis8~
+% 		fis a16.([ c!32)] c16([ h)] h a a([ g)] g4 r8
+% 		c8 fis, r16 fis a c h8 e, r4
+% 		a8 dis, r16 dis fis? a h8.[( a32 h]) c16[ a g fis] %415
+% 		e8.[ fis16] fis4\trill e r
+% 		R1*14 \bar "|" %430 (finis)
+% 	}
 	
-	% chapter 18, verse 31, to chapter 19, verse 12
-	\set Score.currentBarNumber = #234
+	% chapter 19, verses 13 to 37
+	\set Score.currentBarNumber = #431
 	\relative c' {
-		R1*26 %259
-		r8 d g8. g16 f!4 f8 d %260
-		f f r g e e16 e r4
-		e fis8 g a4 c,8 h
-		d4 r r2
-		R1*9 %272
-		r4 a'8 d, g8.([ a32 h)] a4
-		r8 h g4 r8 a fis4
-		r e8 a16([ fis)] \appoggiatura e4 d2 %275
-		cis4 r r8 e a fis
-		dis4 dis fis8 fis g a
-		g!4 g r8 g g h
-		gis4 gis h8 e,16 e f!8. e16
-		c!8 c r e16 a a8. dis,16 dis8 g %280
-		e e r4 r r8 g
-		g \appoggiatura fis16 e8 \appoggiatura d16 cis8. g'16 g8 fis d4~
-		d8[ h' \appoggiatura a16 g8 \appoggiatura fis?16 e8] e4.\trill d8
-		d4 r r2
-		R1*6 %290
-		r8 a' a e r e g! a
-		fis fis r4 r16 fis16 fis^\critnote gis? a8 a16 h
-		gis4 r r gis8 gis
-		eis4 h'8 h16 a fis8 fis r fis
-		fis gis a16 a a h gis8 gis16 gis gis8 a
-		e e r4 r a~
-		a8[ f!] f d g4 d'16([ h)] g f
-		f8 e r4 b'8 b a gis
-		a2~ a4. h8
-		a4 r r2 %300
-		R1*108 %408
-		r4 a8. a16 a([ e)] e4 a16 g
-		g([ fis)] fis8 r d16 a' h([ g)] g8~ g16[ a32 g] fis16 fis %410
-		fis?([ e)] e4 e16 e fis8. d'32([ h)] \appoggiatura a8 gis8. a16
-		a4 r8 a h16. fis32 fis4 fis8~
-		fis a16.([ c!32)] c16([ h)] h a a([ g)] g4 r8
-		c8 fis, r16 fis a c h8 e, r4
-		a8 dis, r16 dis fis? a h8.[( a32 h]) c16[ a g fis] %415
-		e8.[ fis16] fis4\trill e r
-		R1*14 \bar "|" %430 (finis)
+		R1*120 %550
+		a'4. g8 f4 r
+		b4. a8 g4 r
+		r2 a4 f
+		r2 g4 e
+		a a8 b \appoggiatura f4 e2 %555
+		d1
+		R1*2
+		r2 h'4 g
+		r2 a4 fis %560
+		h4. c8 \appoggiatura g4 fis2
+		e1
+		R1*8 %570
+		g2. as4
+		\appoggiatura g4 f4. es8 es2
 	}
 }
 
@@ -188,42 +208,58 @@ JesusLyrics = \lyricmode {
 % 	be de ma -- lo. %185
 % 	Si au -- tem be -- ne
 % 	quid me cae -- dis? %187 (finis)
+% 	
+% 	% chapter 18, verse 31, to chapter 19, verse 12
+% 	A te -- met i -- pso hoc %260
+% 	di -- cis, an a -- li -- i
+% 	ti -- bi di -- xe -- runt de
+% 	me?
+% 	
+% 	Re -- gnum me -- um %273
+% 	non est, non est
+% 	de hoc mun -- %275
+% 	do. Si ex hoc
+% 	mun -- do es -- set re -- gnum
+% 	me -- um, mi -- ni -- stri
+% 	me -- i u -- ti -- que de -- cer --
+% 	ta -- rent ut non tra -- de -- rer Iu -- %280
+% 	dae -- is. Nunc
+% 	au -- tem re -- gnum me -- um non __
+% 	_ est hinc.
+% 	
+% 	Tu di -- cis quia rex sum %291
+% 	e -- go. E -- go in hoc na -- tus
+% 	sum et ad
+% 	hoc ve -- ni in mun -- dum ut
+% 	te -- sti -- mo -- ni -- um per -- hi -- be -- am ve -- ri -- %295
+% 	ta -- ti. O --
+% 	mnis qui est ex ve -- ri --
+% 	ta -- te au -- dit vo -- cem
+% 	me -- _
+% 	am. %300
+% 	
+% 	Non ha -- be -- res po -- te -- %409
+% 	sta -- tem in me ul -- lam ni -- si %410
+% 	ti -- bi da -- tum es -- set de -- su --
+% 	per. Pro -- pter -- e -- a qui __
+% 	me tra -- di -- dit ti -- bi
+% 	ma -- ius pec -- ca -- tum ha -- bet,
+% 	ma -- ius pec -- ca -- tum ha -- _ %415
+% 	_ _ bet. %416 (finis)
 	
-	% chapter 18, verse 31, to chapter 19, verse 12
-	A te -- met i -- pso hoc %260
-	di -- cis, an a -- li -- i
-	ti -- bi di -- xe -- runt de
-	me?
+	% chapter 19, verses 13 to 37
+	Mu -- li -- er, %551
+	mu -- li -- er
+	ec -- ce,
+	ec -- ce
+	fi -- li -- us tu -- %555
+	us.
 	
-	Re -- gnum me -- um %273
-	non est, non est
-	de hoc mun -- %275
-	do. Si ex hoc
-	mun -- do es -- set re -- gnum
-	me -- um, mi -- ni -- stri
-	me -- i u -- ti -- que de -- cer --
-	ta -- rent ut non tra -- de -- rer Iu -- %280
-	dae -- is. Nunc
-	au -- tem re -- gnum me -- um non __
-	_ est hinc.
+	Ec -- ce, %559
+	ec -- ce %560
+	ma -- ter tu --
+	a.
 	
-	Tu di -- cis quia rex sum %291
-	e -- go. E -- go in hoc na -- tus
-	sum et ad
-	hoc ve -- ni in mun -- dum ut
-	te -- sti -- mo -- ni -- um per -- hi -- be -- am ve -- ri -- %295
-	ta -- ti. O --
-	mnis qui est ex ve -- ri --
-	ta -- te au -- dit vo -- cem
-	me -- _
-	am. %300
-	
-	Non ha -- be -- res po -- te -- %409
-	sta -- tem in me ul -- lam ni -- si %410
-	ti -- bi da -- tum es -- set de -- su --
-	per. Pro -- pter -- e -- a qui __
-	me tra -- di -- dit ti -- bi
-	ma -- ius pec -- ca -- tum ha -- bet,
-	ma -- ius pec -- ca -- tum ha -- _ %415
-	_ _ bet. %416 (finis)
+	Si -- _ %%71
+	_ ti -- o.
 }

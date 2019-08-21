@@ -244,207 +244,354 @@ Organo = {
 % 		g4 c, g'2~
 % 		g c, \bar "|" %233 (finis)
 % 	}
+% 	
+% 	% chapter 18, verse 31, to chapter 19, verse 12
+% 	\set Score.currentBarNumber = #234
+% 	\relative c {
+% 		\verse "18" "31" \mvTr f1\pE-\soloE
+% 		d4 r r2 %235
+% 		a4 a8 h cis4 a8 a'
+% 		b8 g16 a b8 a g4 b
+% 		c8 c,16. c32 c4 r8 a16. a32 a4
+% 		r8 b a b c4 c,
+% 		f r r2 %240
+% 		e'2 f
+% 		r4 g c,2
+% 		\mvTr f4\fE-\tuttiE f8 f d4 d
+% 		g g8 g e4 e
+% 		a, a'8 a e4 f8 f %245
+% 		c1
+% 		f
+% 		\verse "18" "32" \mvTr d1~\pE-\soloE
+% 		d~
+% 		d2 h!~ %250
+% 		h c
+% 		r4 cis d2
+% 		r4 d \verse "18" "33" es2~
+% 		es1~
+% 		es2 e~ %255
+% 		e f~
+% 		f g4 c,
+% 		fis2 b,4 r
+% 		\verse "18" "34" b2 a4 d
+% 		h1~ %260
+% 		h2 c4 c8 h
+% 		a1
+% 		g4 r r2
+% 		\verse "18" "35" g'1
+% 		a4 d, r2 %265
+% 		h1
+% 		a~
+% 		a2 ais~
+% 		ais h4 g'
+% 		fis r r2 %270
+% 		\verse "18" "36" h,4 r r8 d cis his
+% 		cis2 fis4 r
+% 		d2 h'8 g d' fis,
+% 		g4 r8 e fis4 r8 d
+% 		cis h cis a h d e e, %275
+% 		a a' e cis a2
+% 		h1
+% 		e
+% 		d
+% 		a' %280
+% 		g8 h g fis e e d d
+% 		cis4 r8 a' d, d, r fis'
+% 		g2 a
+% 		d,4 r r2
+% 		\verse "18" "37" d1~ %285
+% 		d2 r8 cis d4
+% 		g, r r2
+% 		e'1
+% 		d4 r r2
+% 		d2 e4 a, %290
+% 		cis1
+% 		r8 d fis e dis2
+% 		r8 e gis fis eis2~
+% 		eis fis~
+% 		fis d %295
+% 		r8 e e d c! h c a
+% 		d2 h4 g
+% 		c8 c g' f e2
+% 		r8 f e dis e2
+% 		a,4 r r2 %300
+% 		\verse "18" "38" e'1
+% 		f4 b,2 c4
+% 		f r r2
+% 		d2 c4 r
+% 		cis1~ %305
+% 		cis
+% 		d
+% 		e4 a, r2
+% 		f8 r f' r e r c r
+% 		f r f e d2 %310
+% 		c4 c'8 b \verse "18" "39" a2~
+% 		a fis~
+% 		fis1
+% 		b,
+% 		c %315
+% 		d4 g, r2
+% 		\verse "18" "40" e'!1~
+% 		e2 r8 a, b h
+% 		c2 f4 r
+% 		r4 \mvTr b,\fE-\tuttiE f' f %320
+% 		b, b'8 b es,2
+% 		b'4 b8 b b4 a
+% 		b?1
+% 		\mvTr e,!\pE-\soloE
+% 		f4 \verse "19" "1" fis2.~ %325
+% 		fis2 g~
+% 		g4 r8 a d, c \verse "19" "2" b4~
+% 		b2 r8 b b4-\markup { \remark "flebile" }
+% 		r8 b? b4 r8 es es4
+% 		r2 r8 des des4 %330
+% 		r2 r8 c c4
+% 		r2 r8 e! e4
+% 		r2 r8 as f es
+% 		\verse "19" "3" d!2 es
+% 		f b,4 r %335
+% 		\mvTr es4\fE-\tuttiE es8 es es4 es8 es
+% 		es4 es b'2
+% 		es,4 es8 es as4 es8 es
+% 		b1
+% 		es %340
+% 		\mvTr e\pE-\soloE
+% 		f4 f8 es \verse "19" "4" d2~
+% 		d1
+% 		r8 es e4 r8 f fis4
+% 		r g c, r %345
+% 		f8 r f r e r c r
+% 		r f g a b2
+% 		a4 f c e8 d
+% 		cis8 r a r d a' fis e
+% 		dis8 r h r e h' gis fis %350
+% 		e r d! r c!4 f
+% 		e2 a,4 r
+% 		\verse "19" "5" f'1
+% 		g
+% 		f2 cis %355
+% 		d1
+% 		r8 dis e4 a, r
+% 		dis1
+% 		e4 r r2
+% 		\verse "19" "6" cis1~ %360
+% 		cis
+% 		d~
+% 		d2 e4 a,
+% 		\mvTr fis'8\fE-\tuttiE fis fis fis g4 g
+% 		gis8 gis gis gis a4 a %365
+% 		a, a8 a d4 a
+% 		a a8 a d4 a
+% 		r a'8 a fis4 g
+% 		a1
+% 		d, %370
+% 		\mvTr fis2\pE-\soloE g4 r
+% 		g8 r g, r r4 h
+% 		c r8 c a a' a g
+% 		f4. es8 d a d es
+% 		c4. c8 b d b a %375
+% 		g4. b8 a e' a g
+% 		f4 cis d8 e f g
+% 		a4 a, d r
+% 		\verse "19" "7" d1~
+% 		d2 e4 a, %380
+% 		\mvTr f\fE-\tuttiE f' f f8 f
+% 		b2 f4 f8 f
+% 		c' c c c f,4 e
+% 		g2 c,4 c8 c
+% 		g' g g g c4 c, %385
+% 		r c2 c4
+% 		cis cis8 cis d4 d
+% 		g2 a,~
+% 		a d
+% 		\verse "19" "8" \mvTr d1~\pE-\soloE %390
+% 		d2 e
+% 		<< { \oneVoice a,1 } \\ { s2 \verse "19" "9" s2 } >>
+% 		dis2 e
+% 		a h4 e,
+% 		e2 c %395
+% 		h4 r r2
+% 		dis1~
+% 		dis2 e4 e8 d?
+% 		\verse "19" "10" cis?1~
+% 		cis2 d4 r %400
+% 		d1~
+% 		d
+% 		c!
+% 		h4 dis2.
+% 		e1 %405
+% 		fis4 h, r2
+% 		\verse "19" "11" h2~ h8 his his his
+% 		cis2 fis4 r
+% 		d16([ cis d e fis e fis g)] a,([ gis? a h cis h cis a)]
+% 		d([ cis d e fis e fis d)] g([ fis g a h cis d d,)] %410
+% 		a'([ gis a h cis a h cis)] d8 d, e e,
+% 		a16([ gis a h cis dis e cis)] dis([ cis dis e fis e dis cis)]
+% 		h4. dis8 e16([ dis e fis g! fis g e)]
+% 		a([ c a g fis e fis d)] g([ h g fis? e d e cis)]
+% 		fis([ a fis e dis cis dis h)] g8 g' a a, %415
+% 		h2 e4 r
+% 		\verse "19" "12" cis1~
+% 		cis2 d4 d'8 c!
+% 		h1
+% 		c2 d4 d, %420
+% 		g1
+% 		\mvTr g4\fE-\tuttiE fis8 g d'4 d,8 d
+% 		r g, g4 r8 a a4
+% 		r8 h' g h a4 a,
+% 		d d,8 d d4 d''8 d %425
+% 		gis,4 gis gis8 gis a gis
+% 		a4 a d,2
+% 		dis e4 a,
+% 		e'2. e4
+% 		a,1 \bar "|" %430 (finis)
+% 	}
 	
-	% chapter 18, verse 31, to chapter 19, verse 12
-	\set Score.currentBarNumber = #234
+	% chapter 19, verses 13 to 37
+	\set Score.currentBarNumber = #431
 	\relative c {
-		\verse "18" "31" \mvTr f1\pE-\soloE
-		d4 r r2 %235
-		a4 a8 h cis4 a8 a'
-		b8 g16 a b8 a g4 b
-		c8 c,16. c32 c4 r8 a16. a32 a4
-		r8 b a b c4 c,
-		f r r2 %240
-		e'2 f
-		r4 g c,2
-		\mvTr f4\fE-\tuttiE f8 f d4 d
-		g g8 g e4 e
-		a, a'8 a e4 f8 f %245
+		\verse "19" "13" \mvTr e1~\pE-\soloE %431
+		e2 cis~
+		cis d~
+		d b~
+		b1 %435
+		d
+		<< { \oneVoice es1 } \\ { s4 \verse "19" "14" s2. } >>
+		e1
+		f~
+		f2 g4 c, %440
+		c c c r
+		b b as r
+		g g r as
+		b1
+		es, %445
+		\verse "19" "15" a'!
+		b4 d, es f
+		b,1
+		\mvTr b'4\fE-\tuttiE b, b' b,
+		b8 b b b b4 b %450
+		f'8 f f f b4 b,
+		r b'?8 b a4 a
+		r c,8 c f4 b,
+		c1
+		f %455
+		\mvTr fis~\pE-\soloE
+		fis2 b,
+		g' c,~
+		c b4 r
+		b1 %460
+		c4 f r2
+		\mvTr f8\fE-\tuttiE f f f b4 a
+		e f c'8. c,16 c4
+		r c8 c f4 c
+		r c8 c f4 c %465
+		d e f b,
+		c2. c4
+		f1
+		\verse "19" "16" \mvTr cis~\pE-\soloE
+		cis~ %470
+		cis2 d4 d8 c?
+		b1
+		<< { \oneVoice es~ es2 e~ } \\
+			 { s2. \verse "19" "17" s4 s1 } >> 
+		e2 f~ %475
+		f1
+		g
+		<< { \oneVoice c,~ c2 } \\ { s2 \verse "19" "18" s s } >>
+		b2~
+		b1~ %480
+		b2 c~
+		c d4 es~
+		\verse "19" "19" es1~
+		es2 des~
+		des r8 c c b %485
+		as1
+		d!~
+		d
+		g4 g8 f \verse "19" "20" e!2~
+		e1~ %490
+		e2 f4 f8 es
+		d1~
+		d2 es~
+		es1
+		d4 d8 c h!2 %495
+		c1
+		f2 g4 fis~
+		\verse "19" "21" fis1
+		g
+		r4 a d,2 %500
+		\mvTr b4\fE-\tuttiE b f'8. f16 f4
+		f f8 f b,4 b
+		r8 b b b f'4 f
+		d e! f f
+		f, f' b b, %505
+		g g' e! e8 f
 		c1
 		f
-		\verse "18" "32" \mvTr d1~\pE-\soloE
-		d~
-		d2 h!~ %250
-		h c
-		r4 cis d2
-		r4 d \verse "18" "33" es2~
-		es1~
-		es2 e~ %255
-		e f~
-		f g4 c,
-		fis2 b,4 r
-		\verse "18" "34" b2 a4 d
-		h1~ %260
-		h2 c4 c8 h
-		a1
-		g4 r r2
-		\verse "18" "35" g'1
-		a4 d, r2 %265
-		h1
-		a~
-		a2 ais~
-		ais h4 g'
-		fis r r2 %270
-		\verse "18" "36" h,4 r r8 d cis his
-		cis2 fis4 r
-		d2 h'8 g d' fis,
-		g4 r8 e fis4 r8 d
-		cis h cis a h d e e, %275
-		a a' e cis a2
-		h1
-		e
-		d
-		a' %280
-		g8 h g fis e e d d
-		cis4 r8 a' d, d, r fis'
-		g2 a
-		d,4 r r2
-		\verse "18" "37" d1~ %285
-		d2 r8 cis d4
-		g, r r2
-		e'1
-		d4 r r2
-		d2 e4 a, %290
-		cis1
-		r8 d fis e dis2
-		r8 e gis fis eis2~
-		eis fis~
-		fis d %295
-		r8 e e d c! h c a
-		d2 h4 g
-		c8 c g' f e2
+		\verse "19" "22" \mvTr d2\pE-\soloE g~
+		g a4 d, %510
+		d1
+		r4 e a,2
+		\verse "19" "23" fis'1~
+		fis2 b,4 g'8 f
+		e1~ %515
+		e~
+		e~
+		e~
+		e2 f4 f8 e
+		d1~ %520
+		d2 e~
+		e1
 		r8 f e dis e2
-		a,4 r r2 %300
-		\verse "18" "38" e'1
-		f4 b,2 c4
-		f r r2
-		d2 c4 r
-		cis1~ %305
-		cis
-		d
-		e4 a, r2
-		f8 r f' r e r c r
-		f r f e d2 %310
-		c4 c'8 b \verse "18" "39" a2~
-		a fis~
-		fis1
-		b,
-		c %315
-		d4 g, r2
-		\verse "18" "40" e'!1~
-		e2 r8 a, b h
-		c2 f4 r
-		r4 \mvTr b,\fE-\tuttiE f' f %320
-		b, b'8 b es,2
-		b'4 b8 b b4 a
-		b?1
-		\mvTr e,!\pE-\soloE
-		f4 \verse "19" "1" fis2.~ %325
-		fis2 g~
-		g4 r8 a d, c \verse "19" "2" b4~
-		b2 r8 b b4-\markup { \remark "flebile" }
-		r8 b? b4 r8 es es4
-		r2 r8 des des4 %330
-		r2 r8 c c4
-		r2 r8 e! e4
-		r2 r8 as f es
-		\verse "19" "3" d!2 es
-		f b,4 r %335
-		\mvTr es4\fE-\tuttiE es8 es es4 es8 es
-		es4 es b'2
-		es,4 es8 es as4 es8 es
-		b1
-		es %340
-		\mvTr e\pE-\soloE
-		f4 f8 es \verse "19" "4" d2~
-		d1
-		r8 es e4 r8 f fis4
-		r g c, r %345
-		f8 r f r e r c r
-		r f g a b2
-		a4 f c e8 d
-		cis8 r a r d a' fis e
-		dis8 r h r e h' gis fis %350
-		e r d! r c!4 f
-		e2 a,4 r
-		\verse "19" "5" f'1
-		g
-		f2 cis %355
-		d1
-		r8 dis e4 a, r
-		dis1
-		e4 r r2
-		\verse "19" "6" cis1~ %360
-		cis
-		d~
-		d2 e4 a,
-		\mvTr fis'8\fE-\tuttiE fis fis fis g4 g
-		gis8 gis gis gis a4 a %365
-		a, a8 a d4 a
-		a a8 a d4 a
-		r a'8 a fis4 g
-		a1
-		d, %370
-		\mvTr fis2\pE-\soloE g4 r
-		g8 r g, r r4 h
-		c r8 c a a' a g
-		f4. es8 d a d es
-		c4. c8 b d b a %375
-		g4. b8 a e' a g
-		f4 cis d8 e f g
-		a4 a, d r
-		\verse "19" "7" d1~
-		d2 e4 a, %380
-		\mvTr f\fE-\tuttiE f' f f8 f
-		b2 f4 f8 f
-		c' c c c f,4 e
-		g2 c,4 c8 c
-		g' g g g c4 c, %385
-		r c2 c4
-		cis cis8 cis d4 d
-		g2 a,~
-		a d
-		\verse "19" "8" \mvTr d1~\pE-\soloE %390
-		d2 e
-		<< { \oneVoice a,1 } \\ { s2 \verse "19" "9" s2 } >>
-		dis2 e
-		a h4 e,
-		e2 c %395
-		h4 r r2
-		dis1~
-		dis2 e4 e8 d?
-		\verse "19" "10" cis?1~
-		cis2 d4 r %400
-		d1~
+		a,4 a'8 g! \verse "19" "24" f!2~
+		f g4 c, %525
+		\mvTr c8\fE-\tuttiE c c c g'4 g
+		gis8 gis gis gis a4 a
+		r8 a a a dis,4 dis8 dis
+		e4 e c a
+		h e h' h, %530
+		e1
+		\mvTr cis1\pE-\soloE
+		d2. d8 cis
+		h2 cis~
+		cis d~ %535
+		d h~
+		h cis4 fis~
+		fis gis2.~
+		gis2 cis,
+		\verse "19" "25" dis1~ %540
+		dis
 		d
 		c!
-		h4 dis2.
-		e1 %405
-		fis4 h, r2
-		\verse "19" "11" h2~ h8 his his his
-		cis2 fis4 r
-		d16([ cis d e fis e fis g)] a,([ gis? a h cis h cis a)]
-		d([ cis d e fis e fis d)] g([ fis g a h cis d d,)] %410
-		a'([ gis a h cis a h cis)] d8 d, e e,
-		a16([ gis a h cis dis e cis)] dis([ cis dis e fis e dis cis)]
-		h4. dis8 e16([ dis e fis g! fis g e)]
-		a([ c a g fis e fis d)] g([ h g fis? e d e cis)]
-		fis([ a fis e dis cis dis h)] g8 g' a a, %415
-		h2 e4 r
-		\verse "19" "12" cis1~
-		cis2 d4 d'8 c!
-		h1
-		c2 d4 d, %420
-		g1
-		\mvTr g4\fE-\tuttiE fis8 g d'4 d,8 d
-		r g, g4 r8 a a4
-		r8 h' g h a4 a,
-		d d,8 d d4 d''8 d %425
-		gis,4 gis gis8 gis a gis
-		a4 a d,2
-		dis e4 a,
-		e'2. e4
-		a,1 \bar "|" %430 (finis)
+		f
+		g4 \verse "19" "26" e2.~ %545
+		e1
+		cis~
+		cis2 d~
+		d1
+		e4 a, r2 %550
+		d d4 f
+		e2 e4 g
+		f2 r
+		e r
+		f4 g a2 %555
+		d,1
+		\verse "19" "27" d
+		e4 a, r2
+		g'4 e r2
+		dis4 h r2 %560
+		g'4 a h2
+		e,1
+		cis~
+		cis~
+		cis %565
+		d4 d8 c! \verse "19" "28" b2~
+		b1~
+		b2 es~
+		es as~
+		as b4 es, %570
+		es4 es h!2~
+		h c
 	}
 }
 
@@ -683,203 +830,347 @@ BassFigures = \figuremode {
 % 	<[6]>2.. q16 <[5]>
 % 	r2 <[4]>4 <[3]>8 <[2]>
 % 	<[3]>1 %233 (finis)
+% 	
+% 	% chapter 18, verse 31, to chapter 19, verse 12
+% 	r1 %234
+% 	<[6]> %235
+% 	<_+>2 <[6]>4 <[_+]>
+% 	r2 <[_-]>4 <[6]>
+% 	r2 r8 q4.
+% 	r4 q2.
+% 	r1 %240
+% 	<[6]>
+% 	r
+% 	r2 <[6]>
+% 	<[_!]> <[6]>
+% 	<6> <[6]> %245
+% 	<[4]> <[3]>
+% 	r1
+% 	<[6-]>
+% 	r
+% 	<[5-]>2 <[6]> %250
+% 	r <[_-]>
+% 	r4 <[7- 5 _!]> <[6- 4]>2
+% 	r4 <[\t \t]> <[5-]>2
+% 	r1
+% 	<[7- 5-]>2 <[6]> %255
+% 	r <[_-]>
+% 	<[4!]>2 <_!>4 <[_-]>
+% 	<[6]>2 q
+% 	q2 <_+>4 <[_!]>
+% 	<[6 5]>1 %260
+% 	r
+% 	<[7]>2 <[6\\]>
+% 	r1
+% 	r2 <[4+]>
+% 	<_+>4 <[_+]>2. %265
+% 	<6+>1
+% 	<[_+]>
+% 	r2 <[6+ _+]>
+% 	r <[5+]>4 <[6]>
+% 	<[5+] _+>1 %270
+% 	<[5+]>2 r8 <[8 _+]>4 \bassFigureExtendersOn <8 _+>8 \bassFigureExtendersOff
+% 	<[6 4+]>4 <[5+ _+]> <[5+]>2
+% 	<[_+]>2 <[6]>4 <[_+]>8 <[6]>
+% 	r4. <[6\\]>8 <[6]>4. <[_+]>8
+% 	<[6]>4. <[_+]>8 <[7 5+]>4 <[7 _+]> %275
+% 	<[_+]>1
+% 	<[5+ _+]>
+% 	<[_!]>
+% 	<[4+] 2>
+% 	<[_!]>2 <[6+ 4+]> %280
+% 	<[6]>2 <[5 3]>4 <[\t \t]>
+% 	<[6 5]>4. <[7 _+]>8 <[4]> <[_+]> r <[6]>
+% 	<[5]>4 <[6]> <[4]> <[_+]>
+% 	<[_+]>1
+% 	q %285
+% 	<[7! _+]>2 r8 <[7 5]> <[4]> <[_+]>
+% 	r1
+% 	<5>2 <6+>
+% 	<[_+]>1
+% 	q2 <_+>4 q %290
+% 	<[6]>1
+% 	r8 <[_+]>4. <[6 5 _+]>2
+% 	r8 <[_+]>4. <[6+ 5 _+]>2
+% 	r <[5+]>
+% 	r <[4+]> %295
+% 	r8 <_+>4. <[6]>2
+% 	<[_!]>2 <[6]>
+% 	r <[5-]>
+% 	r8 <[8 3]>4 \bassFigureExtendersOn <8 3>8 \bassFigureExtendersOff <[6 4]>4 <[5 _+]>
+% 	r1 %300
+% 	<[6]>
+% 	r
+% 	r
+% 	<[6!]>
+% 	<[6]> %305
+% 	r
+% 	r
+% 	<[_+]>
+% 	r2 <[6]>
+% 	r2 <[5]>4. <[6!]>8 %310
+% 	r2 <[6]>
+% 	r q
+% 	r1
+% 	<[6]>
+% 	<[_-]>2 <[4+]> %315
+% 	<_+>4 <_->2.
+% 	<[6]>1
+% 	r2 r8 <[6]>4 \bassFigureExtendersOn <6>8 \bassFigureExtendersOff
+% 	<[6 4]>4 <[5 3]>2.
+% 	r2. <[7-]>4 %320
+% 	r1
+% 	r2 <[4- 2]>4 <[6 5-]>
+% 	r1
+% 	<[6]>
+% 	r4 <6>2. %325
+% 	r2 <[_-]>
+% 	<[4+]>4. <[_+]>8 r2
+% 	r2 r8 <[7-]>4.
+% 	r8 <[\t]>4. r8 <[5-]>4.
+% 	r2 r8 <[6- 4 2-]>4. %330
+% 	r2 r8 <[6- _-]>4.
+% 	r2 r8 <[6 5-]>4.
+% 	r2 r8 <[6]> <[_-]>4
+% 	<[6]>2 <[5-]>
+% 	<[6 4-]>4 <[5 3]>2. %335
+% 	<[5- 3]>2 <[6 4-]>
+% 	<[\t \t]>4 <[5- 3]> <[7-]>2
+% 	<[5- 3]> q4 q
+% 	<[7- 6 4-]> \bassFigureExtendersOn <7- [5 3]>8 <7- [4- 2]> <7- [5 3]>2 \bassFigureExtendersOff
+% 	<[5- 3]>1 %340
+% 	<[6]>
+% 	r2 <[6-]>
+% 	r1
+% 	r8 <[5- 3]> <[6]>4 r8 <[_!]> <[6]>4
+% 	r2 <[_-]> %345
+% 	r <[6]>
+% 	r <[5]>4 <[6]>
+% 	q2 <[6 4]>4 <[6]>
+% 	q <[7 _+]> <[4]> <[6]>
+% 	<[6 _+]> <[7 5+ _+]> <[_+]>2 %350
+% 	<[\t]>4 <[5 _+]>8. <[6 \t]>16 <[6]>4 q
+% 	<[_+]>1
+% 	r
+% 	<[6 _-]>
+% 	r2 <[6]> %355
+% 	r1
+% 	r8 <[7 5 _+]> <[6 4]> <[5 _+]> r2
+% 	<[6 _+]>1
+% 	r
+% 	<[6]> %360
+% 	<[6 5]>
+% 	<[_+]>
+% 	r2 <[_+]>4 q
+% 	<[6]>1
+% 	q2 <[_+]> %365
+% 	q2 q4 q
+% 	q2 q4 q
+% 	r q <[6]>2
+% 	<[4]> <[_+]>
+% 	q1 %370
+% 	<[6]>
+% 	r2. <[6 5]>4
+% 	r4. <[7-]>8 <[6]>2
+% 	r4. <[4 3]>8 <[_+]>2
+% 	<[4+]> <[6]>4 q8 <[6\\]> %375
+% 	<[_-]>4. <[4 3]>8 <[_+]>2
+% 	<[6]>4 q r8 <[6\\]> <[6]> <[_-]>
+% 	<[4]>4 <[_+]>2.
+% 	r1
+% 	<[4+]>2 <_+> %380
+% 	r1
+% 	r
+% 	<[7-]>2. <[6]>4
+% 	<[4]> <[_!]>2.
+% 	r1 %385
+% 	r
+% 	<[6 5]>2 <[9]>4 <[8]>
+% 	<[8 6 _-]>4. \bassFigureExtendersOn <[7 5] _->8 \bassFigureExtendersOff <[5 _+]>4 <[6 4]>
+% 	<[4]> <[_+]>2.
+% 	r1 %390
+% 	r2 <[_+]>
+% 	r1
+% 	<[6 _+]>
+% 	r2 <[5+] _+>
+% 	r <[6]> %395
+% 	<[5+] _+>1
+% 	<[6 _+]>
+% 	<7 5 _+>
+% 	<[6]>
+% 	r2 <_+> %400
+% 	<[_+]>1
+% 	r
+% 	<[4\+] 2>
+% 	<[6]>4 <6 [_+]>2.
+% 	r2 <[6+ 4+ 2+]> %405
+% 	<[5+] _+>4 <[5+]>2.
+% 	q2 r8 <[6+ 5+ _+]>4.
+% 	<[6 4+]>4 <[5+ _+]> <[5+]>2
+% 	<[_+]>4 <[6]> <[_+]> <[6]>
+% 	<[_+]> <[6]> r <[6]>16 q <[_+]>8 %410
+% 	<[6+ 4]>8 <[5 _+]> <[6]>4 <[5 _+]>8 <[6 \t]> <[6+ 4]> <[5 _+]>
+% 	<[_+]>4 <[6]> <[6 _+]>2
+% 	<[7 5+ _+]>4. <[6 5 _+]>8 <[4]> <[_!]> <[6]>4
+% 	<[_!]> <[6 5]> r <[6 5]>
+% 	<[6+]> <[6 5 _+]> <[6]> <[6\\]> %415
+% 	<[6 4]> <[5 _+]>2.
+% 	<[6]>1
+% 	r2 <[_+]>
+% 	<[6]>1
+% 	r2 <[6 4]>4 <[5 _+]> %420
+% 	r1
+% 	r4 <[6 5]> <[6 4]> <[5 _+]>
+% 	r2 r8 <[6\\ 4 3]>4.
+% 	r8 <[6]> q q <[4]>4 <[_+]>
+% 	q2. <[_!]>4 %425
+% 	<[6 5]>2. <[_!]>8 <[6]>
+% 	r2 <[6- _!]>
+% 	<[7 5 _+]> <[_+]>
+% 	<[4]> <[_+]>
+% 	r1 %430 (finis)
 	
-	% chapter 18, verse 31, to chapter 19, verse 12
-	r1 %234
-	<[6]> %235
-	<_+>2 <[6]>4 <[_+]>
-	r2 <[_-]>4 <[6]>
-	r2 r8 q4.
-	r4 q2.
-	r1 %240
+	% chapter 19, verses 13 to 37
+	<[6]>1 %431
+	r2 q
+	r1
+	<_+>2 <[6]>
+	r1 %435
+	<6- 5->
+	<[5-]>
 	<[6]>
-	r
-	r2 <[6]>
-	<[_!]> <[6]>
-	<6> <[6]> %245
-	<[4]> <[3]>
-	r1
-	<[6-]>
-	r
-	<[5-]>2 <[6]> %250
-	r <[_-]>
-	r4 <[7- 5 _!]> <[6- 4]>2
-	r4 <[\t \t]> <[5-]>2
-	r1
-	<[7- 5-]>2 <[6]> %255
-	r <[_-]>
-	<[4!]>2 <_!>4 <[_-]>
-	<[6]>2 q
-	q2 <_+>4 <[_!]>
-	<[6 5]>1 %260
-	r
-	<[7]>2 <[6\\]>
-	r1
-	r2 <[4+]>
-	<_+>4 <[_+]>2. %265
-	<6+>1
-	<[_+]>
-	r2 <[6+ _+]>
-	r <[5+]>4 <[6]>
-	<[5+] _+>1 %270
-	<[5+]>2 r8 <[8 _+]>4 \bassFigureExtendersOn <8 _+>8 \bassFigureExtendersOff
-	<[6 4+]>4 <[5+ _+]> <[5+]>2
-	<[_+]>2 <[6]>4 <[_+]>8 <[6]>
-	r4. <[6\\]>8 <[6]>4. <[_+]>8
-	<[6]>4. <[_+]>8 <[7 5+]>4 <[7 _+]> %275
-	<[_+]>1
-	<[5+ _+]>
-	<[_!]>
-	<[4+] 2>
-	<[_!]>2 <[6+ 4+]> %280
-	<[6]>2 <[5 3]>4 <[\t \t]>
-	<[6 5]>4. <[7 _+]>8 <[4]> <[_+]> r <[6]>
-	<[5]>4 <[6]> <[4]> <[_+]>
-	<[_+]>1
-	q %285
-	<[7! _+]>2 r8 <[7 5]> <[4]> <[_+]>
-	r1
-	<5>2 <6+>
-	<[_+]>1
-	q2 <_+>4 q %290
-	<[6]>1
-	r8 <[_+]>4. <[6 5 _+]>2
-	r8 <[_+]>4. <[6+ 5 _+]>2
-	r <[5+]>
-	r <[4+]> %295
-	r8 <_+>4. <[6]>2
-	<[_!]>2 <[6]>
-	r <[5-]>
-	r8 <[8 3]>4 \bassFigureExtendersOn <8 3>8 \bassFigureExtendersOff <[6 4]>4 <[5 _+]>
-	r1 %300
-	<[6]>
-	r
-	r
-	<[6!]>
-	<[6]> %305
-	r
-	r
-	<[_+]>
-	r2 <[6]>
-	r2 <[5]>4. <[6!]>8 %310
-	r2 <[6]>
-	r q
-	r1
-	<[6]>
-	<[_-]>2 <[4+]> %315
-	<_+>4 <_->2.
-	<[6]>1
-	r2 r8 <[6]>4 \bassFigureExtendersOn <6>8 \bassFigureExtendersOff
-	<[6 4]>4 <[5 3]>2.
-	r2. <[7-]>4 %320
-	r1
-	r2 <[4- 2]>4 <[6 5-]>
-	r1
-	<[6]>
-	r4 <6>2. %325
-	r2 <[_-]>
-	<[4+]>4. <[_+]>8 r2
-	r2 r8 <[7-]>4.
-	r8 <[\t]>4. r8 <[5-]>4.
-	r2 r8 <[6- 4 2-]>4. %330
-	r2 r8 <[6- _-]>4.
-	r2 r8 <[6 5-]>4.
-	r2 r8 <[6]> <[_-]>4
+	<_->2 <4!>
+	r2. <_->4 %440
+	<[_-]>1
 	<[6]>2 <[5-]>
-	<[6 4-]>4 <[5 3]>2. %335
-	<[5- 3]>2 <[6 4-]>
-	<[\t \t]>4 <[5- 3]> <[7-]>2
-	<[5- 3]> q4 q
-	<[7- 6 4-]> \bassFigureExtendersOn <7- [5 3]>8 <7- [4- 2]> <7- [5 3]>2 \bassFigureExtendersOff
-	<[5- 3]>1 %340
-	<[6]>
-	r2 <[6-]>
+	<[6- _-]>2. <[5-]>4
+	<[7-]>1
+	<[5-]> %445
+	<6>
+	r4 <[6]> <[5-]>8 <[6]> r4
 	r1
-	r8 <[5- 3]> <[6]>4 r8 <[_!]> <[6]>4
-	r2 <[_-]> %345
+	r
+	<[6 4-]>2. <[5 3]>4 %450
+	<[7-]>2 <[7 4- 2]>4 <[8 3]>
+	r2 <[6]>
+	r4 <[7-]> r2
+	<[4]> <[3]>
+	r1 %455
+	<[6]>
+	r2 q
+	<_-> <[_-]>
+	<6 [_-]>1
+	r2 <[4!]> %460
+	r1
+	r2. <[6]>4
+	<[6 5-]>2 <[6 4]>4 <[5 3]>
+	r1
+	r %465
+	<[6-]>4 <[6]>2.
+	<[4]>2 <[3]>
+	r1
+	<[6]>
+	r %470
+	r
+	r
+	<[5-]>
+	r2 <7->
+	r <[_-]> %475
+	r1
+	<7 [_!]>
+	<[_-]>2 <[4+] 2>
 	r <[6]>
-	r <[5]>4 <[6]>
-	q2 <[6 4]>4 <[6]>
-	q <[7 _+]> <[4]> <[6]>
-	<[6 _+]> <[7 5+ _+]> <[_+]>2 %350
-	<[\t]>4 <[5 _+]>8. <[6 \t]>16 <[6]>4 q
-	<[_+]>1
-	r
-	<[6 _-]>
-	r2 <[6]> %355
+	r1 %480
+	r2 <[_-]>
+	<[4+ 2]> <[6- 4]>4 <[5-]>
 	r1
-	r8 <[7 5 _+]> <[6 4]> <[5 _+]> r2
-	<[6 _+]>1
+	r2 <[6- 4] 2->
+	r2 r8 <[6- _-]>4 <[6 _-]>8 %485
+	<[5-]>1
+	<[6-]>
+	<[6- 5-]>
+	<[6- _-]>2 <[6]>
+	r1 %490
+	r2 <[_-]>
+	<[6-]>1
+	r2 <[5-]>
+	r <[4!]>
+	<[6-]> <6> %495
+	<[_-]>1
+	<[_-]>2 <_!>4 <6>
+	r1
+	<[_-]>2 <[4+]>
+	r4 <_+>2. %500
+	r1
 	r
-	<[6]> %360
+	r
+	<[6]>4 q2.
+	r1 %505
+	<[_-]>2 <[6 5-]>
+	<[5 3]>4 <[6 4]> <[5 \t]> <[\t 3]>
+	r1
+	<[_+]>2 <[_-]>
+	<[4+]> <[_+]>4 <[_!]> %510
+	r1
+	r4 <_+>2.
+	<[6]>1
+	r2 q
+	q1 %515
+	r
+	r
+	r
+	r
+	r %520
+	r2 <[_+]>
+	r1
+	r8 <[8 3]>4 \bassFigureExtendersOn <8 3>8 \bassFigureExtendersOff <[6 4]>4 <[5 _+]>
+	r1
+	<[4!]> %525
+	r
 	<[6 5]>
-	<[_+]>
-	r2 <[_+]>4 q
-	<[6]>1
-	q2 <[_+]> %365
-	q2 q4 q
-	q2 q4 q
-	r q <[6]>2
-	<[4]> <[_+]>
-	q1 %370
+	r2 <[6 5 _+]>
+	r <[6]>
+	<[5+ _+]> <[6 4]>4 <[5+ _+]> %530
+	r1
 	<[6]>
-	r2. <[6 5]>4
-	r4. <[7-]>8 <[6]>2
-	r4. <[4 3]>8 <[_+]>2
-	<[4+]> <[6]>4 q8 <[6\\]> %375
-	<[_-]>4. <[4 3]>8 <[_+]>2
-	<[6]>4 q r8 <[6\\]> <[6]> <[_-]>
-	<[4]>4 <[_+]>2.
-	r1
-	<[4+]>2 <_+> %380
-	r1
+	<[_+]>2.. <6+>8
+	<[5+]>2 <[6+]>
+	r <[6 _+]> %535
+	r <6+>
+	r <[5+] _+>4 <[5+]>
+	r4 <7+ [5+] _+>2.
+	r2 <[5+ _!]>
+	<6 [_+]>1 %540
 	r
-	<[7-]>2. <[6]>4
-	<[4]> <[_!]>2.
-	r1 %385
-	r
-	<[6 5]>2 <[9]>4 <[8]>
-	<[8 6 _-]>4. \bassFigureExtendersOn <[7 5] _->8 \bassFigureExtendersOff <[5 _+]>4 <[6 4]>
-	<[4]> <[_+]>2.
-	r1 %390
-	r2 <[_+]>
-	r1
-	<[6 _+]>
-	r2 <[5+] _+>
-	r <[6]> %395
-	<[5+] _+>1
-	<[6 _+]>
-	<7 5 _+>
+	<[4+] 2>
 	<[6]>
-	r2 <_+> %400
-	<[_+]>1
-	r
-	<[4\+] 2>
-	<[6]>4 <6 [_+]>2.
-	r2 <[6+ 4+ 2+]> %405
-	<[5+] _+>4 <[5+]>2.
-	q2 r8 <[6+ 5+ _+]>4.
-	<[6 4+]>4 <[5+ _+]> <[5+]>2
-	<[_+]>4 <[6]> <[_+]> <[6]>
-	<[_+]> <[6]> r <[6]>16 q <[_+]>8 %410
-	<[6+ 4]>8 <[5 _+]> <[6]>4 <[5 _+]>8 <[6 \t]> <[6+ 4]> <[5 _+]>
-	<[_+]>4 <[6]> <[6 _+]>2
-	<[7 5+ _+]>4. <[6 5 _+]>8 <[4]> <[_!]> <[6]>4
-	<[_!]> <[6 5]> r <[6 5]>
-	<[6+]> <[6 5 _+]> <[6]> <[6\\]> %415
-	<[6 4]> <[5 _+]>2.
-	<[6]>1
-	r2 <[_+]>
-	<[6]>1
-	r2 <[6 4]>4 <[5 _+]> %420
+	<[3]>2 <[4!]>
+	r4 <[6]>2. %545
 	r1
-	r4 <[6 5]> <[6 4]> <[5 _+]>
-	r2 r8 <[6\\ 4 3]>4.
-	r8 <[6]> q q <[4]>4 <[_+]>
-	q2. <[_!]>4 %425
-	<[6 5]>2. <[_!]>8 <[6]>
-	r2 <[6- _!]>
-	<[7 5 _+]> <[_+]>
-	<[4]> <[_+]>
-	r1 %430 (finis)
+	<[6]>
+	r
+	r2 <[4+]>
+	<_+>1 %550
+	<5 3>2. \bassFigureExtendersOn q4
+	<6+ [5-]>2. <6+ 5->4 \bassFigureExtendersOff
+	<6>1
+	<6+>
+	<6>4 <[_-]> <[6 4]> <[5 _+]> %555
+	r1
+	r2 <[4+] 2>
+	<_+>1
+	<[6]>
+	<[6 5 _+]>4 <[7 5+ _+]>2. %560
+	<[6]>2 <[6 4]>4 <[5+ _+]>
+	r1
+	<[6]>
+	r
+	r %565
+	r
+	r
+	r2 <[5-]>
+	r q
+	<[4! 2]>2. <[5-]>4 %570
+	<[6]>2 q4 <[7-]>
+	r2 <[_-]>
 }
