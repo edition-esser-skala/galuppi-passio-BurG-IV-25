@@ -6,8 +6,8 @@
 # change the following variables according to your project
 project = Galuppi_Passio_BurG_IV_25
 zipname = Galuppi_Passio_BurG_IV_25_Engraving_Files
-notes = A AncillaOstaria B Jesus org Pilatus S T Textus UnusMinimorum
-parts = b coro org
+notes = A B Iesus org other S Soli T Textus
+parts = coro org
 movements = passio
 
 

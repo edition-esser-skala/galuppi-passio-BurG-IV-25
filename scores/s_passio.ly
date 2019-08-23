@@ -13,8 +13,6 @@
 
 #(set-global-staff-size 15.87)
 
-showLastLength = r1*39
-
 \book {
 	\bookpart {
 		\header {
@@ -32,12 +30,12 @@ showLastLength = r1*39
 					\new Lyrics \lyricsto Textus \TextusLyrics
 					
 					\new Staff {
-						\set Staff.instrumentName = \JesusIncipit
+						\set Staff.instrumentName = \IesusIncipit
 						\override Staff.InstrumentName.self-alignment-Y = ##f
 						\override Staff.InstrumentName.self-alignment-X = #RIGHT
-						\new Voice = "Jesus" { \dynamicUp \JesusNotes }
+						\new Voice = "Iesus" { \dynamicUp \IesusNotes }
 					}
-					\new Lyrics \lyricsto Jesus \JesusLyrics
+					\new Lyrics \lyricsto Iesus \IesusLyrics
 					
 					\new Staff {
 						\set Staff.instrumentName = \SoliIncipit
@@ -89,7 +87,7 @@ showLastLength = r1*39
 					\BassFigures
 				}
 			>>
-% 			\layout { }
+			\layout { }
 			\midi { \tempo 4 = 72 }
 		}
 	}

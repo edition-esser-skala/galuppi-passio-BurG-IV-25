@@ -5,7 +5,7 @@
 \version "2.18.0"
 
 SoliIncipit = \markup {
-	\raise #4 \center-column { "Ancilla ostiaria (S)" "Petrus (A), Pilatus (A)" "Unus minimorum (A)" "Unus ex servis (A)" } \hspace #-27 \score {
+	\raise #4 \center-column { "Ancilla ostiaria (S)" "Petrus (A), Pilatus (A)" "Unus ministrorum (A)" "Unus ex servis (A)" } \hspace #-27 \score {
 		\new Staff \with {
 			\remove Time_signature_engraver
 		} {
@@ -28,8 +28,8 @@ SoliNotes = {
 		a a r4 r2 %140
 		r4 r8 h^\Petrus g4 r
 		R1*36 %177
-		r2 r4 g8^\UnusMinimorum h
-		h4 e,8 dis fis fis16 fis r4
+		r2 r4 g8^\UnusMinistrorum h
+		h4 e,8 dis fis fis16 fis r4 %180
 		R1*22 %201
 		r4 r8 a^\Petrus e4 r
 		R1*4 %206

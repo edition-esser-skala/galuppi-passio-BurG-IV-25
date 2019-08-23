@@ -4,24 +4,297 @@
 
 \version "2.18.0"
 
-TextusIncipit = \markup {
-	"Textus" \hspace #-21.5 \score {
-		\new Staff \with {
-			\remove Time_signature_engraver
-		} {
-			\clef soprano s4 \bar empty
-		}
-		\layout { }
-	} \hspace #-.8
+OrganoCoro = {
+	\clef bass
+	\key c \major \time 4/4 \tempoAdagio
+	\relative c {
+		R1*34
+		c'8 c h h a4 d, %35
+		g r r2
+		\key d \major d2 r
+		a'4. a8 a4 a
+		a g8[ fis] g4 a
+		h4. h8 h4 h4 %40
+		a1
+		d,
+		\key c \major R1*19 %61
+		c1
+		r4 d g, r
+		c2 r
+		g'4. g8 g4 g %65
+		g f8 e f4 g
+		a4. a8 a4 a
+		g1
+		c,
+		R1*125 %194
+		r2 r4 a' %195
+		d,1
+		g4 g8 g fis2
+		e8 e fis fis16 fis g2
+		fis e
+		d1 %200
+		R1*23 %223
+		dis1
+		e4 r r2 %225
+		c8 c c c g'4 g8 g
+		a2 g4 g8 g
+		c,4 c g' g,8 g'
+		a a g g16 g fis4 g
+		d2 g4 g %230
+		e r8 e f! f f f16 f
+		g4 c, g'2~
+		g c,
+		R1*7 %240
+		e2 f
+		r4 g c,2
+		f4 f8 f d4 d
+		g g8 g e4 e
+		a, a'8 a e4 f8 f %245
+		c1
+		f
+		R1*70 %317
+		e2 r8 a, b h
+		c2 f4 r
+		r4 b, f' f %320
+		b, b'8 b es,2
+		b'4 b8 b b4 a
+		b?1
+		R1*10 %333
+		d,!2 es
+		f b,4 r %335
+		es4 es8 es es4 es8 es
+		es4 es b'2
+		es,4 es8 es as4 es8 es
+		b1
+		es %340
+		R1*21 %361
+		d1~
+		d2 e4 a,
+		fis'8 fis fis fis g4 g
+		gis8 gis gis gis a4 a %365
+		a, a8 a d4 a
+		a a8 a d4 a
+		r a'8 a fis4 g
+		a1
+		d, %370
+		R1*8 %378
+		d1~
+		d2 e4 a, %380
+		f f' f f8 f
+		b2 f4 f8 f
+		c' c c c f,4 e
+		g2 c,4 c8 c
+		g' g g g c4 c, %385
+		r c2 c4
+		cis cis8 cis d4 d
+		g2 a,~
+		a d
+		R1*30 %419
+		c'2 d4 d, %420
+		g1
+		g4 fis8 g d'4 d,8 d
+		r g, g4 r8 a a4
+		r8 h' g h a4 a,
+		d d,8 d d4 d''8 d %425
+		gis,4 gis gis8 gis a gis
+		a4 a d,2
+		dis e4 a,
+		e'2. e4
+		a,1
+		R1*16 %446
+		b'4 d, es f
+		b,1
+		b'4 b, b' b,
+		b8 b b b b4 b %450
+		f'8 f f f b4 b,
+		r b'?8 b a4 a
+		r c,8 c f4 b,
+		c1
+		f %455
+		fis~
+		fis2 b,
+		g' c,~
+		c b4 r
+		b1 %460
+		c4 f r2
+		f8 f f f b4 a
+		e f c'8. c,16 c4
+		r c8 c f4 c
+		r c8 c f4 c %465
+		d e f b,
+		c2. c4
+		f1
+		R1*30 %498
+		g1
+		r4 a d,2 %500
+		b4 b f'8. f16 f4
+		f f8 f b,4 b
+		r8 b b b f'4 f
+		d e! f f
+		f, f' b b, %505
+		g g' e! e8 f
+		c1
+		f
+		R1*15 %523
+		a,4 a'8 g! f!2~
+		f g4 c, %525
+		c8 c c c g'4 g
+		gis8 gis gis gis a4 a
+		r8 a a a dis,4 dis8 dis
+		e4 e c a
+		h e h' h, %530
+		e1
+		R1*102 \bar "|." %633 FINIS
+	}
 }
 
-TextusNotes = {
+BassFiguresCoro = \figuremode {
+	r1*34
+	r4 <[6]> <7> <_+> %35
+	r1
+	r
+	<[6 4]>2 <[5 3]>4 <[4+ 2]>
+	<[5 2]>4. \bassFigureExtendersOn <5 2>8 \bassFigureExtendersOff <[6]>4 <[7] [4]>8 <\l [3]>
+	<[4]>2 <[3]>4 <[6\\]> %40
+	<[6 4]>2 <[5 3]>
+	r1
+	r1*19 %61
+	<[6]>2 <[4+]>
+	r4 <[_+]>2.
+	r1
+	<[6 4]>2 <[5 3]>4 <[4+ 2]> %65
+	<[5 2]>4. \bassFigureExtendersOn <5 2>8 \bassFigureExtendersOff <[6]>4 <[7] [4]>8 <\l [3]>
+	<[4]>2 <[3]>4 <[6\\]>
+	<[6 4]>2 <[5 3]>
+	r1
+	r1*125 %194
+	r2. <[_+]>4 %195
+	q1
+	r2 <[6]>
+	q4 <[6 5]> <[5]> <[6]>
+	<[7]> <[6]> <[7]> <[6\\]>
+	<[_+]>1 %200
+	r1*23 %223
+	<[7 5 _+]>1
+	r %225
+	r
+	<[6\\]>
+	r
+	r4 <[2]> <[6 5]>2
+	<[4]>4 <[_+]>2. %230
+	<[6]>2.. q16 <[5]>
+	r2 <[4]>4 <[3]>8 <[2]>
+	<[3]>1
+	r1*7 %240
+	<[6]>1
+	r
+	r2 <[6]>
+	<[_!]> <[6]>
+	<6> <[6]> %245
+	<[4]> <[3]>
+	r1
+	r1*70 %317
+	r2 r8 <[6]>4 \bassFigureExtendersOn <6>8 \bassFigureExtendersOff
+	<[6 4]>4 <[5 3]>2.
+	r2. <[7-]>4 %320
+	r2 <[5-]>
+	r <[4- 2]>4 <[6 5-]>
+	r1
+	r1*10 %333
+	<[6]>2 <[5-]>
+	<[6 4-]>4 <[5 3]>2. %335
+	<[5- 3]>2 <[6 4-]>
+	<[\t \t]>4 <[5- 3]> <[7-]>2
+	<[5- 3]> q4 q
+	<[7- 6 4-]> \bassFigureExtendersOn <7- [5 3]>8 <7- [4- 2]> <7- [5 3]>2 \bassFigureExtendersOff
+	<[5- 3]>1 %340
+	r1*21 %361
+	<[_+]>1
+	r2 <[_+]>4 q
+	<[6]>1
+	q2 <[_+]> %365
+	q2 q4 q
+	q2 q4 q
+	r q <[6]>2
+	<[4]> <[_+]>
+	q1 %370
+	r1*8 %378
+	r1
+	<[4+]>2 <_+> %380
+	r1
+	r
+	<[7-]>2. <[6]>4
+	<[4]> <[_!]>2.
+	r1 %385
+	r
+	<[6 5]>2 <[9]>4 <[8]>
+	<[8 6 _-]>4. \bassFigureExtendersOn <[7 5] _->8 \bassFigureExtendersOff <[5 _+]>4 <[6 4]>
+	<[4]> <[_+]>2.
+	r1*30 %419
+	r2 <[6 4]>4 <[5 _+]> %420
+	r1
+	r4 <[6 5]> <[6 4]> <[5 _+]>
+	r2 r8 <[6\\ 4 3]>4.
+	r8 <[6]> q q <[4]>4 <[_+]>
+	q2. <[_!]>4 %425
+	<[6 5]>2. <[_!]>8 <[6]>
+	r2 <[6- _!]>
+	<[7 5 _+]> <[_+]>
+	<[4]> <[_+]>
+	r1 %430
+	r1*16 %446
+	r4 <[6]> <[5-]>8 <[6]> r4
+	r1
+	r
+	<[6 4-]>2. <[5 3]>4 %450
+	<[7-]>2 <[7 4- 2]>4 <[8 3]>
+	r2 <[6]>
+	r4 <[7-]> r2
+	<[4]> <[3]>
+	r1 %455
+	<[6]>
+	r2 q
+	<_-> <[_-]>
+	<6 [_-]>1
+	r2 <[4!]> %460
+	r1
+	r2. <[6]>4
+	<[6 5-]>2 <[6 4]>4 <[5 3]>
+	r1
+	r %465
+	<[6-]>4 <[6]>2.
+	<[4]>2 <[3]>
+	r1
+	r1*30 %498
+	<[_-]>2 <[4+]>
+	r4 <_+>2. %500
+	r1
+	r
+	r
+	<[6]>4 q2.
+	r1 %505
+	<[_-]>2 <[6 5-]>
+	<[5 3]>4 <[6 4]> <[5 \t]> <[\t 3]>
+	r1
+	r1*15 %523
+	r1
+	<[4!]> %525
+	r
+	<[6 5]>
+	r2 <[6 5 _+]>
+	r <[6]>
+	<[5+ _+]> <[6 4]>4 <[5+ _+]> %530
+	r1
+	r1*102 %633 FINIS
+}
+
+SoliOrgNotes = {
 	\clef treble
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
 	
 	% chapter 18, verses 1 to 30
 	\relative c' {
-		g'4.( as16) g g2
+		g'4.(^\Textus as16) g g2
 		c4.( des16) c c2
 		d4 d16([ es)] es([ f)] f8 f, as8. g32([ f)]
 		f8 es r4 r es'
@@ -51,15 +324,24 @@ TextusNotes = {
 		e8 e r c' a f r d'
 		h g r e' c a r4
 		r8 f' e d c8.([\fermata d16] d4\trill) %30
-		c4 r r2
-		R1*3
-		r8 c16 e d8 \tuplet 3/2 8 { g16([ h, e)] } \appoggiatura d4 c2 %35
+		c4 r r r8 c,^\Iesus
+		f16.([ g32 a8)] r c, g'16.([ a32 b8)] r c,
+		a'8. c32([ a)] g8 r16 c, \appoggiatura g'8 f4.\trill e8
+		a g16 g r4 r2
+		r8 c16^\Textus e d8 \tuplet 3/2 8 { g16([ h, e)] } \appoggiatura d4 c2 %35
 		h4 r r2
-		R1*6 %42
-		e8 h d cis a2~
+		\key d \major d4.^\TurbaS d8 d4 d
+		d( cis8[ h] cis4) dis
+		e4. e8 e4 e
+		e d8[ cis] d2~ %40
+		d4 cis8[ h] cis2
+		d1
+		\key c \major e8^\Textus h d cis a2~
 		a4. \appoggiatura cis16 h8 a2
-		R1*3 %47
-		r4 cis8 cis ais4 ais8 cis
+		e4.(^\Iesus g8) fis2 %45
+		g4. a16[ h] a8[ g fis] e
+		\appoggiatura e2 dis1
+		r4 cis'8^\Textus cis ais4 ais8 cis
 		cis4 fis, fis8 gis ais h
 		cis cis d4 h8 h r4 %50
 		r d, g8 g g a
@@ -69,16 +351,31 @@ TextusNotes = {
 		f f r4 d' c8 d %55
 		b4 b r8 b a g
 		cis4. d8 \appoggiatura b a a r4
-		R1*4 %61
-		r4 c8 a fis4 fis8 g
+		r2 r4 r8 c,^\Iesus
+		f16.([ g32 a8)] r c, g'16.([ a32 b8)] r c,
+		a'8. c32([ a)] g8 r16 c, \appoggiatura g'8 f4.\trill e8 %60
+		a g16 g r4 r2
+		r4 c8^\Textus a fis4 fis8 g
 		g d r4 r2
-		R1*6 %69
-		r4 e' dis8.([ d16)] d4 %70
+		c'4.^\TurbaS c8 c4 c
+		c( h8[ a] h4) cis %65
+		d4. d8 d4 d
+		d c8[ h] c2~
+		c4 h8[ a] h2
+		c1
+		r4 e^\Textus dis8.([ d16)] d4 %70
 		r d cis8.([ c16)] c4
 		r8 c h a a2~
 		a4. \appoggiatura c16 h8 a2
-		R1*8 %81
-		r8 b b b b f f f16 f
+		r2 a4.^\Iesus b8
+		g8([ fis16 g)] g4 g8 b a g %75
+		f4 r d8 f e d
+		\appoggiatura d cis4 r8 a' a d, r a'
+		b([ a)] g f \appoggiatura g f8. e16 e4
+		f8. c16 c4 d8([ b' a)] g
+		f2~ f4. \appoggiatura a16 g8 %80
+		f1
+		r8 b^\Textus b b b f f f16 f
 		d8 d r4 f8 f r4
 		f8 g as b g g r es'
 		es8. b16 b8 b des c \appoggiatura b as as %85
@@ -93,8 +390,15 @@ TextusNotes = {
 		g8 g r4 e'8 d r4
 		d8 cis h2.~ %95
 		h8.[ cis16] cis4\trill h r
-		R1*8 %104
-		r4 d8 d h h h d %105
+		r4 d,8^\Iesus g fis4 g8 a
+		g8.([ a32 h)] a4 g8.([ h16] a8) g
+		fis8.([ e16)] d4 r2
+		g8. d16 d8 e f a g f %100
+		\appoggiatura g f4 e r r8 a
+		fis4 r8 h g4 r8 e
+		dis([ e)] fis([ h)] \appoggiatura a4 g2\trill
+		fis r
+		r4 d'8^\Textus d h h h d %105
 		g, g r d16 d g8 g g a
 		f!4 f r8 h c d
 		\appoggiatura g,4 f4. e8 e e r4
@@ -126,10 +430,12 @@ TextusNotes = {
 		e'8 a, g a f! f r f'
 		d d r c \appoggiatura h! a2~ %135
 		a8.[ h16] h8.\trill a16 a4 r
-		R1*3
-		r4 d8([ e16)] c \appoggiatura c h8.[(\trill a16]) g4 %140
-		R1
-		g8 g c h c4 c
+		r4 r8 c,^\Ancilla f4 r8 a
+		g4 r r e8 f
+		g g16 g r8 g c c c g
+		a a d8([^\Textus e16)] c \appoggiatura c h8.[(\trill a16]) g4 %140
+		r4 r8 h^\Petrus g4 r
+		g8^\Textus g c h c4 c
 		c8 c c g16 g e4 e
 		r8 e g a b b r d
 		b b16 b b8 a f4 r %145
@@ -143,16 +449,39 @@ TextusNotes = {
 		r cis' a a 
 		r a fis2~
 		fis4. gis8 fis4 r %155
-		R1*19 %174
-		r8 g c16 c c e c8 c c h16 a %175
+		d4^\Iesus e fis16.([ g32)] a8 r h
+		a8.([ h16)] \appoggiatura a g4 fis r8 a
+		a([ g)] g fis16.([ g32)] \appoggiatura fis8 e d r4
+		fis?8 fis a fis? e8. d16 d4
+		r8 d h' a gis h h d, %160
+		\appoggiatura e d4 cis r e
+		g!8 g4 g8 h a4 g8
+		\appoggiatura a g8. fis16 fis4 r8 fis e d
+		gis8.([ a32 h)] a4 r8 fis e dis
+		e4 a4. fis16[ h] \appoggiatura a8 gis4 %165
+		a r r8 a fis d
+		g g16 g r4 r8 h gis e
+		a a16 a r8 h fis4 g8 a
+		g4 r8 h16. g32 c!8 a r a16. fis32
+		h8 g r e16. g32 \appoggiatura g8 fis8.[( g16)] a([ g)] fis([ e)] %170
+		h'4 h, h'8 g r h
+		a fis r a g8. fis16 e8. h'16
+		c!8([ a)] g fis e2~
+		e8.[ fis16] fis4\trill e r
+		r8 g^\Textus c16 c c e c8 c c h16 a %175
 		gis8 gis a h c c a c
 		h4 a8 h g4 g
-		e'8[( \grace { d32[ c] } h16 c]) h4 r2
-		R1
-		r8 e cis h ais4. h8 %180
+		e'8[( \grace { d32[ c] } h16 c]) h4 r g8^\UnusMinistrorum h
+		h4 e,8 dis fis fis16 fis r4
+		r8 e'^\Textus cis h ais4. h8 %180
 		\appoggiatura g4 fis2 fis4 r
-		R1*6 %187
-		r4 r8 fis h h cis d
+		r4 r8 d^\Iesus g4.~ g16[ a]
+		g8 h a g \appoggiatura g fis4 r
+		r g8 h e, fis16 a g8. d16
+		d8 g16([ e)] \appoggiatura d8 c4\trill h2 %185
+		r8 d g h a d, r4
+		r g8 fis a a r4
+		r4 r8 fis^\Textus h h cis d
 		cis4 cis8 cis cis4 gis8 a
 		h8. h16 h8 cis a8. a16 a4 %190
 		r a8 d d4 a
@@ -160,15 +489,20 @@ TextusNotes = {
 		c! r8 e a, h c c16 h
 		g4 r8 g cis cis cis d
 		a4.( h8) a2 %195
-		R1*5 %200
-		r8 e' e h gis gis r c
-		a a r4 r r8 c16 c
+		R1
+		h4^\TurbaS h8 h d2
+		c8 c c d16 c h4 e~
+		e d2 cis4
+		d1 %200
+		r8 e^\Textus e h gis gis r c
+		a a r a^\Petrus e4 r8 c'16^\Textus c
 		c4 g g8 g16 a b8 b16 c
 		a8 a16 a r4 r8 a cis e
 		e4 g, b8 b r b %205
 		a g cis cis16 d a8 a16 a r4
-		R1*2
-		r4 a8 a16 d d8 a16 a c!8 d
+		r4 d,8^\UnusExServis d g4 g8 fis
+		g g16 b g8 g16 d e8 e r4
+		r4 a8^\Textus a16 d d8 a16 a c!8 d
 		h! h r g h h d h16 c %210
 		c8 g r g c c c es
 		es4 a,8 a c c c d
@@ -180,23 +514,39 @@ TextusNotes = {
 		as g as b16 c b8 b r16 b as b
 		g8 g r4 es'8.([ f32 g)] c,8.([ d32 es)]
 		\appoggiatura b4 a!4. b8 \appoggiatura g f f r4 %220
-		R1*2
-		r2 r4 h8 c
+		c8^\Pilatus c c d e4 fis8 g
+		fis? fis r fis fis g a fis16 d
+		g4 r r h8^\Textus c
 		a4 a c8 a a g
 		e e r4 r2 %225
-		R1*8 \bar "|" %233 (finis)
+		c'8^\TurbaS c c c h4 h8 h
+		c2 h4 d8 d
+		e2 d4 r8 d
+		c c c c16 c c4 h
+		a2 h4 h %230
+		c r8 c c c c d16 c
+		h4 c c h8[ a]
+		h2 c \bar "|" %233 (finis)
 	}
 	
 	% chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c' {
-		r4 a'8 c c f, es' es16 d %234
+		r4 a'8^\Textus c c f, es' es16 d %234
 		b8 b r4 r2 %235
-		R1*5 %240
-		r8 g c e a,4 h8 c
+		r4 r8 e,^\Pilatus a e16 f g8 f
+		d4 r8 d16 d g8 b16.([ a32)] g8 f
+		e c r g'16 c, f8 f r c'16. c,32
+		d8.([ e16] f8) b, c2
+		f,4 r r2 %240
+		r8 g'^\Textus c e a,4 h8 c
 		\appoggiatura a g g r4 r2
-		R1*5 %247
-		r8 f b a b b d8. d16
+		c4^\TurbaS a8 f b4 b
+		d h8 g c4 c
+		r c8 c b4 a8 a %245
+		g1
+		a
+		r8 f^\Textus b a b b d8. d16
 		b8 b r b b f r f
 		\appoggiatura b as8. as16 as8 b? g4 g8 d' %250
 		d f, as8. g16 es4 es
@@ -206,35 +556,73 @@ TextusNotes = {
 		b8. des,16 des8 es c c r4 %255
 		b'8 b as g as as r f
 		h h r16 f' h, c g8 g r4
-		R1
-		r8 g cis d a a r4
-		R1*4 %263
-		r4 r8 g cis4 cis8 d
+		a8^\Pilatus g fis e16 d g8 g r4
+		r8 g^\Textus cis d a a r4
+		r8 d,^\Iesus g8. g16 f!4 f8 d %260
+		f f r g e e16 e r4
+		e fis8 g a4 c,8 h
+		d4 r r2
+		r4 r8 g^\Textus cis4 cis8 d
 		a a r4 r2 %265
-		R1*5 %270
-		r8 d \appoggiatura cis?16 h8 \appoggiatura a!16 gis8 \appoggiatura gis4 fis2~
+		r4 gis8^\Pilatus h h d, r16 d d cis
+		e4 r r8 a a e
+		r4 e8 g fis fis16 fis r8 cis?16 d
+		e4 e8 fis d d r h'16 e,
+		fis8 fis r4 r2 %270
+		r8 d'^\Textus \appoggiatura cis?16 h8 \appoggiatura a!16 gis8 \appoggiatura gis4 fis2~
 		fis4. gis8 fis?4 r
-		R1*12 %284
-		r4 a8 h c!8. c16 c4 %285
+		r4 a8^\Iesus d, g8.([ a32 h)] a4
+		r8 h g4 r8 a fis4
+		r e8 a16([ fis)] \appoggiatura e4 d2 %275
+		cis4 r r8 e a fis
+		dis4 dis fis8 fis g a
+		g!4 g r8 g g h
+		gis4 gis h8 e,16 e f!8. e16
+		c!8 c r e16 a a8. dis,16 dis8 g %280
+		e e r4 r r8 g
+		g \appoggiatura fis16 e8 \appoggiatura d16 cis8. g'16 g8 fis d4~
+		d8[ h' \appoggiatura a16 g8 \appoggiatura fis?16 e8] e4.\trill d8
+		d4 r r2
+		r4 a'8^\Textus h c!8. c16 c4 %285
 		e c8 h g4.( a8)
 		g4 r r2
-		R1*2
-		r8 d' gis, a e e r4 %290
-		R1*10 %300
-		r4 c'8 g c4 b8 g
+		r4 h8^\Pilatus g r4 a8 e
+		fis4 r r2
+		r8 d'^\Textus gis, a e e r4 %290
+		r8 a^\Iesus a e r e g! a
+		fis fis r4 r16 fis16 fis^\critnote gis? a8 a16 h
+		gis4 r r gis8 gis
+		eis4 h'8 h16 a fis8 fis r fis
+		fis gis a16 a a h gis8 gis16 gis gis8 a %295
+		e e r4 r a~
+		a8[ f!] f d g4 d'16([ h)] g f
+		f8 e r4 b'8 b a gis
+		a2~ a4. h8
+		a4 r r2 %300
+		r4 c8^\Textus g c4 b8 g
 		\tuplet 3/2 8 { a16[ g f] c'[ b a] } d[ d, e f] b([ g8.)] g4\trill
 		f r r2
-		R1
-		a8 a cis e e4 a, %305
+		r4 f8^\Pilatus e g16. g32 g8 r4
+		a8^\Textus a cis e e4 a, %305
 		a8. a16 a8 b g g b a
 		f4 f r8 d' gis, a
 		\appoggiatura f e e r4 r2
-		R1*8 %316
-		c'8 c c c c4 g
+		r4 f8^\Pilatus a g4 c,8 b'
+		a8. g16 f4. g8 a h %310
+		c8.( c,16) c4 r r8 f
+		a f f16 f es f d8 d r a'
+		a4 g8 a fis fis fis e16 d
+		g8 g r4 g8 d f es16 d
+		es4 es es8 c fis16 fis fis g %315
+		d8 d r4 r2
+		c'8^\Textus c c c c4 g
 		g8 a b b16 a f2~
 		f8.[ g16] g4\trill f r
-		R1*4 %323
-		r4 c'8 c c g16 g b8 a
+		r4 b^\TurbaS a c %320
+		b d8 d es2
+		d4 b8 b c2
+		b1
+		r4 c8^\Textus c c g16 g b8 a
 		f f r d' d a r fis16 g %325
 		a8 a16 b c8 d b b r cis~
 		cis cis16 d \appoggiatura b8 a a r4 r8 f
@@ -246,55 +634,107 @@ TextusNotes = {
 		g as b as f f r4
 		r8 b16 f as8 as16 b g8 g es' d
 		b8.[\fermata c16] c4\trill b r %335
-		R1*5 %340
-		r4 r8 c c g b a!
+		r4 b8^\TurbaS b c4 c8 c
+		c4 b d2
+		es4 b8 b c4 b8 b
+		as1
+		g %340
+		r4 r8 c^\Textus c g b a!
 		f f16 f r4 r r8 f
 		b b b d b b16 b r b as b
 		g8 g r c a a r es'
 		h! c \appoggiatura as g g r2 %345
-		R1*7 %352
-		r4 r8 f f f f g
+		f4^\Pilatus g8. a16 g8 c, e g
+		a4 f d g
+		c,8 f([ g)] a a4 g
+		a8 e g a16 g g8. fis16 fis4
+		h8 fis a a16 h gis8. gis16 gis4 %350
+		h8 e,16 e fis8 fis16 gis a4 d,
+		e4.\trill e8 a,4 r
+		r4 r8 f'^\Textus f f f g
 		\appoggiatura f e4 e g8 g16 a b8. c16
 		a8 a16 a r8 a16 b g8 g16 g b8. a16 %355
 		f8 f r4 f' d8 c
 		a4.( h8) a4 r
-		R1*2
-		r4 r8 e a a16 a a8 h %360
+		r4 h8^\Pilatus c a a a h
+		g g r4 r2
+		r4 r8 e^\Textus a a16 a a8 h %360
 		g4 g8 e g g16 g g8 a
 		fis fis r a a d, r d'
 		d4 gis,8 a e e r4
-		R1*7 %370
-		d'8 e c! c16 h g8 g r4
-		R1*7 %378
-		r4 a8 a f'[ \grace e32 d16 c] h8 a32[ gis] a16
+		d'8^\TurbaS d d d h4 h
+		e8 e e e cis4 cis %365
+		r cis?8 cis d4 cis
+		r cis8 cis d4 cis
+		r cis8 cis d4 d
+		d cis?8[ h] cis2
+		d1 %370
+		d8^\Textus e c! c16 h g8 g r4
+		r4 r8 d^\Pilatus g d16 e f!8 g
+		e g b a g8. f16 f4
+		r a8 a fis4 fis
+		r a8 d, g8. g16 g4 %375
+		r8 b g e cis cis^\critnote e r
+		a r a g f16 e d cis d8 g,
+		a4.\trill a8 d4 r
+		r4 a'8^\Textus a f'[ \grace e32 d16 c] h8 a32[ gis] a16
 		\appoggiatura a8 gis gis r a \appoggiatura f e e r4 %380
-		R1*9 %389
-		r4 r8 d' d a a g16 a %390
+		r4 c'^\TurbaS c c8 c
+		d2 c4 c8 c
+		b b b c a4 c
+		c( h) c c8 c
+		h h h h c4 c %385
+		r c2 c4
+		a a8 a a4 a
+		b2 a~
+		a a
+		r4 r8 d^\Textus d a a g16 a %390
 		d8^\critnote d d h gis gis r h16 e,
 		c8 c16 c r4 a'8 h c16 c c h
 		h8 h16 h r4 h8 g16 g r8 h
 		c a r g \appoggiatura fis e e r4
-		R1*2 %396
-		r4 h'8 h h4 fis8 e
+		g8^\Pilatus e r4 a4 a8 e
+		fis4 r r2
+		r4 h8^\Textus h h4 fis8 e
 		fis? fis r16 c' a g e8 e r4
 		r a8 h cis e e4~
 		e8[ g,] g8.\trill fis16 a8 a r4 %400
-		R1*6 %406
-		r8 d \appoggiatura cis16 h8 \appoggiatura a16 gis8 fis2~
+		a4^\Pilatus a8 a fis8. fis16 fis4
+		a8 d, d e fis g a c
+		c fis,16 fis r8 fis16 g a4 a8 h
+		g4 r h8 fis16 g a8 h
+		g g16 g r8 e ais4 ais8 h %405
+		fis4 r r2
+		r8 d'^\Textus \appoggiatura cis16 h8 \appoggiatura a16 gis8 fis2~
 		fis4. gis8 fis4 r
-		R1*8 %416
-		r4 e8 e a a16. a32 cis8 d16 e
+		r4 a8.^\Iesus a16 a([ e)] e4 a16 g
+		g([ fis)] fis8 r d16 a' h([ g)] g8~ g16[ a32 g] fis16 fis %410
+		fis?([ e)] e4 e16 e fis8. d'32([ h)] \appoggiatura a8 gis8. a16
+		a4 r8 a h16. fis32 fis4 fis8~
+		fis a16.([ c!32)] c16([ h)] h a a([ g)] g4 r8
+		c8 fis, r16 fis a c h8 e, r4
+		a8 dis, r16 dis fis? a h8.[( a32 h]) c16[ a g fis] %415
+		e8.[ fis16] fis4\trill e r
+		r4 e8^\Textus e a a16. a32 cis8 d16 e
 		e8 g,16 g g8 g16 a fis8 fis r4
 		r r8 d' d g, g f16 g
 		e8.([ e'16)] c8 h g8.[ a16] a4\trill %420
 		g1
-		R1*9 \bar "|" %430 (finis)
+		h4^\TurbaS c8 h h4 a8 a
+		h4 r8 h c4 r8 c
+		d h e d \appoggiatura d4 cis4. d8
+		d2 r4 d8 d %425
+		d4 h e8 d c! h
+		c4 c b2
+		a gis4 a
+		a gis8[ fis] gis4. gis8
+		a1 \bar "|" %430 (finis)
 	}
 	
 	% chapter 19, verses 13 to 37
 	\set Score.currentBarNumber = #431
 	\relative c' {
-		r8 g' c h c c c g %431
+		r8 g'^\Textus c h c c c g %431
 		b b b c a a r e'
 		e g, b a f f r a
 		a d, d' a16 b g8 g r d
@@ -304,18 +744,35 @@ TextusNotes = {
 		c4 c c8 g b as
 		f f r f h h r f'
 		f4 h,8 c \appoggiatura as g g r4 %440
-		R1*5 %445
-		r4 c8 f, es'4 es8 d
+		r2 es4^\Pilatus c
+		g' r as c
+		b r es,4.( c8)
+		\appoggiatura b4 as1
+		g %445
+		r4 c'8^\Textus f, es'4 es8 d
 		b4~ b32[ d c b c d es f] g16[ es] \tuplet 3/2 8 { d[ es c] } c4\trill
 		b1
-		R1*7 %455
-		r4 a8 d,r4 d'8 a
+		b4^\TurbaS f d' b
+		es8 es es es es4 d %450
+		c8 c c c c4 b
+		r d8 d c4 c
+		r b8 b a4 b
+		g1
+		a %455
+		r4 a8^\Textus d,r4 d'8 a
 		c4 c8 b \appoggiatura a g g r4
-		R1*2
-		r4 b8 d \appoggiatura f, e!4 e8 f %460
+		r4 g8^\Pilatus d es4 es
+		r f8 c d d r4
+		r4 b'8^\Textus d \appoggiatura f, e!4 e8 f %460
 		f c16 c r4 r2
-		R1*7 %468
-		r4 r8 e a4 a
+		c'8^\TurbaS c a c d4 c
+		b a a8. g16 g4
+		r c8 g a4 g
+		r c8 g a4 g %465
+		b c a b
+		g2. g4
+		a1
+		r4 r8 e^\Textus a4 a
 		a8 a16 a a8 b g4 g %470
 		e'8 g,16 a b8 a f f r4
 		r f8 f b b as b
@@ -347,11 +804,19 @@ TextusNotes = {
 		r8 d' d es c4 b8 a
 		b b r g cis cis16 cis r8 cis16 d
 		\appoggiatura b8 a4 a r2 %500
-		R1*8 %508
-		r4 r8 a b b r g
+		d4^\TurbaS d c8. c16 c4
+		c4 b8 c d4 d
+		r8 d d d c4 c
+		b c a a
+		r c d r %505
+		r d c b8 a
+		g4 a g2
+		a1
+		r4 r8 a^\Textus b b r g
 		\appoggiatura d'4 cis cis8 d a a r4 %510
-		R1*2
-		d4 a8 g a4 a
+		r4 r8 d,^\Pilatus gis a r4
+		a8 e r4 r2
+		d'4^\Textus a8 g a4 a
 		d16 a a b c8 b g4 g
 		c8 c c g g g f g %515
 		e e r c16 d e8 e e f16 g
@@ -364,8 +829,13 @@ TextusNotes = {
 		a2~ a4. h8
 		a4 r r8 c a f
 		h! h r c c g16 g r4 %525
-		R1*6 %531
-		r4 a8 h g g g a
+		c8^\TurbaS c c c h4 h
+		d8 d d d c4 c
+		r8 c c c h4 h8 h
+		h4 h a a
+		fis r g fis %530
+		g1
+		r4 a8^\Textus h g g g a
 		fis fis r4 a8 d, r4
 		r8 h' h cis ais4 cis8 h
 		ais4 gis8 fis h4 h %535
@@ -384,11 +854,19 @@ TextusNotes = {
 		e8 g, b b16 a f8 f r4
 		a8 d, r4 d'8 h! gis8.\trill a16
 		e8 e r4 r2 %550
-		R1*6 %556
-		r4 r8 d' d gis, h gis16 a
+		a4.^\Iesus g8 f4 r
+		b4. a8 g4 r
+		r2 a4 f
+		r2 g4 e
+		a a8 b \appoggiatura f4 e2 %555
+		d1
+		r4 r8 d'^\Textus d gis, h gis16 a
 		a8 e16 e r4 r2
-		R1*4 %562
-		r4 a r8 a cis e
+		r2 h'4^\Iesus g
+		r2 a4 fis %560
+		h4. c8 \appoggiatura g4 fis2
+		e1
+		r4 a^\Textus r8 a cis e
 		e4 g, r8 b a g
 		cis4 cis8 e e g,16 g r8 a %565
 		f f r4 r f8 f16 f
@@ -396,8 +874,9 @@ TextusNotes = {
 		f g \appoggiatura b as8. b16 g4 es'8 b
 		b c des des16 es c4 c
 		d4. es8 \appoggiatura c b b r4 %570
-		R1*2
-		r4 r8 c c f, f g
+		g2.^\Iesus as4
+		\appoggiatura g4 f4. es8 es2
+		r4 r8 c'^\Textus c f, f g
 		es es16 es c'16([ a)] f4 es(\trill d16) es
 		d8 d r4 b'8 b r b16 c %575
 		as8 as f' as,16 b g8 g r es
@@ -408,8 +887,11 @@ TextusNotes = {
 		des?4 g, b b8 c
 		as as r4 as4.( b8)
 		as?1
-		R1*4 %587
-		r2 b
+		c8([^\Iesus as)] r f ges[ b] r e,!
+		f[ as] r f ges f4 e!8 %585
+		f1~
+		f
+		r2 b^\Textus
 		a16([ b8.)] a16([ b8.)] \appoggiatura es,8 d4. as'8
 		as?8. g16 g4 r b8.^\markup { \remark "sotto voce piano" } as16 %590
 		as?4 r r as?8. g16
@@ -458,7 +940,7 @@ TextusNotes = {
 	}
 }
 
-TextusLyrics = \lyricmode {
+SoliOrgLyrics = \lyricmode {
 	% chapter 18, verses 1 to 30
 	Pas -- si -- o,
 	pas -- si -- o
@@ -490,15 +972,24 @@ TextusLyrics = \lyricmode {
 	e -- um pro -- ces -- sit, pro --
 	ces -- sit et di -- cit,
 	et di -- cit e -- %30
-	is:
-	
+	is: Quem
+	quae -- _ _ _
+	_ ri -- tis, quem quae -- _
+	_ ri -- tis?
 	Re -- spon -- de -- runt e -- %35
 	i:
-	
-	Di -- cit e -- is Ie -- %43
+	Ie -- sum Na -- za --
+	re -- num,
+	Ie -- sum Na -- za --
+	re -- _ _ %40
+	_ _
+	num.
+	Di -- cit e -- is Ie --
 	_ sus:
-	
-	Sta -- bat au -- tem et %48
+	E -- go, %45
+	e -- _ _ go
+	sum.
+	Sta -- bat au -- tem et
 	Iu -- das qui tra -- de -- bat
 	e -- um cum i -- psis. %50
 	Ut er -- go di -- xit
@@ -508,16 +999,31 @@ TextusLyrics = \lyricmode {
 	ter -- ram. I -- te -- rum %55
 	er -- go in -- ter -- ro --
 	ga -- vit e -- os:
-	
-	Il -- li au -- tem di -- %62
+	Quem
+	quae -- _ _ _
+	_ ri -- tis, quem quae -- _ %60
+	_ ri -- tis?
+	Il -- li au -- tem di --
 	xe -- runt:
-	
+	Ie -- sum Na -- za --
+	re -- num, %65
+	Ie -- sum Na -- za --
+	re -- _ _
+	_ _
+	num.
 	Re -- spon -- dit, %70
 	re -- spon -- dit,
 	re -- spon -- dit Ie --
 	_ sus:
-	
-	Ut im -- ple -- re -- tur ser -- mo quem %82
+	Di -- xi
+	vo -- bis qui -- a e -- go %75
+	sum, qui -- a e -- go
+	sum. Si er -- go, si
+	er -- go me quae -- ri -- tis,
+	si -- ni -- te hos __ ab --
+	i -- _ %80
+	re.
+	Ut im -- ple -- re -- tur ser -- mo quem
 	di -- xit: Qui -- a
 	quos de -- di -- sti mi -- hi non
 	per -- di -- di ex e -- is quem -- quam. %85
@@ -532,7 +1038,14 @@ TextusLyrics = \lyricmode {
 	er -- go Ie -- sus,
 	Ie -- sus Pe -- %95
 	_ tro:
-	
+	Mit -- te gla -- di -- um
+	tu -- um in __ va --
+	gi -- nam!
+	Ca -- li -- cem quem de -- dit mi -- hi %100
+	Pa -- ter non
+	vis, non vis ut
+	bi -- bam il --
+	lum?
 	Co -- hors er -- go et tri -- %105
 	bu -- nus et mi -- ni -- stri Iu -- dae --
 	o -- rum con -- pre -- hen --
@@ -565,9 +1078,11 @@ TextusLyrics = \lyricmode {
 	Di -- cit er -- go Pe -- tro an --
 	cil -- la os -- tia -- %135
 	_ ri -- a:
-	
-	Di -- cit il -- le: %140
-	
+	Num -- quid et
+	tu ex di --
+	sci -- pu -- lis es ho -- mi -- nis is --
+	ti -- us? Di -- cit il -- le: %140
+	Non sum.
 	Sta -- bant au -- tem ser -- vi
 	et mi -- ni -- stri ad pru -- nas
 	quia fri -- gus e -- rat et
@@ -582,16 +1097,39 @@ TextusLyrics = \lyricmode {
 	Re -- spon -- dit
 	ei Ie --
 	_ sus: %155
-	
+	E -- go pa -- lam lo --
+	cu -- tus sum, lo --
+	cu -- tus sum mun -- do.
+	E -- go sem -- per do -- cu -- i
+	in sy -- na -- go -- ga et in %160
+	tem -- plo quo
+	o -- mnes Iu -- dae -- i con --
+	ve -- ni -- unt, et in oc --
+	cul -- to lo -- cu -- tus
+	sum ni -- _ _ %165
+	hil. Quid me in --
+	ter -- ro -- gas? Quid me in --
+	ter -- ro -- gas? In -- ter -- ro -- ga
+	eos qui au -- die -- runt, qui au --
+	die -- runt quid lo -- cu -- tus sum %170
+	i -- psis. Ec -- ce hii
+	sci -- unt quae di -- xe -- rim, quae
+	di -- xe -- rim e --
+	_ go.
 	Haec au -- tem cum di -- xis -- set u -- nus ad -- %175
 	si -- stens mi -- ni -- stro -- rum de -- dit
 	a -- la -- pam Ie -- su
-	di -- cens:
-	
+	di -- cens: Sic re --
+	spon -- des pon -- ti -- fi -- ci?
 	Re -- spon -- dit e -- i %180
 	Ie -- sus:
-	
-	Et mi -- sit e -- um %188
+	Si ma --
+	le lo -- cu -- tus sum
+	te -- sti -- mo -- ni -- um per -- hi --
+	be de ma -- lo. %185
+	Si au -- tem be -- ne
+	quid me cae -- dis?
+	Et mi -- sit e -- um
 	An -- nas li -- ga -- tum ad
 	Cai -- a -- phan pon -- ti -- fi -- cem. %190
 	Er -- at au -- tem
@@ -600,14 +1138,19 @@ TextusLyrics = \lyricmode {
 	se. Di -- xe -- runt er -- go
 	e -- i: %195
 	
-	Ne -- ga -- vit il -- le et %201
-	di -- xit: Di -- cit
+	Num -- quid et tu
+	ex di -- sci -- pu -- lis e -- _
+	_ ius
+	es? %200
+	Ne -- ga -- vit il -- le et
+	di -- xit: Non sum. Di -- cit
 	e -- i u -- nus ex ser -- vis pon --
 	ti -- fi -- cis co -- gna -- tus
 	e -- ius cu -- ius ab -- %205
 	sci -- dit Pe -- trus au -- ri -- cu -- lam:
-	
-	I -- te -- rum er -- go ne -- ga -- vit %209
+	Non -- ne e -- go te
+	vi -- di in hor -- to cum il -- lo?
+	I -- te -- rum er -- go ne -- ga -- vit
 	Pe -- trus, et sta -- tim gal -- lus can -- %210
 	ta -- vit. Ad -- du -- cunt er -- go
 	Ie -- sum a Cai -- phas in prae --
@@ -619,19 +1162,36 @@ TextusLyrics = \lyricmode {
 	i -- vit er -- go Pi -- la -- tus ad e -- os
 	fo -- ras et __ _
 	_ _ di -- xit: %220
-	
-	Re -- spon -- %223
+	Quam ac -- cu -- sa -- tio -- nem af --
+	fer -- tis ad -- ver -- sus ho -- mi -- nem
+	hunc? Re -- spon --
 	de -- runt et di -- xe -- runt
-	e -- i: %225 (finis)
+	e -- i: %225
+	Si non es -- set hic ma -- le -- %226
+	fa -- ctor, ma -- le --
+	fa -- ctor, non
+	ti -- bi tra -- di -- dis -- se -- mus
+	e -- um, non, %230
+	non, non ti -- bi tra -- di -- dis --
+	se -- mus e -- _
+	_ um. %233 (finis)
 	
 	% chapter 18, verse 31, to chapter 19, verse 12
 	Di -- xit er -- go e -- is Pi -- %234
 	la -- tus:
-	
-	Di -- xe -- runt er -- go Iu -- %241
+	Ac -- ci -- pi -- te e -- um
+	vos et se -- cun -- dum le -- gem
+	ve -- stram iu -- di -- ca -- te, iu -- di --
+	ca -- te e --
+	um. %240
+	Di -- xe -- runt er -- go Iu --
 	dae -- i:
-	
-	Ut ser -- mo Ie -- su im -- ple -- %248
+	No -- bis non li -- cet,
+	no -- bis non li -- cet
+	in -- ter -- fi -- ce -- re %245
+	quem --
+	quam.
+	Ut ser -- mo Ie -- su im -- ple --
 	re -- tur quem di -- xit si --
 	gni -- fi -- cans qua mor -- te, si -- %250
 	gni -- fi -- cans qua mor -- te
@@ -641,35 +1201,72 @@ TextusLyrics = \lyricmode {
 	to -- ri -- um Pi -- la -- tus %255
 	et vo -- ca -- vit Ie -- sum et
 	di -- xit, et di -- xit e -- i:
-	
-	Re -- spon -- dit Ie -- sus: %259
-	
-	Re -- spon -- dit Pi -- %264
+	Tu es rex Iu -- dae -- o -- rum?
+	Re -- spon -- dit Ie -- sus:
+	A te -- met i -- pso hoc %260
+	di -- cis, an a -- li -- i
+	ti -- bi di -- xe -- runt de
+	me?
+	Re -- spon -- dit Pi --
 	la -- tus: %265
-	
-	Re -- spon -- dit Ie -- %271
+	Num -- quid e -- go Iu -- dae -- us
+	sum? Gens tu -- a
+	et pon -- ti -- fi -- ces tra -- di --
+	de -- runt te mi -- hi. Quid fe --
+	ci -- sti? %270
+	Re -- spon -- dit Ie --
 	_ sus:
-	
+	Re -- gnum me -- um
+	non est, non est
+	de hoc mun -- %275
+	do. Si ex hoc
+	mun -- do es -- set re -- gnum
+	me -- um, mi -- ni -- stri
+	me -- i u -- ti -- que de -- cer --
+	ta -- rent ut non tra -- de -- rer Iu -- %280
+	dae -- is. Nunc
+	au -- tem re -- gnum me -- um non __
+	_ est hinc.
 	Di -- xit i -- ta -- que %285
 	e -- i Pi -- la --
 	tus:
-	
+	Er -- go rex es
+	tu?
 	Re -- spon -- dit Ie -- sus: %290
-	
-	Di -- cit e -- i Pi -- %301
+	Tu di -- cis quia rex sum
+	e -- go. E -- go in hoc na -- tus
+	sum et ad
+	hoc ve -- ni in mun -- dum ut
+	te -- sti -- mo -- ni -- um per -- hi -- be -- am ve -- ri -- %295
+	ta -- ti. O --
+	mnis qui est ex ve -- ri --
+	ta -- te au -- dit vo -- cem
+	me -- _
+	am. %300
+	Di -- cit e -- i Pi --
 	la -- _ _ _ _
 	tus:
-	
+	Quid est ve -- ri -- tas?
 	Et cum hoc di -- xis -- set %305
 	i -- te -- rum ex -- i -- vit ad Iu --
 	dae -- os et di -- cit
 	e -- is:
-	
-	Cla -- ma -- ve -- runt er -- go %317
+	E -- go nul -- lam in --
+	ve -- ni -- o in e -- o %310
+	cau -- sam. Est
+	au -- tem con -- sue -- tu -- do vo -- bis ut
+	u -- num di -- mit -- tam vo -- bis in
+	pas -- cha. Vul -- tis er -- go di --
+	mit -- tam vo -- bis re -- gem Iu -- dae -- %315
+	o -- rum?
+	Cla -- ma -- ve -- runt er -- go
 	rur -- sum o -- mnes di -- cen --
 	_ tes:
-	
-	E -- rat au -- tem Ba -- rab -- bas %324
+	Non hunc, non %320
+	hunc sed Ba -- rab --
+	bam, sed Ba -- rab --
+	bam.
+	E -- rat au -- tem Ba -- rab -- bas
 	la -- tro. Tunc er -- go ap -- %325
 	pre -- hen -- dit Pi -- la -- tus Ie -- sum et __
 	fla -- gel -- la -- vit. Et
@@ -681,48 +1278,101 @@ TextusLyrics = \lyricmode {
 	cum -- de -- de -- runt e -- um
 	et ve -- nie -- bant ad e -- um et di --
 	ce -- _ bant: %335
-	
-	Et da -- bant e -- i %341
+	A -- ve rex Iu -- dae --
+	o -- rum, A --
+	ve, a -- ve rex Iu -- dae --
+	o --
+	rum. %340
+	Et da -- bant e -- i
 	a -- la -- pas. Ex --
 	i -- it er -- go i -- te -- rum Pi -- la -- tus
 	fo -- ras et di -- cit, et
 	di -- cit ei -- s: %345
-	
+	Ec -- ce ad -- du -- co vo -- bis
+	e -- um fo -- ras
+	ut co -- gno -- sca -- tis
+	qui -- a nul -- lam in -- ve -- ni -- o,
+	qui -- a nul -- lam in -- ve -- ni -- o, %350
+	nul -- lam in -- ve -- nio in e -- o
+	cau -- _ sam.
 	Ex -- i -- vit er -- go
 	Ie -- sus por -- tans co -- ro -- nam
-	spi -- ne -- am et pur -- pu -- re -- um ve -- sti --
+	spi -- ne -- am et pur -- pu -- re -- um ve -- sti -- %355
 	men -- tum et di -- cit
 	e -- is:
-	
+	Ec -- ce ho -- mo, ec -- ce
+	ho -- mo.
 	Cum er -- go vi -- dis -- sent %360
 	e -- um pon -- ti -- fi -- ces et mi --
 	ni -- stri cla -- ma -- bant, cla --
 	ma -- bant di -- cen -- tes:
-	
-	Di -- cit e -- is Pi -- la -- tus: %371
-	
-	Re -- spon -- de -- _ _ runt %379
-	e -- i Iu -- dae -- i:
-	
+	Cru -- ci -- fi -- ge e -- um,
+	cru -- ci -- fi -- ge e -- um, %365
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge
+	e -- _ _
+	um. %370
+	Di -- cit e -- is Pi -- la -- tus:
+	Ac -- ci -- pi -- te e -- um
+	vos et cru -- ci -- fi -- gi -- te.
+	E -- go e -- nim
+	non in -- ve -- ni -- o %375
+	in e -- o cau -- sam, non,
+	non, non in -- ve -- ni -- o in e -- o
+	cau -- _ sam.
+	Re -- spon -- de -- _ _ runt
+	e -- i Iu -- dae -- i: %380
+	Nos le -- gem ha --
+	be -- mus et se --
+	cun -- dum le -- gem de -- bet
+	mo -- ri, de -- bet
+	mo -- ri, de -- bet mo -- ri %385
+	qui -- a
+	Fi -- li -- um De -- i
+	se fe --
+	cit.
 	Cum er -- go_au -- dis -- set Pi -- %390
 	la -- tus hunc ser -- mo -- nem ma -- gis
 	ti -- mu -- it et in -- gres -- sus est prae --
 	to -- ri -- um i -- te -- rum et
 	di -- cit ad Ie -- sum:
-	
-	Ie -- sus au -- tem re -- %397
+	Un -- de, un -- de es %395
+	tu?
+	Ie -- sus au -- tem re --
 	spon -- sum non de -- dit e -- i.
 	Di -- cit er -- go e --
 	i Pi -- la -- tus: %400
-	
-	Re -- spon -- dit Ie -- %407
+	Mi -- hi non lo -- que -- ris?
+	Ne -- scis qui -- a po -- te -- sta -- tem
+	ha -- be -- o cru -- ci -- fi -- ge -- re
+	te et po -- te -- sta -- tem
+	ha -- be -- o di -- mit -- te -- re %405
+	te?
+	Re -- spon -- dit Ie --
 	_ sus:
-	
-	Et ex -- in -- de quae -- re -- bat Pi -- %417
+	Non ha -- be -- res po -- te --
+	sta -- tem in me ul -- lam __ ni -- si %410
+	ti -- bi da -- tum es -- set de -- su --
+	per. Pro -- pter -- e -- a qui __
+	me tra -- di -- dit ti -- bi
+	ma -- ius pec -- ca -- tum ha -- bet,
+	ma -- ius pec -- ca -- tum ha -- _ %415
+	_ _ bet.
+	Et ex -- in -- de quae -- re -- bat Pi --
 	la -- tus di -- mit -- te -- re e -- um.
 	Iu -- dae -- i au -- tem cla --
 	ma -- bant di -- cen -- _ %420
-	tes: %421 (finis)
+	tes:
+	Si hunc di -- mit -- tis non
+	es, non es, non
+	es a -- mi -- cus Cae -- sa --
+	ris. O -- mnis %425
+	e -- nim qui se re -- gem
+	fa -- cit con --
+	tra -- di -- cit
+	Cae -- _ _ sa --
+	ri. %430 (finis)
 	
 	% chapter 19, verses 13 to 37
 	Pi -- la -- tus au -- tem cum au -- %431
@@ -735,18 +1385,35 @@ TextusLyrics = \lyricmode {
 	Pas -- chae ho -- ra qua -- si
 	sex -- ta. Et di -- cit, et
 	di -- cit Iu -- dae -- is: %440
-	
-	Il -- li au -- tem cla -- %446
+	Ec -- ce
+	Rex, ec -- ce
+	Rex, Rex __
+	ve --
+	ster. %445
+	Il -- li au -- tem cla --
 	ma -- _ _ _
 	bant:
-	
-	Di -- xit, di -- xit %456
+	Tol -- le,  tol -- le
+	cru -- ci -- fi -- ge e -- um, %450
+	cru -- ci -- fi -- ge e -- um,
+	cru -- ci -- fi -- ge,
+	cru -- ci -- fi -- ge
+	e --
+	um. %455
+	Di -- xit, di -- xit
 	e -- is Pi -- la -- tus:
-	
+	Re -- gem ve -- strum
+	cru -- ci -- fi -- gam?
 	Re -- spon -- de -- runt pon -- %460
 	ti -- fi -- ces:
-	
-	Tunc er -- go %469
+	Non ha -- be -- mus re -- gem
+	ni -- si Cae -- sa -- rem,
+	non ha -- be -- mus,
+	non ha -- be -- mus %465
+	re -- gem ni -- si
+	Cae -- sa --
+	rem.
+	Tunc er -- go
 	tra -- di -- dit e -- is il -- lum %470
 	ut cru -- ci -- fi -- ge -- re -- tur.
 	Su -- sce -- pe -- runt au -- tem
@@ -778,11 +1445,19 @@ TextusLyrics = \lyricmode {
 	Di -- ce -- bant er -- go Pi --
 	la -- to pon -- ti -- fi -- ces Iu -- dae --
 	o -- rum: %500
-	
-	Re -- spon -- dit, re -- %509
+	No -- li scri -- be -- re
+	rex Iu -- dae -- o -- rum,
+	sed qui -- a i -- pse,
+	i -- pse di -- xit:
+	rex sum, %505
+	rex sum Iu -- dae --
+	o -- _ _
+	rum.
+	Re -- spon -- dit, re --
 	spon -- dit Pi -- la -- tus: %510
-	
-	Mi -- li -- tes er -- go %513
+	Quod scri -- psi
+	scri -- psi.
+	Mi -- li -- tes er -- go
 	cum cru -- ci -- fi -- xis -- sent e -- um
 	ac -- ce -- pe -- runt ve -- sti -- men -- ta %515
 	e -- ius et fe -- ce -- runt quat -- tu -- or
@@ -795,8 +1470,13 @@ TextusLyrics = \lyricmode {
 	to -- _
 	tum. Di -- xe -- runt
 	er -- go ad in -- vi -- cem: %525
-	
-	Ut scri -- ptu -- ra im -- ple -- %532
+	Non scin -- da -- mus e -- am,
+	non scin -- da -- mus e -- am
+	sed sor -- ti -- a -- mur de
+	il -- la cu -- ius
+	sit, cu -- ius %530
+	sit.
+	Ut scri -- ptu -- ra im -- ple --
 	a -- tur di -- cens:
 	Par -- ti -- ti sunt ve -- sti --
 	men -- ta mea si -- bi %535
@@ -815,11 +1495,19 @@ TextusLyrics = \lyricmode {
 	stan -- tem quem di -- li -- ge -- bat
 	di -- cit, di -- cit ma -- tri
 	su -- ae: %550
-	
-	De -- in -- de di -- cit di -- %557
+	Mu -- li -- er,
+	mu -- li -- er
+	ec -- ce,
+	ec -- ce
+	fi -- li -- us tu -- %555
+	us.
+	De -- in -- de di -- cit di --
 	sci -- pu -- lo:
-	
-	Et ex il -- la %563
+	Ec -- ce,
+	ec -- ce %560
+	ma -- ter tu --
+	a.
+	Et ex il -- la
 	ho -- ra ac -- ce -- pit
 	e -- am di -- sci -- pu -- lus in %565
 	su -- a. Post -- e -- a
@@ -827,8 +1515,9 @@ TextusLyrics = \lyricmode {
 	con -- sum -- ma -- ta sunt et con --
 	sum -- ma -- re -- tur scri -- ptu -- ra
 	di -- _ _ cit: %570
-	
-	Vas er -- go e -- rat %573
+	Si -- _
+	_ ti -- o.
+	Vas er -- go e -- rat
 	po -- si -- tum a -- ce -- _ to
 	ple -- num. Il -- li au -- tem %575
 	spon -- giam ple -- nam a -- ce -- to hy --
@@ -839,8 +1528,11 @@ TextusLyrics = \lyricmode {
 	pis -- set Ie -- sus a --
 	ce -- tum di --
 	xit:
-	
-	Et %588
+	Con -- su -- ma -- _
+	_ _ _ _ tum %585
+	est.
+	__
+	Et
 	in -- cli -- na -- to
 	ca -- pi -- te tra -- di -- %590
 	dit, tra -- di --

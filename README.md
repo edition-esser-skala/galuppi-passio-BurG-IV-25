@@ -29,19 +29,17 @@ The file *master.ly* allows you to work with an editor like Kile: Change the inc
 * *master.ly* – allows building movements/parts from within Kile.
 * Individual voices in folder *notes*:
     * n_01_Textus.ly
-    * n_02_AncillaOstiaria.ly
-    * n_03_Jesus.ly
-    * n_04_Pilatus.ly
-    * n_05_UnusMinimorum.ly
-    * n_06_S.ly
-    * n_07_A.ly
-    * n_08_T.ly
-    * n_09_B.ly
-    * n_10_org.ly
+    * n_02_Iesus.ly
+    * n_03_Soli.ly
+    * n_04_S.ly
+    * n_05_A.ly
+    * n_06_T.ly
+    * n_07_B.ly
+    * n_08_org.ly
+    * n_99_other.ly
 * Movement definitions in folder *scores*:
     * s_passio.ly
 * Parts definitions in folder *parts*:
-    * p_b.ly
     * p_coro.ly
     * p_org.ly
 

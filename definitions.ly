@@ -130,10 +130,13 @@ tenutoE = \markup { \remarkE ten. }
 unisono = \markup { \remark "unisono" }
 unisonoE = \markup { \remarkE "unisono" }
 
+Textus = \markup { \remark "Textus" }
+Iesus = \markup { \remark "Iesus" }
+TurbaS = \markup { \remark "Turba (Soprano)" }
 Ancilla = \markup { \remark "Ancilla ostiaria" }
 Petrus = \markup { \remark "Petrus" }
 Pilatus = \markup { \remark "Pilatus" }
-UnusMinimorum = \markup { \remark "Unus minimorum" }
+UnusMinistrorum = \markup { \remark "Unus ministrorum" }
 UnusExServis = \markup { \remark "Unus ex servis" }
 
 t = \markup { \combine \fontsize #-2 \transparent \number 5 \raise #.6 \draw-line #'(1 . 0) }
@@ -297,7 +300,7 @@ tempoAdagio = \tempoMarkup "Adagio"
 		\Score
 		\override MetronomeMark.font-series = #'medium
 		\compressFullBarRests
-		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
+% 		\override BarNumber.break-visibility = #'#(#f #t #t) % uncomment to show each bar number
 	}
 	\context {
 		\StaffGroup
@@ -374,10 +377,11 @@ tempoAdagio = \tempoMarkup "Adagio"
 }
 
 \include "notes/n_01_Textus.ly"
-\include "notes/n_02_Jesus.ly"
+\include "notes/n_02_Iesus.ly"
 \include "notes/n_03_Soli.ly"
 \include "notes/n_04_S.ly"
 \include "notes/n_05_A.ly"
 \include "notes/n_06_T.ly"
 \include "notes/n_07_B.ly"
 \include "notes/n_08_org.ly"
+\include "notes/n_99_other.ly"

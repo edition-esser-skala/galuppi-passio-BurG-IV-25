@@ -245,7 +245,7 @@ Organo = {
 		g c, \bar "|" %233 (finis)
 	}
 	
-	% chapter 18, verse 31, to chapter 19, verse 12
+% 	chapter 18, verse 31, to chapter 19, verse 12
 	\set Score.currentBarNumber = #234
 	\relative c {
 		\verse "18" "31" \mvTr f1\pE-\soloE
@@ -447,7 +447,7 @@ Organo = {
 		a,1 \bar "|" %430 (finis)
 	}
 	
-	% chapter 19, verses 13 to 37
+% 	chapter 19, verses 13 to 37
 	\set Score.currentBarNumber = #431
 	\relative c {
 		\verse "19" "13" \mvTr e1~\pE-\soloE %431

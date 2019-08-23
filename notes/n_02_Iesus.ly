@@ -4,7 +4,7 @@
 
 \version "2.18.0"
 
-JesusIncipit = \markup {
+IesusIncipit = \markup {
 	"Iesus" \hspace #-21 \score {
 		\new Staff \with {
 			\remove Time_signature_engraver
@@ -15,7 +15,7 @@ JesusIncipit = \markup {
 	} \hspace #-.8
 }
 
-JesusNotes = {
+IesusNotes = {
 	\clef treble
 	\key c \major \time 4/4 \autoBeamOff \tempoAdagio
 	
@@ -109,7 +109,7 @@ JesusNotes = {
 		fis fis r4 r16 fis16 fis^\critnote gis? a8 a16 h
 		gis4 r r gis8 gis
 		eis4 h'8 h16 a fis8 fis r fis
-		fis gis a16 a a h gis8 gis16 gis gis8 a
+		fis gis a16 a a h gis8 gis16 gis gis8 a %295
 		e e r4 r a~
 		a8[ f!] f d g4 d'16([ h)] g f
 		f8 e r4 b'8 b a gis
@@ -155,9 +155,9 @@ JesusNotes = {
 	}
 }
 
-JesusLyrics = \lyricmode {
+IesusLyrics = \lyricmode {
 	% chapter 18, verses 1 to 30
-	Quem %30
+	Quem %31
 	quae -- _ _ _
 	_ ri -- tis, quem quae -- _
 	_ ri -- tis?
