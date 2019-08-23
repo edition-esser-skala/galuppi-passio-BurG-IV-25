@@ -13,6 +13,8 @@
 
 #(set-global-staff-size 15.87)
 
+showLastLength = r1*39
+
 \book {
 	\bookpart {
 		\header {
@@ -87,8 +89,8 @@
 					\BassFigures
 				}
 			>>
-			\layout { }
-			\midi { \tempo 4 = 60 }
+% 			\layout { }
+			\midi { \tempo 4 = 72 }
 		}
 	}
 }

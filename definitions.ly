@@ -317,8 +317,8 @@ tempoAdagio = \tempoMarkup "Adagio"
 	\context {
 		\ChoirStaff
 		\override StaffGrouper.staffgroup-staff-spacing =
-		  #'((basic-distance . 15)
-         (minimum-distance . 15)
+		  #'((basic-distance . 20)
+         (minimum-distance . 20)
          (padding . -100)
          (stretchability . 0))
 		\override StaffGrouper.staff-staff-spacing =
