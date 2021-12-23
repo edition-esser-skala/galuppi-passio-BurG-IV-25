@@ -1,17 +1,18 @@
-composer: Galuppi, Baldassare
+composer:
+  last: Galuppi
+  first: Baldassare
 title: Passio per il Venerdi Santo
 id: BurG IV/25
 genre: passion
 scoring: 2 S, 5 A (solo), S, A, T, B (coro), b, org
+license: cc-by-nc-sa-4.0
 sources:
-  1:
+  A1:
     siglum: F-Pn
     shelfmark: MS-1886
-    type: autograph manuscript
     date: 1750
     rism: 840017202
     url: https://gallica.bnf.fr/ark:/12148/btv1b8447127b
-github: galuppi-passio-BurG-IV-25
+    license: custom (free for non-commercial purposes)
+    principal: true
 imslp: Passio_secundum_Joannem_(Galuppi,_Baldassare)
-notes:
-
